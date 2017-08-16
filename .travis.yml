@@ -1,0 +1,14 @@
+#language: node_js
+#node_js:
+#  - "8"
+
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker pull node:8-alpine
+
+script:
+  - docker run --rm -v $PWD:/usr/src/app -w /usr/src/app node:8-alpine npm run build
