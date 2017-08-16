@@ -3,21 +3,10 @@ language: node_js
 node_js:
   - "8"
 
-notifications:
-  email:
-    recipients:
-      - one@example.com
-      - other@example.com
-    on_success: never # default: change
-    on_failure: always # default: always
-
 sudo: required
 
 services:
   - docker
 
-before_install:
-  - docker pull node:8-alpine
-
 script:
-  - docker run --rm -v $PWD:/usr/src/app -w /usr/src/app node:8-alpine npm run build
+  - docker build --force-rm --rm .
