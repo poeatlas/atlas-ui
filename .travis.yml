@@ -4,6 +4,8 @@ node_js:
 sudo: required
 services: 
 script:
+- npm install
+- npm run build
 - npm install release-it
 deploy:
   provider: script
