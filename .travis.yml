@@ -1,12 +1,15 @@
 language: node_js
-
 node_js:
-  - "8"
-
+- '8'
 sudo: required
-
-services:
-  - docker
-
+services: 
 script:
-  - docker build --force-rm --rm .
+- npm install release-it
+deploy:
+  provider: script
+  script: ./travis-release-script
+  on:
+    branch: master
+env:
+  global:
+    secure: JZSeTH1Oxl7CtH2TkSZ4x0s+h6PjlRIhTxU3elNR5b3ASkLpKG7uHHcB7Cv7YUnEcIUMgk1kAB7rzddJhRRCu/iKuft0xtHDjs5xZC3BR8bhN7BIjbmYBHN1n1glXtXK8lHgoFxCgHAXxgQoEdh79atNHqpR58+Aa17qGdmtFtfe/YJ5LrIPORabWi8RFkNju8gSfG8kRW7i/jVYgGafL1yiVY6IkDMx7/6u86U2LCgQZfREr5+oF8ie5Q3lIW+Zzh0Iam5N9oEARUJy2Kqq5qbyNA2tBZCnQEjmew171rbCP/vWAX2/Styk53JRoIX+Z2vhV+Fwm5rud2IOIYP8U78Zw5h/zqzLTy5KnFb1AtTA40ycsus0R570TLvmi4whckLXfMAwm4BJD6J8TVvSt6hi0HFvkg19MqaBWxzd0nyEOLOE2B9hBCOfhWfuR+qiJsTVpW0uHA33szCyxKdkLlt6lXTzII+eYW3Y2inLUoidwuB2+9GoaYASfWwfCLFj/53596CtO/2J5zJYhsS6Yq3pmdqV+/IieU1Go0zE5Y/7VgHM6pLQqbEfRDxgyVzjlppwWOYtCp1NllrNY/j1yAHPFOW6kY+eTLzQXyQY9HVf7B5Z9ZPy5uLctrTo6b3hSnoX6ergudzfjbcFwp1btmDANKeXn4osfzbaNkExgXg=
