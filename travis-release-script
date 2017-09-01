@@ -4,7 +4,7 @@ git config --global user.name "Travis CI"
 
 git checkout $TRAVIS_BRANCH
 
-echo Travis Branch is $TRAVIS_BRANCH
+ls ./node_modules
 
 git remote set-url --push origin https://${GH_TOKEN}@github.com/poeatlas/atlas-ui.git
 
