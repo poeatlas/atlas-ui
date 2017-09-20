@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { FormGroup, FormControl } from 'react-bootstrap';
-import { observer } from "mobx-react";
+import { inject, observer } from "mobx-react";
 
-// @observer
+@inject('MapStore') @observer
 class SearchBar extends Component {
   constructor(props) {
     super(props);
@@ -18,28 +18,35 @@ class SearchBar extends Component {
     });
   }
 
+  filterChange(e) {
+    console.log(this.props.MapStore);
+    this.props.MapStore.filter = e.target.value;
+  }
+
   render() {
-    // const {filter, filteredMaps, maps } = this.props.store;
-    
+    console.log(this)
+    const { filter, filteredMaps, maps} = this.props.MapStore;
     // test filtered maps from searchbar
-    // const mapList = filteredMaps.map(map => (
-    //   <li>{ map } </li>
-    // ));
+    const mapList = filteredMaps.map(map => (
+      <li>{ map } </li>
+    ));
 
     return (
       <div className="searchbar">
         <form>
+          { console.log(filter)}
           <FormGroup controlId="search">
-            {/*<FormControl
+            <FormControl
               type="text"
               value={filter}
               placeholder="Type keywords here..."
-              onChange={this.filter.bind(this)}
-            />*/}
+              onChange={this.filterChange.bind(this)}
+            />
           </FormGroup>
           {/*test filered maps list */}
-          {/*<ul> { mapList } </ul>*/}
+          <ul> { mapList } </ul>
         </form>
+        
       </div>
     );
   }

@@ -5,11 +5,10 @@ import { observer } from 'mobx-react';
 import cx from 'classnames';
 
 // @inject("mapStore")
-// @observer
+@observer
 class Map extends Component {
 
   render() {
-    // const { filter, filteredMaps, maps } = this.props.store;
     const {iconPath, x, y, worldAreasName, worldAreasLevel, id, shaperOrb} = this.props;
     const TIER_MAGIC_LEVEL = 67;
     const mapClass = {

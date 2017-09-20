@@ -1,12 +1,13 @@
-import {observable, computed, reaction} from 'mobx';
+import {observable, computed} from 'mobx';
 
-export default class MapStore {
+export class MapStore {
 
-    // @observable maps = [];
-    // @observable filter = "";
+    @observable maps = ["Crypt", "Racecourse", "Core", "Shore"];
+    @observable filter = "";
 
-    // @computed get filteredMaps() {
-    //     var matchesFilter = new RegExp(this.filter, "i");
-    //     return this.todos.filter(todo => !this.filter || matchesFilter.test(todo));
-    // }
+    @computed get filteredMaps() {
+        var matchesFilter = new RegExp(this.filter, "i");
+        return this.maps.filter(map => !this.filter || matchesFilter.test(map));
+    }
 }
+export default new MapStore();
