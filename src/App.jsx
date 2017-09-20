@@ -2,13 +2,18 @@ import React, { Component } from 'react';
 import './App.css';
 import atlas from './resources/atlas.json';
 import Map from './components/Map';
+import BonusCount from './components/BonusCount';
+import SearchBar from './components/SearchBar';
 
 class App extends Component {
 
   render() {
+
     return (
       <div id="atlas">
-         { atlas.map((map) => <Map x={map.x} y={map.y} path={map.icon_path} name={map.world_areas_name} key={map.id} /> ) }
+        <SearchBar />
+         { atlas.map((map) => <Map {...map} key={map.id} /> ) }
+        <BonusCount x={atlas[atlas.length-1].x} y={atlas[atlas.length-1].y} />
       </div>
     );
   }
