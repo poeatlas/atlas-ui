@@ -19,22 +19,15 @@ class SearchBar extends Component {
   }
 
   filterChange(e) {
-    console.log(this.props.MapStore);
     this.props.MapStore.filter = e.target.value;
   }
 
   render() {
-    console.log(this)
-    const { filter, filteredMaps, maps} = this.props.MapStore;
-    // test filtered maps from searchbar
-    const mapList = filteredMaps.map(map => (
-      <li>{ map } </li>
-    ));
+    const { filter } = this.props.MapStore;
 
     return (
       <div className="searchbar">
         <form>
-          { console.log(filter)}
           <FormGroup controlId="search">
             <FormControl
               type="text"
@@ -43,8 +36,6 @@ class SearchBar extends Component {
               onChange={this.filterChange.bind(this)}
             />
           </FormGroup>
-          {/*test filered maps list */}
-          <ul> { mapList } </ul>
         </form>
         
       </div>

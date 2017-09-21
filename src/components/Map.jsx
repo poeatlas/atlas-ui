@@ -1,19 +1,31 @@
 import React, { Component } from 'react';
 import { MAP_MULTIPLIER, MAP_OFFSET } from '../const';
 import { Popover, OverlayTrigger } from 'react-bootstrap';
-import { observer } from 'mobx-react';
+import { inject, observer } from 'mobx-react';
 import cx from 'classnames';
 
-// @inject("mapStore")
+@inject("MapStore")
 @observer
 class Map extends Component {
 
+  filterChange() {
+    // var matchFilter = new RegExp(this.props.MapStore.filter, "i");
+    const filterStr = this.props.MapStore.filter.toLowerCase();
+    const areaNameStr = this.props.map.worldAreasName.toLowerCase();
+    if (areaNameStr.toLowerCase().indexOf(filterStr) !== -1) {
+      return { opacity: '1' };
+    } else {
+      return { opacity: '0.5' };
+    }
+  }
+
   render() {
-    const {iconPath, x, y, worldAreasName, worldAreasLevel, id, shaperOrb} = this.props;
+    const {iconPath, x, y, worldAreasName, worldAreasLevel, id, shaperOrb} = this.props.map;
     const TIER_MAGIC_LEVEL = 67;
+    const SHAPERS_REALM_ID = 125;
     const mapClass = {
       map: true,
-      shaperId: id===125 ? true : false
+      shaperId: id===SHAPERS_REALM_ID ? true : false
     }
     var shapableMap;
 
@@ -41,8 +53,9 @@ class Map extends Component {
   return (
       <div>
         <OverlayTrigger trigger={['hover', 'focus']} placement="top" overlay={popoverHoverFocus}>
-          <div className={cx(mapClass)} style={mapStyle}></div>  
+          <div className={cx(mapClass)} style={{ ...mapStyle, ...this.filterChange()}}></div>  
         </OverlayTrigger>
+        {/*blue circle indicating map can be shaped*/}
         { shapableMap }
       </div>
     );
