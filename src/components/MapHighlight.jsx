@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
-import cx from 'classnames';
 
 @inject("MapStore")
 @observer

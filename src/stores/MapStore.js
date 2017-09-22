@@ -1,7 +1,4 @@
-import {
-  observable,
-  computed
-} from 'mobx';
+import {observable} from 'mobx';
 
 export class MapStore {
 

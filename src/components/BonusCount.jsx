@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MAP_MULTIPLIER, MAP_OFFSET } from '../const';
+import { MAP_MULTIPLIER } from '../const';
 
 class BonusCount extends Component {
     
