@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { FormGroup, FormControl } from 'react-bootstrap';
+import { InputGroup, FormGroup, FormControl, Button, ButtonGroup } from 'react-bootstrap';
+import InfoIcon from "./InfoIcon";
 import { inject, observer } from "mobx-react";
 
 @inject('MapStore') @observer
@@ -28,16 +29,18 @@ class SearchBar extends Component {
     return (
       <div className="searchbar">
         <form>
-          <FormGroup controlId="search">
-            <FormControl
-              type="text"
-              value={filter}
-              placeholder="Type keywords here..."
-              onChange={this.filterChange.bind(this)}
-            />
+          <FormGroup>
+            <InputGroup>
+              <InfoIcon />
+              <FormControl
+                type="text"
+                value={filter}
+                placeholder="Type keywords here..."
+                onChange={this.filterChange.bind(this)}
+              />
+            </InputGroup>
           </FormGroup>
         </form>
-        
       </div>
     );
   }
