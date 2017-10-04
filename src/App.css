@@ -7,7 +7,7 @@
   background-size: 19px 19px;
   cursor: pointer;
   cursor: hand;
-  z-index: 2;
+  z-index: 3;
 }
 
 .map.shaperId {
@@ -27,7 +27,33 @@
   width: 50px;
   height: 50px;
   border: 2px dotted blue;
-  
+  -moz-transition:all 1s ease-in-out;
+  -webkit-transition:all 1s ease-in-out;
+  -o-transition:all 1s ease-in-out;
+  -ms-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
+
+  -webkit-animation:spin 30s linear infinite;
+  -moz-animation:spin 30s linear infinite;
+  animation:spin 30s linear infinite;
+  z-index: 0;
+}
+
+.usedShaperOrb {
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px dotted yellow;
+
+  -moz-transition:all 1s ease-in-out;
+  -webkit-transition:all 1s ease-in-out;
+  -o-transition:all 1s ease-in-out;
+  -ms-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
+
   -webkit-animation:spin 30s linear infinite;
   -moz-animation:spin 30s linear infinite;
   animation:spin 30s linear infinite;
@@ -50,19 +76,101 @@
   animation: flickerAnimation 1.5s infinite;
   z-index: 0;
 }
+
+.shapedHighlight {
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid blue;
+  background: lightblue;
+
+/*-webkit-animation:spin 30s linear infinite;*/
+  -webkit-animation: flickerAnimation 1.5s infinite;
+  -moz-animation: flickerAnimation 1.5s infinite;
+  -o-animation: flickerAnimation 1.5s infinite;
+  animation: flickerAnimation 1.5s infinite;
+  z-index: 0;
+}
+
 .info {
   width: 20px;
 }
 .searchbar {
   position: fixed;
   margin:0 auto;
-  width: 20%;
+  width: 30%;
   top: 5px;
-  left: 40%;
+  left: 35%;
   clear:left;
   height:auto;
-  z-index:3;
+  z-index:4;
 }
+.seal {
+  background: url('/Art/2DItems/Currency/SealWhite.png');
+  /*background-position: -10;*/
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+.sealToggle {
+  background: url('/Art/2DItems/Currency/SealRed.png');
+  /*background-position: -10;*/
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+.sextant {
+  background: url('/Art/2DItems/Currency/AtlasRadiusWhite.png');
+  /*background-position: -10;*/
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+.sextantToggle {
+  background: url('/Art/2DItems/Currency/AtlasRadiusRed.png');
+  /*background-position: -10;*/
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+.orb {
+  background: url('/Art/2DItems/Currency/UpgradeMap-GRAYSCALE.png');
+  /*background-position: -10;*/
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+.orbToggle {
+  background: url('/Art/2DItems/Currency/UpgradeMapToYellow.png');
+  /*background-position: -10;*/
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+.sextanted {
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 217.232676963px;
+  height: 217.232676963px;
+  border: 2px dotted red;
+  margin-left: -108.616338481px;
+  margin-top: -108.616338481px;
+  
+  -webkit-animation:spin 30s linear infinite;
+  -moz-animation:spin 30s linear infinite;
+  animation:spin 30s linear infinite;
+  z-index: 2;
+}
+/*.sealCursor {
+  cursor: url('/Art/2DItems/Currency/SealWhite.png'), auto;
+}*/
+
+
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }

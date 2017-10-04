@@ -8,11 +8,16 @@ import SearchBar from './components/SearchBar';
 class App extends Component {
 
   render() {
-
+    console.log(this.props);
     return (
       <div id="atlas">
-        <SearchBar />
-         { atlas.map((map) => <Map map={map} key={map.id} /> ) }
+        <SearchBar mapStore={this.props.mapStore}/>
+         { atlas.map((map) => 
+          <Map map={map} 
+            key={map.id} 
+            mapStore={this.props.mapStore[map.id]} 
+            mapList = {this.props.mapStore} 
+          /> ) }
         <BonusCount x={atlas[atlas.length-1].x} y={atlas[atlas.length-1].y} />
       </div>
     );
