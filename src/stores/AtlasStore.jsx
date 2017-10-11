@@ -1,4 +1,4 @@
-import {computed, observable, action} from 'mobx';
+import { observable, action } from 'mobx';
 
 export class AtlasStore {
 
@@ -7,7 +7,6 @@ export class AtlasStore {
   @observable sextantState = 0;
   @observable shaperOrbState = 0;
   @observable downgradeState = 0;
-  @observable shaperOrbUsedId = -1;
 
   @action setToggle({seal, sextant, shaperOrb, downgrade}) {
     this.sealState = seal;

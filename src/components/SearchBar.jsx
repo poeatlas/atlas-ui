@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { InputGroup, FormGroup, FormControl, Button, ButtonGroup } from 'react-bootstrap';
+import { InputGroup, FormGroup, FormControl } from 'react-bootstrap';
 import InfoIcon from "./InfoIcon";
 import Seal from "./Seal";
 import ShaperOrb from "./ShaperOrb";
+import UnshapeDialogue from './UnshapeDialogue';
 import Sextant from "./Sextant";
 import { observer } from "mobx-react";
 
@@ -17,7 +18,7 @@ class SearchBar extends Component {
   }
 
   handleChange(e) {
-    const { mapStore } = this.props;
+    const { mapList } = this.props;
 
     this.setState({ 
       value: e.target.value
@@ -30,8 +31,8 @@ class SearchBar extends Component {
       filterTier = parseInt(filter.substring(tierIndex+5), 10);
     }
 
-    for (var i=0; i<mapStore.length; i++) {
-      const currMap = mapStore[i];
+    for (var i=0; i<mapList.length; i++) {
+      const currMap = mapList[i];
       const areaName = currMap.name.toLowerCase();
       const tier = currMap.tier;
 
@@ -45,8 +46,6 @@ class SearchBar extends Component {
   }
 
   render() {
-    const { mapStore } = this.props;
-
     return (
       <div className="searchbar">
         <form>
@@ -62,7 +61,7 @@ class SearchBar extends Component {
               <InputGroup.Button>
               <Seal />
               <Sextant />
-              <ShaperOrb mapStore={mapStore} />
+              <ShaperOrb />
               </InputGroup.Button>
             </InputGroup>
           </FormGroup>

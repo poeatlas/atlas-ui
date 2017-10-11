@@ -9,38 +9,48 @@ class MapStore {
   @observable shapeHighlighted = false;
   @observable isHidden = false;
   @observable usedShaperOrb = false;
-  @observable shabedById = -1;
+  @observable shapedById = -1;
+  @observable shapedMapId = -1;
+  @observable showUnshapeModal = false;
   id = 0;
   x = 0;
   y = 0;
   connectedMapIds = null;
+  sextantMapIds = null;
   worldAreasName = null;
   worldAreasLevel = 0;
   iconPath = null;
   shapedIconPath = null;
-  shaperOrb = 0; // number indicates tier maps this orb can shape
+  shaperOrbTier = 0; // number indicates tier maps this orb can shape
 
   constructor({id, 
+      name, 
+      level, 
       x, 
       y, 
-      connectedMapIds, 
-      worldAreasName, 
-      worldAreasLevel, 
+      connected, 
+      sextant,
       iconPath, 
       shapedIconPath,
-      shaperOrb}) {
+      shaperOrbTier}) {
     this.id = id;
     this.x = x;
     this.y = y;
-    this.connectedMapIds = connectedMapIds;
-    this.worldAreasName = worldAreasName;
-    this.worldAreasLevel = worldAreasLevel;
+    this.connectedMapIds = connected;
+    this.worldAreasName = name;
+    this.worldAreasLevel = level;
+    this.sextantMapIds = sextant;
     this.iconPath = iconPath;
     this.shapedIconPath = shapedIconPath;
-    this.shaperOrb = shaperOrb;
+    this.shaperOrbTier = shaperOrbTier;
   }
   @computed get hasShaperOrb() {
-    return this.shaperOrb && !this.usedShaperOrb;
+    return this.shaperOrbTier > 0 && !this.usedShaperOrb;
+  }
+
+  @action toggleShaperOrbMap(value) {
+    this.isHidden = !value;
+    this.shapehighlighted = value;
   }
 
   @computed get isMapShown() {
@@ -53,6 +63,10 @@ class MapStore {
 
   @computed get tier() {
     return this.mapLevel - 67;
+  }
+
+  @computed get baseTier() {
+    return this.worldAreasLevel - 67;
   }
 
   @computed get name() {

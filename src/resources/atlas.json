@@ -1,1094 +1,2355 @@
-[{
-  "id": 0,
-  "x": 823.851,
-  "y": 425.447,
-  "connectedMapIds": [6],
-  "worldAreasName": "Arcade",
-  "worldAreasLevel": 68,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Arcade1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Arcade2.png"
-}, {
-  "id": 1,
-  "x": 174.295,
-  "y": 75.681,
-  "connectedMapIds": [5],
-  "worldAreasName": "Crystal Ore",
-  "worldAreasLevel": 68,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/CrystalOre1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/CrystalOre2.png"
-}, {
-  "id": 2,
-  "x": 805.31,
-  "y": 79.413,
-  "connectedMapIds": [7],
-  "worldAreasName": "Desert",
-  "worldAreasLevel": 68,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Desert1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Desert2.png"
-}, {
-  "id": 3,
-  "x": 223.412,
-  "y": 428.267,
-  "connectedMapIds": [4],
-  "worldAreasName": "Jungle Valley",
-  "worldAreasLevel": 68,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/JungleValley1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/JungleValley2.png"
-}, {
-  "id": 4,
-  "x": 244.838,
-  "y": 401.257,
-  "connectedMapIds": [3, 12, 14],
-  "worldAreasName": "Beach",
-  "worldAreasLevel": 69,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Beach1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Beach2.png"
-}, {
-  "id": 5,
-  "x": 170.902,
-  "y": 128.495,
-  "connectedMapIds": [1, 9, 10],
-  "worldAreasName": "Factory",
-  "worldAreasLevel": 69,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Factory1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Factory2.png"
-}, {
-  "id": 6,
-  "x": 784.551,
-  "y": 409.981,
-  "connectedMapIds": [0, 13],
-  "worldAreasName": "Ghetto",
-  "worldAreasLevel": 69,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Ghetto1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Ghetto2.png"
-}, {
-  "id": 7,
-  "x": 800.263,
-  "y": 109.768,
-  "connectedMapIds": [2, 8, 11],
-  "worldAreasName": "Oasis",
-  "worldAreasLevel": 69,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Oasis1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Oasis2.png"
-}, {
-  "id": 8,
-  "x": 794.01,
-  "y": 134.897,
-  "connectedMapIds": [7, 18],
-  "worldAreasName": "Arid Lake",
-  "worldAreasLevel": 70,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/AridLake1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/AridLake2.png"
-}, {
-  "id": 9,
-  "x": 173.901,
-  "y": 229.2,
-  "connectedMapIds": [5, 21, 23],
-  "worldAreasName": "Cavern",
-  "worldAreasLevel": 70,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Cavern1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Cavern2.png"
-}, {
-  "id": 10,
-  "x": 200.26,
-  "y": 162.606,
-  "connectedMapIds": [5, 17],
-  "worldAreasName": "Channel",
-  "worldAreasLevel": 70,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Channel1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Channel2.png"
-}, {
-  "id": 11,
-  "x": 815.413,
-  "y": 191.103,
-  "connectedMapIds": [7, 18, 22],
-  "worldAreasName": "Grotto",
-  "worldAreasLevel": 70,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Grotto1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Grotto2.png"
-}, {
-  "id": 12,
-  "x": 182.262,
-  "y": 358.349,
-  "connectedMapIds": [4, 14],
-  "worldAreasName": "Marshes",
-  "worldAreasLevel": 70,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Marshes1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Marshes2.png"
-}, {
-  "id": 13,
-  "x": 771.0,
-  "y": 442.808,
-  "connectedMapIds": [6, 19],
-  "worldAreasName": "Sewer",
-  "worldAreasLevel": 70,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Sewer1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Sewer2.png"
-}, {
-  "id": 14,
-  "x": 222.694,
-  "y": 343.302,
-  "connectedMapIds": [4, 12, 15, 21],
-  "worldAreasName": "Vaal Pyramid",
-  "worldAreasLevel": 70,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/VaalPyramid1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/VaalPyramid2.png"
-}, {
-  "id": 15,
-  "x": 240.83,
-  "y": 332.09,
-  "connectedMapIds": [14],
-  "worldAreasName": "Vaults of Atziri",
-  "worldAreasLevel": 70,
-  "iconPath": "Art/2DItems/Maps/UniqueMap1.png"
-}, {
-  "id": 16,
-  "x": 822.575,
-  "y": 385.83,
-  "connectedMapIds": [19, 30],
-  "worldAreasName": "Academy",
-  "worldAreasLevel": 71,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Academy1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Academy2.png"
-}, {
-  "id": 17,
-  "x": 199.0,
-  "y": 114.74,
-  "connectedMapIds": [10, 27, 28],
-  "worldAreasName": "Acid Lakes",
-  "worldAreasLevel": 71,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/AcidLakes1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/AcidLakes2.png"
-}, {
-  "id": 18,
-  "x": 807.62,
-  "y": 165.827,
-  "connectedMapIds": [8, 11, 26],
-  "worldAreasName": "Dungeon",
-  "worldAreasLevel": 71,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Dungeon1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Dungeon2.png"
-}, {
-  "id": 19,
-  "x": 726.171,
-  "y": 413.595,
-  "connectedMapIds": [13, 16, 20, 31],
-  "worldAreasName": "Graveyard",
-  "worldAreasLevel": 71,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Graveyard1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Graveyard2.png"
-}, {
-  "id": 20,
-  "x": 719.621,
-  "y": 435.744,
-  "connectedMapIds": [19],
-  "worldAreasName": "Hallowed Ground",
-  "worldAreasLevel": 71,
-  "iconPath": "Art/2DItems/Maps/HallowedGround.png"
-}, {
-  "id": 21,
-  "x": 189.696,
-  "y": 310.583,
-  "connectedMapIds": [9, 14, 24, 29],
-  "worldAreasName": "Phantasmagoria",
-  "worldAreasLevel": 71,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Phantasmagoria1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Phantasmagoria2.png"
-}, {
-  "id": 22,
-  "x": 764.174,
-  "y": 188.694,
-  "connectedMapIds": [11, 25, 26, 30],
-  "worldAreasName": "Villa",
-  "worldAreasLevel": 71,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Villa1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Villa2.png"
-}, {
-  "id": 23,
-  "x": 210.77,
-  "y": 215.631,
-  "connectedMapIds": [9, 27, 29],
-  "worldAreasName": "Waste Pool",
-  "worldAreasLevel": 71,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/WastePool1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/WastePool2.png"
-}, {
-  "id": 24,
-  "x": 243.96,
-  "y": 297.216,
-  "connectedMapIds": [21, 32, 40],
-  "worldAreasName": "Burial Chambers",
-  "worldAreasLevel": 72,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/BurialChambers1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/BurialChambers2.png"
-}, {
-  "id": 25,
-  "x": 727.207,
-  "y": 193.0,
-  "connectedMapIds": [22, 35, 39, 41],
-  "worldAreasName": "Peninsula",
-  "worldAreasLevel": 72,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/DryPeninsula1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/DryPeninsula2.png"
-}, {
-  "id": 26,
-  "x": 746.859,
-  "y": 141.53,
-  "connectedMapIds": [18, 22, 37],
-  "worldAreasName": "Dunes",
-  "worldAreasLevel": 72,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Dunes1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Dunes2.png"
-}, {
-  "id": 27,
-  "x": 246.586,
-  "y": 149.303,
-  "connectedMapIds": [17, 23, 32, 33, 34],
-  "worldAreasName": "Mesa",
-  "worldAreasLevel": 72,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Mesa1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Mesa2.png"
-}, {
-  "id": 28,
-  "x": 209.554,
-  "y": 87.483,
-  "connectedMapIds": [17, 34],
-  "worldAreasName": "Pit",
-  "worldAreasLevel": 72,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Pit1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Pit2.png"
-}, {
-  "id": 29,
-  "x": 206.73,
-  "y": 265.815,
-  "connectedMapIds": [21, 23, 32],
-  "worldAreasName": "Primordial Pool",
-  "worldAreasLevel": 72,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/PrimordialPool1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/PrimordialPool2.png"
-}, {
-  "id": 30,
-  "x": 813.393,
-  "y": 264.08,
-  "connectedMapIds": [16, 22, 36, 39],
-  "worldAreasName": "Spider Lair",
-  "worldAreasLevel": 72,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/SpiderLair1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/SpiderLair2.png"
-}, {
-  "id": 31,
-  "x": 780.207,
-  "y": 326.137,
-  "connectedMapIds": [19, 36],
-  "worldAreasName": "Tower",
-  "worldAreasLevel": 72,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Tower1.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Tower2.png"
-}, {
-  "id": 32,
-  "x": 253.971,
-  "y": 236.104,
-  "connectedMapIds": [24, 27, 29, 44],
-  "worldAreasName": "Canyon",
-  "worldAreasLevel": 73,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Canyon2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Canyon3.png"
-}, {
-  "id": 33,
-  "x": 276.101,
-  "y": 114.319,
-  "connectedMapIds": [27, 46, 48],
-  "worldAreasName": "Quarry",
-  "worldAreasLevel": 73,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Quarry2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Quarry3.png"
-}, {
-  "id": 34,
-  "x": 248.07,
-  "y": 66.677,
-  "connectedMapIds": [27, 28, 46],
-  "worldAreasName": "Racecourse",
-  "worldAreasLevel": 73,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Racecourse2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Racecourse3.png"
-}, {
-  "id": 35,
-  "x": 713.13,
-  "y": 242.246,
-  "connectedMapIds": [25, 41, 49],
-  "worldAreasName": "Ramparts",
-  "worldAreasLevel": 73,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Ramparts2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Ramparts3.png"
-}, {
-  "id": 36,
-  "x": 788.166,
-  "y": 270.674,
-  "connectedMapIds": [30, 31, 47, 49],
-  "worldAreasName": "Spider Forest",
-  "worldAreasLevel": 73,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/SpiderForest2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/SpiderForest3.png",
-  "shaperOrb": 1
-}, {
-  "id": 37,
-  "x": 704.121,
-  "y": 140.94,
-  "connectedMapIds": [26, 38, 43],
-  "worldAreasName": "Strand",
-  "worldAreasLevel": 73,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Strand2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Strand3.png"
-}, {
-  "id": 38,
-  "x": 702.134,
-  "y": 159.971,
-  "connectedMapIds": [37],
-  "worldAreasName": "Whakawairua Tuahu",
-  "worldAreasLevel": 73,
-  "iconPath": "Art/2DItems/Maps/UniqueMapEye.png"
-}, {
-  "id": 39,
-  "x": 806.821,
-  "y": 234.763,
-  "connectedMapIds": [25, 30, 49],
-  "worldAreasName": "Thicket",
-  "worldAreasLevel": 73,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Thicket2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Thicket3.png"
-}, {
-  "id": 40,
-  "x": 280.505,
-  "y": 330.084,
-  "connectedMapIds": [24, 42, 44],
-  "worldAreasName": "Vaal City",
-  "worldAreasLevel": 73,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/VaalCity2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/VaalCity3.png"
-}, {
-  "id": 41,
-  "x": 676.428,
-  "y": 170.548,
-  "connectedMapIds": [25, 35, 43],
-  "worldAreasName": "Wharf",
-  "worldAreasLevel": 73,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Wharf2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Wharf3.png"
-}, {
-  "id": 42,
-  "x": 265.0,
-  "y": 363.09,
-  "connectedMapIds": [40, 58, 59],
-  "worldAreasName": "Arachnid Tomb",
-  "worldAreasLevel": 74,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/ArachnidTomb2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/ArachnidTomb3.png"
-}, {
-  "id": 43,
-  "x": 671.0,
-  "y": 102.37,
-  "connectedMapIds": [37, 41, 52, 53],
-  "worldAreasName": "Castle Ruins",
-  "worldAreasLevel": 74,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/CastleRuins2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/CastleRuins3.png"
-}, {
-  "id": 44,
-  "x": 319.938,
-  "y": 308.533,
-  "connectedMapIds": [32, 40, 45, 58],
-  "worldAreasName": "Catacombs",
-  "worldAreasLevel": 74,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Catacomb2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Catacomb3.png"
-}, {
-  "id": 45,
-  "x": 333.752,
-  "y": 319.609,
-  "connectedMapIds": [44],
-  "worldAreasName": "Olmec's Sanctum",
-  "worldAreasLevel": 74,
-  "iconPath": "Art/2DItems/Maps/olmec.png"
-}, {
-  "id": 46,
-  "x": 294.369,
-  "y": 70.623,
-  "connectedMapIds": [33, 34, 50, 54],
-  "worldAreasName": "Cells",
-  "worldAreasLevel": 74,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Cells2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Cells3.png"
-}, {
-  "id": 47,
-  "x": 723.482,
-  "y": 371.81,
-  "connectedMapIds": [36, 51, 55, 57],
-  "worldAreasName": "Armoury",
-  "worldAreasLevel": 74,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Armory2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Armory3.png"
-}, {
-  "id": 48,
-  "x": 351.769,
-  "y": 93.176,
-  "connectedMapIds": [33, 50],
-  "worldAreasName": "Ashen Wood",
-  "worldAreasLevel": 74,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/DryWoods2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/DryWoods3.png",
-  "shaperOrb": 2
-}, {
-  "id": 49,
-  "x": 751.207,
-  "y": 273.93,
-  "connectedMapIds": [35, 36, 39, 57],
-  "worldAreasName": "Mud Geyser",
-  "worldAreasLevel": 74,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/MudGeyser2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/MudGeyser3.png"
-}, {
-  "id": 50,
-  "x": 382.0,
-  "y": 93.94,
-  "connectedMapIds": [46, 48, 66],
-  "worldAreasName": "Arachnid Nest",
-  "worldAreasLevel": 75,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/ArachnidNest2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/ArachnidNest3.png"
-}, {
-  "id": 51,
-  "x": 700.689,
-  "y": 408.37,
-  "connectedMapIds": [47, 65],
-  "worldAreasName": "Arena",
-  "worldAreasLevel": 75,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Arena2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Arena3.png"
-}, {
-  "id": 52,
-  "x": 584.703,
-  "y": 77.833,
-  "connectedMapIds": [43, 53, 54],
-  "worldAreasName": "Bog",
-  "worldAreasLevel": 75,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Bog2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Bog3.png",
-  "shaperOrb": 3
-}, {
-  "id": 53,
-  "x": 617.444,
-  "y": 118.444,
-  "connectedMapIds": [43, 52, 61],
-  "worldAreasName": "Cemetery",
-  "worldAreasLevel": 75,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Cemetery2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Cemetery3.png"
-}, {
-  "id": 54,
-  "x": 428.55,
-  "y": 87.63,
-  "connectedMapIds": [46, 52, 68],
-  "worldAreasName": "Barrows",
-  "worldAreasLevel": 75,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Barrows2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Barrows3.png"
-}, {
-  "id": 55,
-  "x": 703.413,
-  "y": 321.843,
-  "connectedMapIds": [47, 56, 72],
-  "worldAreasName": "Atoll",
-  "worldAreasLevel": 75,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Atoll2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Atoll3.png"
-}, {
-  "id": 56,
-  "x": 684.62,
-  "y": 324.435,
-  "connectedMapIds": [55],
-  "worldAreasName": "Maelström of Chaos",
-  "worldAreasLevel": 75,
-  "iconPath": "Art/2DItems/Maps/MaelstromofChaos.png"
-}, {
-  "id": 57,
-  "x": 736.783,
-  "y": 322.898,
-  "connectedMapIds": [47, 49],
-  "worldAreasName": "Pier",
-  "worldAreasLevel": 75,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Pier2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Pier3.png"
-}, {
-  "id": 58,
-  "x": 316.363,
-  "y": 350.678,
-  "connectedMapIds": [42, 44, 60],
-  "worldAreasName": "Shore",
-  "worldAreasLevel": 75,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Shore2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Shore3.png"
-}, {
-  "id": 59,
-  "x": 283.498,
-  "y": 401.572,
-  "connectedMapIds": [42, 60, 70],
-  "worldAreasName": "Tropical Island",
-  "worldAreasLevel": 75,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/TropicalIsland2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/TropicalIsland3.png"
-}, {
-  "id": 60,
-  "x": 326.326,
-  "y": 402.814,
-  "connectedMapIds": [58, 59, 79],
-  "worldAreasName": "Coves",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Coves2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Coves3.png"
-}, {
-  "id": 61,
-  "x": 540.515,
-  "y": 128.573,
-  "connectedMapIds": [53, 62, 63, 75],
-  "worldAreasName": "Crypt",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Crypt2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Crypt3.png"
-}, {
-  "id": 62,
-  "x": 559.625,
-  "y": 131.159,
-  "connectedMapIds": [61],
-  "worldAreasName": "The Coward's Trial",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/UndeadSiege.png"
-}, {
-  "id": 63,
-  "x": 519.418,
-  "y": 120.999,
-  "connectedMapIds": [61, 64, 68, 76],
-  "worldAreasName": "Museum",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Museum2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Museum3.png"
-}, {
-  "id": 64,
-  "x": 534.112,
-  "y": 115.374,
-  "connectedMapIds": [63],
-  "worldAreasName": "The Putrid Cloister",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/PutridCloister.png"
-}, {
-  "id": 65,
-  "x": 703.01,
-  "y": 444.162,
-  "connectedMapIds": [51, 72],
-  "worldAreasName": "Orchard",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Orchard2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Orchard3.png"
-}, {
-  "id": 66,
-  "x": 385.842,
-  "y": 128.88,
-  "connectedMapIds": [50, 67, 80],
-  "worldAreasName": "Overgrown Shrine",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/OvergrownShrine2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/OvergrownShrine3.png"
-}, {
-  "id": 67,
-  "x": 371.386,
-  "y": 122.477,
-  "connectedMapIds": [66],
-  "worldAreasName": "Acton's Nightmare",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/musicbox.png"
-}, {
-  "id": 68,
-  "x": 471.73,
-  "y": 143.0,
-  "connectedMapIds": [54, 63, 69, 74],
-  "worldAreasName": "Promenade",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Promenade2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Promenade3.png"
-}, {
-  "id": 69,
-  "x": 419.079,
-  "y": 120.041,
-  "connectedMapIds": [68],
-  "worldAreasName": "The Hall of Grandmasters",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/HallOfGrandmasters.png"
-}, {
-  "id": 70,
-  "x": 284.655,
-  "y": 472.673,
-  "connectedMapIds": [59, 71, 81],
-  "worldAreasName": "Reef",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Reef2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Reef3.png",
-  "shaperOrb": 4
-}, {
-  "id": 71,
-  "x": 306.5,
-  "y": 465.878,
-  "connectedMapIds": [70],
-  "worldAreasName": "Mao Kun",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/FairgravesMap01.png"
-}, {
-  "id": 72,
-  "x": 642.331,
-  "y": 399.826,
-  "connectedMapIds": [55, 65, 73, 78],
-  "worldAreasName": "Temple",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Temple2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Temple3.png"
-}, {
-  "id": 73,
-  "x": 628.598,
-  "y": 389.232,
-  "connectedMapIds": [72],
-  "worldAreasName": "Poorjoy's Asylum",
-  "worldAreasLevel": 76,
-  "iconPath": "Art/2DItems/Maps/PoorjoysAsylum.png",
-  "shaperOrb": 9
-}, {
-  "id": 74,
-  "x": 431.214,
-  "y": 160.025,
-  "connectedMapIds": [68, 76, 80, 83],
-  "worldAreasName": "Colonnade",
-  "worldAreasLevel": 77,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Colonnade2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Colonnade3.png",
-  "shaperOrb": 5
-}, {
-  "id": 75,
-  "x": 593.444,
-  "y": 164.813,
-  "connectedMapIds": [61, 76, 84],
-  "worldAreasName": "Arsenal",
-  "worldAreasLevel": 77,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Arsenal2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Arsenal3.png"
-}, {
-  "id": 76,
-  "x": 524.884,
-  "y": 167.366,
-  "connectedMapIds": [63, 74, 75, 77, 91],
-  "worldAreasName": "Courtyard",
-  "worldAreasLevel": 77,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Courtyard2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Courtyard3.png"
-}, {
-  "id": 77,
-  "x": 517.293,
-  "y": 148.411,
-  "connectedMapIds": [76],
-  "worldAreasName": "The Vinktar Square",
-  "worldAreasLevel": 77,
-  "iconPath": "Art/2DItems/Maps/TheVinktarSquare.png",
-  "shaperOrb": 10
-}, {
-  "id": 78,
-  "x": 629.985,
-  "y": 460.538,
-  "connectedMapIds": [72, 86, 90],
-  "worldAreasName": "Malformation",
-  "worldAreasLevel": 77,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Malformation2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Malformation3.png"
-}, {
-  "id": 79,
-  "x": 365.116,
-  "y": 461.57,
-  "connectedMapIds": [60, 81, 87, 88],
-  "worldAreasName": "Port",
-  "worldAreasLevel": 77,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Quay2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Quay3.png"
-}, {
-  "id": 80,
-  "x": 309.207,
-  "y": 154.0,
-  "connectedMapIds": [66, 74, 83],
-  "worldAreasName": "Terrace",
-  "worldAreasLevel": 77,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Terrace2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Terrace3.png"
-}, {
-  "id": 81,
-  "x": 395.566,
-  "y": 478.388,
-  "connectedMapIds": [70, 79, 82, 90],
-  "worldAreasName": "Underground River",
-  "worldAreasLevel": 77,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/UndergroundRiver2.png",
-  "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/UndergroundRiver3.png"
-}, {
-  "id": 82,
-  "x": 400.513,
-  "y": 463.281,
-  "connectedMapIds": [81],
-  "worldAreasName": "Caer Blaidd, Wolfpack's Den",
-  "worldAreasLevel": 77,
-  "iconPath": "Art/2DItems/Maps/WolfMap.png"
-}, {
-  "id": 83,
-  "x": 337.607,
-  "y": 194.617,
-  "connectedMapIds": [74, 80, 99],
-  "worldAreasName": "Bazaar",
-  "worldAreasLevel": 78,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Bazaar3.png"
-}, {
-  "id": 84,
-  "x": 631.183,
-  "y": 159.189,
-  "connectedMapIds": [75, 85, 92, 93],
-  "worldAreasName": "Chateau",
-  "worldAreasLevel": 78,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Chateau3.png"
-}, {
-  "id": 85,
-  "x": 642.867,
-  "y": 173.488,
-  "connectedMapIds": [84],
-  "worldAreasName": "Perandus Manor",
-  "worldAreasLevel": 78,
-  "iconPath": "Art/2DItems/Maps/PerandusManor.png"
-}, {
-  "id": 86,
-  "x": 587.793,
-  "y": 430.717,
-  "connectedMapIds": [78, 94],
-  "worldAreasName": "Excavation",
-  "worldAreasLevel": 78,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Excavation3.png",
-  "shaperOrb": 6
-}, {
-  "id": 87,
-  "x": 367.181,
-  "y": 423.703,
-  "connectedMapIds": [79, 88, 96, 97],
-  "worldAreasName": "Precinct",
-  "worldAreasLevel": 78,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Precinct3.png"
-}, {
-  "id": 88,
-  "x": 415.659,
-  "y": 423.872,
-  "connectedMapIds": [79, 87, 89, 98],
-  "worldAreasName": "Torture Chamber",
-  "worldAreasLevel": 78,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/TortureChamber3.png"
-}, {
-  "id": 89,
-  "x": 431.775,
-  "y": 426.232,
-  "connectedMapIds": [88],
-  "worldAreasName": "Oba's Cursed Trove",
-  "worldAreasLevel": 78,
-  "iconPath": "Art/2DItems/Maps/oba.png",
-  "shaperOrb": 8
-}, {
-  "id": 90,
-  "x": 474.276,
-  "y": 445.348,
-  "connectedMapIds": [78, 81, 100],
-  "worldAreasName": "Underground Sea",
-  "worldAreasLevel": 78,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/UndergroundSea3.png"
-}, {
-  "id": 91,
-  "x": 559.38,
-  "y": 204.512,
-  "connectedMapIds": [76, 92],
-  "worldAreasName": "Wasteland",
-  "worldAreasLevel": 78,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Wasteland3.png"
-}, {
-  "id": 92,
-  "x": 596.575,
-  "y": 195.697,
-  "connectedMapIds": [84, 91, 107],
-  "worldAreasName": "Crematorium",
-  "worldAreasLevel": 79,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Crematorium3.png"
-}, {
-  "id": 93,
-  "x": 652.529,
-  "y": 240.84,
-  "connectedMapIds": [84, 102, 107],
-  "worldAreasName": "Estuary",
-  "worldAreasLevel": 79,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Estuary3.png",
-  "shaperOrb": 7
-}, {
-  "id": 94,
-  "x": 596.663,
-  "y": 398.941,
-  "connectedMapIds": [86, 95, 101, 103],
-  "worldAreasName": "Necropolis",
-  "worldAreasLevel": 79,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Necropolis3.png"
-}, {
-  "id": 95,
-  "x": 612.429,
-  "y": 408.018,
-  "connectedMapIds": [94],
-  "worldAreasName": "Death and Taxes",
-  "worldAreasLevel": 79,
-  "iconPath": "Art/2DItems/Maps/DeathandTaxes.png",
-  "shaperOrb": 9
-}, {
-  "id": 96,
-  "x": 462.188,
-  "y": 363.613,
-  "connectedMapIds": [87, 98, 106],
-  "worldAreasName": "Plateau",
-  "worldAreasLevel": 79,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Plateau3.png"
-}, {
-  "id": 97,
-  "x": 356.186,
-  "y": 374.863,
-  "connectedMapIds": [87, 105, 106],
-  "worldAreasName": "Ivory Temple",
-  "worldAreasLevel": 79,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/IvoryTemple3.png"
-}, {
-  "id": 98,
-  "x": 428.759,
-  "y": 397.042,
-  "connectedMapIds": [88, 96],
-  "worldAreasName": "Residence",
-  "worldAreasLevel": 79,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Residence3.png"
-}, {
-  "id": 99,
-  "x": 293.381,
-  "y": 196.658,
-  "connectedMapIds": [83, 104, 108],
-  "worldAreasName": "Shipyard",
-  "worldAreasLevel": 79,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Shipyard3.png"
-}, {
-  "id": 100,
-  "x": 458.783,
-  "y": 423.236,
-  "connectedMapIds": [90, 103],
-  "worldAreasName": "Vault",
-  "worldAreasLevel": 79,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Vault3.png"
-}, {
-  "id": 101,
-  "x": 621.344,
-  "y": 358.448,
-  "connectedMapIds": [94, 110],
-  "worldAreasName": "Lair",
-  "worldAreasLevel": 80,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Lair3.png"
-}, {
-  "id": 102,
-  "x": 690.31,
-  "y": 281.137,
-  "connectedMapIds": [93, 114],
-  "worldAreasName": "Beacon",
-  "worldAreasLevel": 80,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Beacon3.png"
-}, {
-  "id": 103,
-  "x": 530.707,
-  "y": 431.637,
-  "connectedMapIds": [94, 100, 112],
-  "worldAreasName": "Gorge",
-  "worldAreasLevel": 80,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Gorge3.png"
-}, {
-  "id": 104,
-  "x": 314.98,
-  "y": 265.833,
-  "connectedMapIds": [99, 111],
-  "worldAreasName": "High Gardens",
-  "worldAreasLevel": 80,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/HighGardens3.png",
-  "shaperOrb": 8
-}, {
-  "id": 105,
-  "x": 378.324,
-  "y": 352.705,
-  "connectedMapIds": [97, 109],
-  "worldAreasName": "Plaza",
-  "worldAreasLevel": 80,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Plaza3.png"
-}, {
-  "id": 106,
-  "x": 418.373,
-  "y": 348.349,
-  "connectedMapIds": [96, 97, 109],
-  "worldAreasName": "Scriptorium",
-  "worldAreasLevel": 80,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Scriptorium3.png"
-}, {
-  "id": 107,
-  "x": 621.733,
-  "y": 255.16,
-  "connectedMapIds": [92, 93, 114],
-  "worldAreasName": "Sulphur Wastes",
-  "worldAreasLevel": 80,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/SulphurWastes3.png"
-}, {
-  "id": 108,
-  "x": 363.129,
-  "y": 227.789,
-  "connectedMapIds": [99, 111, 113],
-  "worldAreasName": "Waterways",
-  "worldAreasLevel": 80,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Waterways3.png"
-}, {
-  "id": 109,
-  "x": 393.146,
-  "y": 305.773,
-  "connectedMapIds": [105, 106, 116],
-  "worldAreasName": "Maze",
-  "worldAreasLevel": 81,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Maze3.png"
-}, {
-  "id": 110,
-  "x": 587.871,
-  "y": 319.659,
-  "connectedMapIds": [101, 115],
-  "worldAreasName": "Mineral Pools",
-  "worldAreasLevel": 81,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/MineralPools3.png"
-}, {
-  "id": 111,
-  "x": 360.207,
-  "y": 257.629,
-  "connectedMapIds": [104, 108, 118],
-  "worldAreasName": "Palace",
-  "worldAreasLevel": 81,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Palace3.png"
-}, {
-  "id": 112,
-  "x": 530.843,
-  "y": 405.097,
-  "connectedMapIds": [103, 115],
-  "worldAreasName": "Shrine",
-  "worldAreasLevel": 81,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Shrine3.png"
-}, {
-  "id": 113,
-  "x": 413.736,
-  "y": 215.489,
-  "connectedMapIds": [108, 119],
-  "worldAreasName": "Springs",
-  "worldAreasLevel": 81,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Springs3.png"
-}, {
-  "id": 114,
-  "x": 621.29,
-  "y": 302.575,
-  "connectedMapIds": [102, 107, 117],
-  "worldAreasName": "Volcano",
-  "worldAreasLevel": 81,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Volcano3.png",
-  "shaperOrb": 9
-}, {
-  "id": 115,
-  "x": 570.827,
-  "y": 363.839,
-  "connectedMapIds": [110, 112, 122],
-  "worldAreasName": "Abyss",
-  "worldAreasLevel": 82,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Abyss3.png"
-}, {
-  "id": 116,
-  "x": 428.257,
-  "y": 299.803,
-  "connectedMapIds": [109, 120],
-  "worldAreasName": "Colosseum",
-  "worldAreasLevel": 82,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Colosseum3.png"
-}, {
-  "id": 117,
-  "x": 587.974,
-  "y": 244.117,
-  "connectedMapIds": [114, 123],
-  "worldAreasName": "Core",
-  "worldAreasLevel": 82,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Core3.png"
-}, {
-  "id": 118,
-  "x": 400.656,
-  "y": 248.482,
-  "connectedMapIds": [111, 119],
-  "worldAreasName": "Dark Forest",
-  "worldAreasLevel": 82,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/DarkForest3.png"
-}, {
-  "id": 119,
-  "x": 451.165,
-  "y": 195.005,
-  "connectedMapIds": [113, 118, 121],
-  "worldAreasName": "Overgrown Ruin",
-  "worldAreasLevel": 82,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/OvergrownRuin3.png",
-  "shaperOrb": 10
-}, {
-  "id": 120,
-  "x": 453.406,
-  "y": 324.744,
-  "connectedMapIds": [116],
-  "worldAreasName": "Pit of the Chimera",
-  "worldAreasLevel": 83,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Chimera.png"
-}, {
-  "id": 121,
-  "x": 451.34,
-  "y": 227.672,
-  "connectedMapIds": [119],
-  "worldAreasName": "Lair of the Hydra",
-  "worldAreasLevel": 83,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Hydra.png"
-}, {
-  "id": 122,
-  "x": 547.586,
-  "y": 325.925,
-  "connectedMapIds": [115],
-  "worldAreasName": "Maze of the Minotaur",
-  "worldAreasLevel": 83,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Minotaur.png"
-}, {
-  "id": 123,
-  "x": 546.949,
-  "y": 228.979,
-  "connectedMapIds": [117],
-  "worldAreasName": "Forge of the Phoenix",
-  "worldAreasLevel": 83,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Phoenix.png"
-}, {
-  "id": 124,
-  "x": 353.807,
-  "y": 292.922,
-  "connectedMapIds": [],
-  "worldAreasName": "Vaal Temple",
-  "worldAreasLevel": 83,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/VaalTemple3.png",
-  "shaperOrb": 10
-}, {
-  "id": 125,
-  "x": 499.667,
-  "y": 274.1,
-  "connectedMapIds": [],
-  "worldAreasName": "The Shaper's Realm",
-  "worldAreasLevel": 84,
-  "iconPath": "Art/2DItems/Maps/AtlasMaps/Atlas.png"
-}]
+[
+  {
+    "id": 0,
+    "name": "Arcade",
+    "level": 68,
+    "x": 823.851,
+    "y": 425.447,
+    "connected": [
+      6
+    ],
+    "sextant": [
+      6,
+      16
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Arcade1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Arcade2.png"
+  },
+  {
+    "id": 1,
+    "name": "Crystal Ore",
+    "level": 68,
+    "x": 174.295,
+    "y": 75.681,
+    "connected": [
+      5
+    ],
+    "sextant": [
+      5,
+      17,
+      28
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/CrystalOre1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/CrystalOre2.png"
+  },
+  {
+    "id": 2,
+    "name": "Desert",
+    "level": 68,
+    "x": 805.31,
+    "y": 79.413,
+    "connected": [
+      7
+    ],
+    "sextant": [
+      7
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Desert1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Desert2.png"
+  },
+  {
+    "id": 3,
+    "name": "Jungle Valley",
+    "level": 68,
+    "x": 223.412,
+    "y": 428.267,
+    "connected": [
+      4
+    ],
+    "sextant": [
+      4
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/JungleValley1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/JungleValley2.png"
+  },
+  {
+    "id": 4,
+    "name": "Beach",
+    "level": 69,
+    "x": 244.838,
+    "y": 401.257,
+    "connected": [
+      3,
+      12,
+      14
+    ],
+    "sextant": [
+      3,
+      42,
+      59
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Beach1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Beach2.png"
+  },
+  {
+    "id": 5,
+    "name": "Factory",
+    "level": 69,
+    "x": 170.902,
+    "y": 128.495,
+    "connected": [
+      1,
+      9,
+      10
+    ],
+    "sextant": [
+      1,
+      10,
+      17
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Factory1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Factory2.png"
+  },
+  {
+    "id": 6,
+    "name": "Ghetto",
+    "level": 69,
+    "x": 784.551,
+    "y": 409.981,
+    "connected": [
+      0,
+      13
+    ],
+    "sextant": [
+      0,
+      13,
+      16
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Ghetto1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Ghetto2.png"
+  },
+  {
+    "id": 7,
+    "name": "Oasis",
+    "level": 69,
+    "x": 800.263,
+    "y": 109.768,
+    "connected": [
+      2,
+      8,
+      11
+    ],
+    "sextant": [
+      2,
+      8
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Oasis1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Oasis2.png"
+  },
+  {
+    "id": 8,
+    "name": "Arid Lake",
+    "level": 70,
+    "x": 794.01,
+    "y": 134.897,
+    "connected": [
+      7,
+      18
+    ],
+    "sextant": [
+      7,
+      18,
+      26
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/AridLake1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/AridLake2.png"
+  },
+  {
+    "id": 9,
+    "name": "Cavern",
+    "level": 70,
+    "x": 173.901,
+    "y": 229.2,
+    "connected": [
+      5,
+      21,
+      23
+    ],
+    "sextant": [
+      23,
+      29
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Cavern1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Cavern2.png"
+  },
+  {
+    "id": 10,
+    "name": "Channel",
+    "level": 70,
+    "x": 200.26,
+    "y": 162.606,
+    "connected": [
+      5,
+      17
+    ],
+    "sextant": [
+      5,
+      17,
+      23,
+      27
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Channel1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Channel2.png"
+  },
+  {
+    "id": 11,
+    "name": "Grotto",
+    "level": 70,
+    "x": 815.413,
+    "y": 191.103,
+    "connected": [
+      7,
+      18,
+      22
+    ],
+    "sextant": [
+      18,
+      22,
+      39
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Grotto1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Grotto2.png"
+  },
+  {
+    "id": 12,
+    "name": "Marshes",
+    "level": 70,
+    "x": 182.262,
+    "y": 358.349,
+    "connected": [
+      4,
+      14
+    ],
+    "sextant": [
+      14,
+      21
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Marshes1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Marshes2.png"
+  },
+  {
+    "id": 13,
+    "name": "Sewer",
+    "level": 70,
+    "x": 771.0,
+    "y": 442.808,
+    "connected": [
+      6,
+      19
+    ],
+    "sextant": [
+      6,
+      19,
+      20
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Sewer1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Sewer2.png"
+  },
+  {
+    "id": 14,
+    "name": "Vaal Pyramid",
+    "level": 70,
+    "x": 222.694,
+    "y": 343.302,
+    "connected": [
+      4,
+      12,
+      15,
+      21
+    ],
+    "sextant": [
+      12,
+      15,
+      21,
+      24,
+      42
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/VaalPyramid1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/VaalPyramid2.png"
+  },
+  {
+    "id": 15,
+    "name": "Vaults of Atziri",
+    "level": 70,
+    "x": 240.83,
+    "y": 332.09,
+    "connected": [
+      14
+    ],
+    "sextant": [
+      14,
+      24,
+      40,
+      42
+    ],
+    "iconPath": "Art/2DItems/Maps/UniqueMap1.png"
+  },
+  {
+    "id": 16,
+    "name": "Academy",
+    "level": 71,
+    "x": 822.575,
+    "y": 385.83,
+    "connected": [
+      19,
+      30
+    ],
+    "sextant": [
+      0,
+      6
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Academy1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Academy2.png"
+  },
+  {
+    "id": 17,
+    "name": "Acid Lakes",
+    "level": 71,
+    "x": 199.0,
+    "y": 114.74,
+    "connected": [
+      10,
+      27,
+      28
+    ],
+    "sextant": [
+      1,
+      5,
+      10,
+      28
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/AcidLakes1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/AcidLakes2.png"
+  },
+  {
+    "id": 18,
+    "name": "Dungeon",
+    "level": 71,
+    "x": 807.62,
+    "y": 165.827,
+    "connected": [
+      8,
+      11,
+      26
+    ],
+    "sextant": [
+      8,
+      11,
+      22
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Dungeon1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Dungeon2.png"
+  },
+  {
+    "id": 19,
+    "name": "Graveyard",
+    "level": 71,
+    "x": 726.171,
+    "y": 413.595,
+    "connected": [
+      13,
+      16,
+      20,
+      31
+    ],
+    "sextant": [
+      13,
+      20,
+      47,
+      51,
+      65
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Graveyard1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Graveyard2.png"
+  },
+  {
+    "id": 20,
+    "name": "Hallowed Ground",
+    "level": 71,
+    "x": 719.621,
+    "y": 435.744,
+    "connected": [
+      19
+    ],
+    "sextant": [
+      13,
+      19,
+      51,
+      65
+    ],
+    "iconPath": "Art/2DItems/Maps/HallowedGround.png"
+  },
+  {
+    "id": 21,
+    "name": "Phantasmagoria",
+    "level": 71,
+    "x": 189.696,
+    "y": 310.583,
+    "connected": [
+      9,
+      14,
+      24,
+      29
+    ],
+    "sextant": [
+      12,
+      14,
+      29
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Phantasmagoria1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Phantasmagoria2.png"
+  },
+  {
+    "id": 22,
+    "name": "Villa",
+    "level": 71,
+    "x": 764.174,
+    "y": 188.694,
+    "connected": [
+      11,
+      25,
+      26,
+      30
+    ],
+    "sextant": [
+      11,
+      18,
+      25,
+      26
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Villa1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Villa2.png"
+  },
+  {
+    "id": 23,
+    "name": "Waste Pool",
+    "level": 71,
+    "x": 210.77,
+    "y": 215.631,
+    "connected": [
+      9,
+      27,
+      29
+    ],
+    "sextant": [
+      9,
+      10,
+      29,
+      32
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/WastePool1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/WastePool2.png"
+  },
+  {
+    "id": 24,
+    "name": "Burial Chambers",
+    "level": 72,
+    "x": 243.96,
+    "y": 297.216,
+    "connected": [
+      21,
+      32,
+      40
+    ],
+    "sextant": [
+      14,
+      15,
+      29,
+      40
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/BurialChambers1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/BurialChambers2.png"
+  },
+  {
+    "id": 25,
+    "name": "Peninsula",
+    "level": 72,
+    "x": 727.207,
+    "y": 193.0,
+    "connected": [
+      22,
+      35,
+      39,
+      41
+    ],
+    "sextant": [
+      22,
+      35,
+      38
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/DryPeninsula1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/DryPeninsula2.png"
+  },
+  {
+    "id": 26,
+    "name": "Dunes",
+    "level": 72,
+    "x": 746.859,
+    "y": 141.53,
+    "connected": [
+      18,
+      22,
+      37
+    ],
+    "sextant": [
+      8,
+      22,
+      37,
+      38
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Dunes1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Dunes2.png"
+  },
+  {
+    "id": 27,
+    "name": "Mesa",
+    "level": 72,
+    "x": 246.586,
+    "y": 149.303,
+    "connected": [
+      17,
+      23,
+      32,
+      33,
+      34
+    ],
+    "sextant": [
+      10,
+      33
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Mesa1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Mesa2.png"
+  },
+  {
+    "id": 28,
+    "name": "Pit",
+    "level": 72,
+    "x": 209.554,
+    "y": 87.483,
+    "connected": [
+      17,
+      34
+    ],
+    "sextant": [
+      1,
+      17,
+      34
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Pit1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Pit2.png"
+  },
+  {
+    "id": 29,
+    "name": "Primordial Pool",
+    "level": 72,
+    "x": 206.73,
+    "y": 265.815,
+    "connected": [
+      21,
+      23,
+      32
+    ],
+    "sextant": [
+      9,
+      21,
+      23,
+      24
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/PrimordialPool1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/PrimordialPool2.png"
+  },
+  {
+    "id": 30,
+    "name": "Spider Lair",
+    "level": 72,
+    "x": 813.393,
+    "y": 264.08,
+    "connected": [
+      16,
+      22,
+      36,
+      39
+    ],
+    "sextant": [
+      36,
+      39
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/SpiderLair1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/SpiderLair2.png"
+  },
+  {
+    "id": 31,
+    "name": "Tower",
+    "level": 72,
+    "x": 780.207,
+    "y": 326.137,
+    "connected": [
+      19,
+      36
+    ],
+    "sextant": [
+      57
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Tower1.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Tower2.png"
+  },
+  {
+    "id": 32,
+    "name": "Canyon",
+    "level": 73,
+    "x": 253.971,
+    "y": 236.104,
+    "connected": [
+      24,
+      27,
+      29,
+      44
+    ],
+    "sextant": [
+      23
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Canyon2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Canyon3.png"
+  },
+  {
+    "id": 33,
+    "name": "Quarry",
+    "level": 73,
+    "x": 276.101,
+    "y": 114.319,
+    "connected": [
+      27,
+      46,
+      48
+    ],
+    "sextant": [
+      27,
+      46,
+      80
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Quarry2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Quarry3.png"
+  },
+  {
+    "id": 34,
+    "name": "Racecourse",
+    "level": 73,
+    "x": 248.07,
+    "y": 66.677,
+    "connected": [
+      27,
+      28,
+      46
+    ],
+    "sextant": [
+      28,
+      46
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Racecourse2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Racecourse3.png"
+  },
+  {
+    "id": 35,
+    "name": "Ramparts",
+    "level": 73,
+    "x": 713.13,
+    "y": 242.246,
+    "connected": [
+      25,
+      41,
+      49
+    ],
+    "sextant": [
+      25,
+      49,
+      102
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Ramparts2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Ramparts3.png"
+  },
+  {
+    "id": 36,
+    "name": "Spider Forest",
+    "level": 73,
+    "x": 788.166,
+    "y": 270.674,
+    "connected": [
+      30,
+      31,
+      47,
+      49
+    ],
+    "sextant": [
+      30,
+      39,
+      49
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/SpiderForest2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/SpiderForest3.png",
+    "shaperOrbTier": 1
+  },
+  {
+    "id": 37,
+    "name": "Strand",
+    "level": 73,
+    "x": 704.121,
+    "y": 140.94,
+    "connected": [
+      26,
+      38,
+      43
+    ],
+    "sextant": [
+      26,
+      38,
+      41,
+      43
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Strand2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Strand3.png"
+  },
+  {
+    "id": 38,
+    "name": "Whakawairua Tuahu",
+    "level": 73,
+    "x": 702.134,
+    "y": 159.971,
+    "connected": [
+      37
+    ],
+    "sextant": [
+      25,
+      26,
+      37,
+      41
+    ],
+    "iconPath": "Art/2DItems/Maps/UniqueMapEye.png"
+  },
+  {
+    "id": 39,
+    "name": "Thicket",
+    "level": 73,
+    "x": 806.821,
+    "y": 234.763,
+    "connected": [
+      25,
+      30,
+      49
+    ],
+    "sextant": [
+      11,
+      30,
+      36
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Thicket2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Thicket3.png"
+  },
+  {
+    "id": 40,
+    "name": "Vaal City",
+    "level": 73,
+    "x": 280.505,
+    "y": 330.084,
+    "connected": [
+      24,
+      42,
+      44
+    ],
+    "sextant": [
+      15,
+      24,
+      42,
+      44,
+      45,
+      58
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/VaalCity2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/VaalCity3.png"
+  },
+  {
+    "id": 41,
+    "name": "Wharf",
+    "level": 73,
+    "x": 676.428,
+    "y": 170.548,
+    "connected": [
+      25,
+      35,
+      43
+    ],
+    "sextant": [
+      37,
+      38,
+      84,
+      85
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Wharf2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Wharf3.png"
+  },
+  {
+    "id": 42,
+    "name": "Arachnid Tomb",
+    "level": 74,
+    "x": 265.0,
+    "y": 363.09,
+    "connected": [
+      40,
+      58,
+      59
+    ],
+    "sextant": [
+      4,
+      14,
+      15,
+      40,
+      58,
+      59
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/ArachnidTomb2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/ArachnidTomb3.png"
+  },
+  {
+    "id": 43,
+    "name": "Castle Ruins",
+    "level": 74,
+    "x": 671.0,
+    "y": 102.37,
+    "connected": [
+      37,
+      41,
+      52,
+      53
+    ],
+    "sextant": [
+      37
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/CastleRuins2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/CastleRuins3.png"
+  },
+  {
+    "id": 44,
+    "name": "Catacombs",
+    "level": 74,
+    "x": 319.938,
+    "y": 308.533,
+    "connected": [
+      32,
+      40,
+      45,
+      58
+    ],
+    "sextant": [
+      40,
+      45,
+      58,
+      104,
+      124
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Catacomb2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Catacomb3.png"
+  },
+  {
+    "id": 45,
+    "name": "Olmec's Sanctum",
+    "level": 74,
+    "x": 333.752,
+    "y": 319.609,
+    "connected": [
+      44
+    ],
+    "sextant": [
+      40,
+      44,
+      58,
+      124
+    ],
+    "iconPath": "Art/2DItems/Maps/olmec.png"
+  },
+  {
+    "id": 46,
+    "name": "Cells",
+    "level": 74,
+    "x": 294.369,
+    "y": 70.623,
+    "connected": [
+      33,
+      34,
+      50,
+      54
+    ],
+    "sextant": [
+      33,
+      34
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Cells2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Cells3.png"
+  },
+  {
+    "id": 47,
+    "name": "Armoury",
+    "level": 74,
+    "x": 723.482,
+    "y": 371.81,
+    "connected": [
+      36,
+      51,
+      55,
+      57
+    ],
+    "sextant": [
+      19,
+      51,
+      55,
+      57
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Armory2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Armory3.png"
+  },
+  {
+    "id": 48,
+    "name": "Ashen Wood",
+    "level": 74,
+    "x": 351.769,
+    "y": 93.176,
+    "connected": [
+      33,
+      50
+    ],
+    "sextant": [
+      50,
+      66,
+      67
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/DryWoods2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/DryWoods3.png",
+    "shaperOrbTier": 2
+  },
+  {
+    "id": 49,
+    "name": "Mud Geyser",
+    "level": 74,
+    "x": 751.207,
+    "y": 273.93,
+    "connected": [
+      35,
+      36,
+      39,
+      57
+    ],
+    "sextant": [
+      35,
+      36,
+      57
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/MudGeyser2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/MudGeyser3.png"
+  },
+  {
+    "id": 50,
+    "name": "Arachnid Nest",
+    "level": 75,
+    "x": 382.0,
+    "y": 93.94,
+    "connected": [
+      46,
+      48,
+      66
+    ],
+    "sextant": [
+      48,
+      54,
+      66,
+      67,
+      69
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/ArachnidNest2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/ArachnidNest3.png"
+  },
+  {
+    "id": 51,
+    "name": "Arena",
+    "level": 75,
+    "x": 700.689,
+    "y": 408.37,
+    "connected": [
+      47,
+      65
+    ],
+    "sextant": [
+      19,
+      20,
+      47,
+      65
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Arena2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Arena3.png"
+  },
+  {
+    "id": 52,
+    "name": "Bog",
+    "level": 75,
+    "x": 584.703,
+    "y": 77.833,
+    "connected": [
+      43,
+      53,
+      54
+    ],
+    "sextant": [
+      53
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Bog2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Bog3.png",
+    "shaperOrbTier": 3
+  },
+  {
+    "id": 53,
+    "name": "Cemetery",
+    "level": 75,
+    "x": 617.444,
+    "y": 118.444,
+    "connected": [
+      43,
+      52,
+      61
+    ],
+    "sextant": [
+      52,
+      75,
+      84
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Cemetery2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Cemetery3.png"
+  },
+  {
+    "id": 54,
+    "name": "Barrows",
+    "level": 75,
+    "x": 428.55,
+    "y": 87.63,
+    "connected": [
+      46,
+      52,
+      68
+    ],
+    "sextant": [
+      50,
+      69
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Barrows2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Barrows3.png"
+  },
+  {
+    "id": 55,
+    "name": "Atoll",
+    "level": 75,
+    "x": 703.413,
+    "y": 321.843,
+    "connected": [
+      47,
+      56,
+      72
+    ],
+    "sextant": [
+      47,
+      56,
+      57,
+      102
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Atoll2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Atoll3.png"
+  },
+  {
+    "id": 56,
+    "name": "Maelström of Chaos",
+    "level": 75,
+    "x": 684.62,
+    "y": 324.435,
+    "connected": [
+      55
+    ],
+    "sextant": [
+      55,
+      57,
+      102
+    ],
+    "iconPath": "Art/2DItems/Maps/MaelstromofChaos.png"
+  },
+  {
+    "id": 57,
+    "name": "Pier",
+    "level": 75,
+    "x": 736.783,
+    "y": 322.898,
+    "connected": [
+      47,
+      49
+    ],
+    "sextant": [
+      31,
+      47,
+      49,
+      55,
+      56
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Pier2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Pier3.png"
+  },
+  {
+    "id": 58,
+    "name": "Shore",
+    "level": 75,
+    "x": 316.363,
+    "y": 350.678,
+    "connected": [
+      42,
+      44,
+      60
+    ],
+    "sextant": [
+      40,
+      42,
+      44,
+      45,
+      60,
+      97
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Shore2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Shore3.png"
+  },
+  {
+    "id": 59,
+    "name": "Tropical Island",
+    "level": 75,
+    "x": 283.498,
+    "y": 401.572,
+    "connected": [
+      42,
+      60,
+      70
+    ],
+    "sextant": [
+      4,
+      42,
+      60
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/TropicalIsland2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/TropicalIsland3.png"
+  },
+  {
+    "id": 60,
+    "name": "Coves",
+    "level": 76,
+    "x": 326.326,
+    "y": 402.814,
+    "connected": [
+      58,
+      59,
+      79
+    ],
+    "sextant": [
+      58,
+      59,
+      87,
+      97
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Coves2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Coves3.png"
+  },
+  {
+    "id": 61,
+    "name": "Crypt",
+    "level": 76,
+    "x": 540.515,
+    "y": 128.573,
+    "connected": [
+      53,
+      62,
+      63,
+      75
+    ],
+    "sextant": [
+      62,
+      63,
+      64,
+      76,
+      77
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Crypt2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Crypt3.png"
+  },
+  {
+    "id": 62,
+    "name": "The Coward's Trial",
+    "level": 76,
+    "x": 559.625,
+    "y": 131.159,
+    "connected": [
+      61
+    ],
+    "sextant": [
+      61,
+      63,
+      64,
+      75,
+      76,
+      77
+    ],
+    "iconPath": "Art/2DItems/Maps/UndeadSiege.png"
+  },
+  {
+    "id": 63,
+    "name": "Museum",
+    "level": 76,
+    "x": 519.418,
+    "y": 120.999,
+    "connected": [
+      61,
+      64,
+      68,
+      76
+    ],
+    "sextant": [
+      61,
+      62,
+      64,
+      68,
+      76,
+      77
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Museum2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Museum3.png"
+  },
+  {
+    "id": 64,
+    "name": "The Putrid Cloister",
+    "level": 76,
+    "x": 534.112,
+    "y": 115.374,
+    "connected": [
+      63
+    ],
+    "sextant": [
+      61,
+      62,
+      63,
+      76,
+      77
+    ],
+    "iconPath": "Art/2DItems/Maps/PutridCloister.png"
+  },
+  {
+    "id": 65,
+    "name": "Orchard",
+    "level": 76,
+    "x": 703.01,
+    "y": 444.162,
+    "connected": [
+      51,
+      72
+    ],
+    "sextant": [
+      19,
+      20,
+      51
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Orchard2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Orchard3.png"
+  },
+  {
+    "id": 66,
+    "name": "Overgrown Shrine",
+    "level": 76,
+    "x": 385.842,
+    "y": 128.88,
+    "connected": [
+      50,
+      67,
+      80
+    ],
+    "sextant": [
+      48,
+      50,
+      67,
+      69
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/OvergrownShrine2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/OvergrownShrine3.png"
+  },
+  {
+    "id": 67,
+    "name": "Acton's Nightmare",
+    "level": 76,
+    "x": 371.386,
+    "y": 122.477,
+    "connected": [
+      66
+    ],
+    "sextant": [
+      48,
+      50,
+      66,
+      69
+    ],
+    "iconPath": "Art/2DItems/Maps/musicbox.png"
+  },
+  {
+    "id": 68,
+    "name": "Promenade",
+    "level": 76,
+    "x": 471.73,
+    "y": 143.0,
+    "connected": [
+      54,
+      63,
+      69,
+      74
+    ],
+    "sextant": [
+      63,
+      74,
+      77
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Promenade2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Promenade3.png"
+  },
+  {
+    "id": 69,
+    "name": "The Hall of Grandmasters",
+    "level": 76,
+    "x": 419.079,
+    "y": 120.041,
+    "connected": [
+      68
+    ],
+    "sextant": [
+      50,
+      54,
+      66,
+      67,
+      74
+    ],
+    "iconPath": "Art/2DItems/Maps/HallOfGrandmasters.png"
+  },
+  {
+    "id": 70,
+    "name": "Reef",
+    "level": 76,
+    "x": 284.655,
+    "y": 472.673,
+    "connected": [
+      59,
+      71,
+      81
+    ],
+    "sextant": [
+      71
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Reef2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Reef3.png",
+    "shaperOrbTier": 4
+  },
+  {
+    "id": 71,
+    "name": "Mao Kun",
+    "level": 76,
+    "x": 306.5,
+    "y": 465.878,
+    "connected": [
+      70
+    ],
+    "sextant": [
+      70
+    ],
+    "iconPath": "Art/2DItems/Maps/FairgravesMap01.png"
+  },
+  {
+    "id": 72,
+    "name": "Temple",
+    "level": 76,
+    "x": 642.331,
+    "y": 399.826,
+    "connected": [
+      55,
+      65,
+      73,
+      78
+    ],
+    "sextant": [
+      73,
+      94,
+      95,
+      101
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Temple2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Temple3.png"
+  },
+  {
+    "id": 73,
+    "name": "Poorjoy's Asylum",
+    "level": 76,
+    "x": 628.598,
+    "y": 389.232,
+    "connected": [
+      72
+    ],
+    "sextant": [
+      72,
+      94,
+      95,
+      101
+    ],
+    "iconPath": "Art/2DItems/Maps/PoorjoysAsylum.png",
+    "shaperOrbTier": 9
+  },
+  {
+    "id": 74,
+    "name": "Colonnade",
+    "level": 77,
+    "x": 431.214,
+    "y": 160.025,
+    "connected": [
+      68,
+      76,
+      80,
+      83
+    ],
+    "sextant": [
+      68,
+      69,
+      119
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Colonnade2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Colonnade3.png",
+    "shaperOrbTier": 5
+  },
+  {
+    "id": 75,
+    "name": "Arsenal",
+    "level": 77,
+    "x": 593.444,
+    "y": 164.813,
+    "connected": [
+      61,
+      76,
+      84
+    ],
+    "sextant": [
+      53,
+      62,
+      84,
+      85,
+      91,
+      92
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Arsenal2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Arsenal3.png"
+  },
+  {
+    "id": 76,
+    "name": "Courtyard",
+    "level": 77,
+    "x": 524.884,
+    "y": 167.366,
+    "connected": [
+      63,
+      74,
+      75,
+      77,
+      91
+    ],
+    "sextant": [
+      61,
+      62,
+      63,
+      64,
+      77,
+      91
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Courtyard2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Courtyard3.png"
+  },
+  {
+    "id": 77,
+    "name": "The Vinktar Square",
+    "level": 77,
+    "x": 517.293,
+    "y": 148.411,
+    "connected": [
+      76
+    ],
+    "sextant": [
+      61,
+      62,
+      63,
+      64,
+      68,
+      76
+    ],
+    "iconPath": "Art/2DItems/Maps/TheVinktarSquare.png",
+    "shaperOrbTier": 10
+  },
+  {
+    "id": 78,
+    "name": "Malformation",
+    "level": 77,
+    "x": 629.985,
+    "y": 460.538,
+    "connected": [
+      72,
+      86,
+      90
+    ],
+    "sextant": [
+      86
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Malformation2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Malformation3.png"
+  },
+  {
+    "id": 79,
+    "name": "Port",
+    "level": 77,
+    "x": 365.116,
+    "y": 461.57,
+    "connected": [
+      60,
+      81,
+      87,
+      88
+    ],
+    "sextant": [
+      81,
+      82,
+      87
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Quay2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Quay3.png"
+  },
+  {
+    "id": 80,
+    "name": "Terrace",
+    "level": 77,
+    "x": 309.207,
+    "y": 154.0,
+    "connected": [
+      66,
+      74,
+      83
+    ],
+    "sextant": [
+      33,
+      83,
+      99
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Terrace2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/Terrace3.png"
+  },
+  {
+    "id": 81,
+    "name": "Underground River",
+    "level": 77,
+    "x": 395.566,
+    "y": 478.388,
+    "connected": [
+      70,
+      79,
+      82,
+      90
+    ],
+    "sextant": [
+      79,
+      82
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/UndergroundRiver2.png",
+    "shapedIconPath": "Art/2DItems/Maps/AtlasMaps/UndergroundRiver3.png"
+  },
+  {
+    "id": 82,
+    "name": "Caer Blaidd, Wolfpack's Den",
+    "level": 77,
+    "x": 400.513,
+    "y": 463.281,
+    "connected": [
+      81
+    ],
+    "sextant": [
+      79,
+      81,
+      87,
+      88,
+      89
+    ],
+    "iconPath": "Art/2DItems/Maps/WolfMap.png"
+  },
+  {
+    "id": 83,
+    "name": "Bazaar",
+    "level": 78,
+    "x": 337.607,
+    "y": 194.617,
+    "connected": [
+      74,
+      80,
+      99
+    ],
+    "sextant": [
+      80,
+      99,
+      108
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Bazaar3.png"
+  },
+  {
+    "id": 84,
+    "name": "Chateau",
+    "level": 78,
+    "x": 631.183,
+    "y": 159.189,
+    "connected": [
+      75,
+      85,
+      92,
+      93
+    ],
+    "sextant": [
+      41,
+      53,
+      75,
+      85,
+      92
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Chateau3.png"
+  },
+  {
+    "id": 85,
+    "name": "Perandus Manor",
+    "level": 78,
+    "x": 642.867,
+    "y": 173.488,
+    "connected": [
+      84
+    ],
+    "sextant": [
+      41,
+      75,
+      84,
+      92
+    ],
+    "iconPath": "Art/2DItems/Maps/PerandusManor.png"
+  },
+  {
+    "id": 86,
+    "name": "Excavation",
+    "level": 78,
+    "x": 587.793,
+    "y": 430.717,
+    "connected": [
+      78,
+      94
+    ],
+    "sextant": [
+      78,
+      94,
+      95
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Excavation3.png",
+    "shaperOrbTier": 6
+  },
+  {
+    "id": 87,
+    "name": "Precinct",
+    "level": 78,
+    "x": 367.181,
+    "y": 423.703,
+    "connected": [
+      79,
+      88,
+      96,
+      97
+    ],
+    "sextant": [
+      60,
+      79,
+      82,
+      88,
+      97
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Precinct3.png"
+  },
+  {
+    "id": 88,
+    "name": "Torture Chamber",
+    "level": 78,
+    "x": 415.659,
+    "y": 423.872,
+    "connected": [
+      79,
+      87,
+      89,
+      98
+    ],
+    "sextant": [
+      82,
+      87,
+      89,
+      98,
+      100
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/TortureChamber3.png"
+  },
+  {
+    "id": 89,
+    "name": "Oba's Cursed Trove",
+    "level": 78,
+    "x": 431.775,
+    "y": 426.232,
+    "connected": [
+      88
+    ],
+    "sextant": [
+      82,
+      88,
+      90,
+      98,
+      100
+    ],
+    "iconPath": "Art/2DItems/Maps/oba.png",
+    "shaperOrbTier": 8
+  },
+  {
+    "id": 90,
+    "name": "Underground Sea",
+    "level": 78,
+    "x": 474.276,
+    "y": 445.348,
+    "connected": [
+      78,
+      81,
+      100
+    ],
+    "sextant": [
+      89,
+      100
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/UndergroundSea3.png"
+  },
+  {
+    "id": 91,
+    "name": "Wasteland",
+    "level": 78,
+    "x": 559.38,
+    "y": 204.512,
+    "connected": [
+      76,
+      92
+    ],
+    "sextant": [
+      75,
+      76,
+      92,
+      117,
+      123
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Wasteland3.png"
+  },
+  {
+    "id": 92,
+    "name": "Crematorium",
+    "level": 79,
+    "x": 596.575,
+    "y": 195.697,
+    "connected": [
+      84,
+      91,
+      107
+    ],
+    "sextant": [
+      75,
+      84,
+      85,
+      91,
+      117
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Crematorium3.png"
+  },
+  {
+    "id": 93,
+    "name": "Estuary",
+    "level": 79,
+    "x": 652.529,
+    "y": 240.84,
+    "connected": [
+      84,
+      102,
+      107
+    ],
+    "sextant": [
+      107
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Estuary3.png",
+    "shaperOrbTier": 7
+  },
+  {
+    "id": 94,
+    "name": "Necropolis",
+    "level": 79,
+    "x": 596.663,
+    "y": 398.941,
+    "connected": [
+      86,
+      95,
+      101,
+      103
+    ],
+    "sextant": [
+      72,
+      73,
+      86,
+      95,
+      101,
+      115
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Necropolis3.png"
+  },
+  {
+    "id": 95,
+    "name": "Death and Taxes",
+    "level": 79,
+    "x": 612.429,
+    "y": 408.018,
+    "connected": [
+      94
+    ],
+    "sextant": [
+      72,
+      73,
+      86,
+      94,
+      101
+    ],
+    "iconPath": "Art/2DItems/Maps/DeathandTaxes.png",
+    "shaperOrbTier": 9
+  },
+  {
+    "id": 96,
+    "name": "Plateau",
+    "level": 79,
+    "x": 462.188,
+    "y": 363.613,
+    "connected": [
+      87,
+      98,
+      106
+    ],
+    "sextant": [
+      98,
+      106,
+      120
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Plateau3.png"
+  },
+  {
+    "id": 97,
+    "name": "Ivory Temple",
+    "level": 79,
+    "x": 356.186,
+    "y": 374.863,
+    "connected": [
+      87,
+      105,
+      106
+    ],
+    "sextant": [
+      58,
+      60,
+      87,
+      105
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/IvoryTemple3.png"
+  },
+  {
+    "id": 98,
+    "name": "Residence",
+    "level": 79,
+    "x": 428.759,
+    "y": 397.042,
+    "connected": [
+      88,
+      96
+    ],
+    "sextant": [
+      88,
+      89,
+      96,
+      100,
+      106
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Residence3.png"
+  },
+  {
+    "id": 99,
+    "name": "Shipyard",
+    "level": 79,
+    "x": 293.381,
+    "y": 196.658,
+    "connected": [
+      83,
+      104,
+      108
+    ],
+    "sextant": [
+      80,
+      83
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Shipyard3.png"
+  },
+  {
+    "id": 100,
+    "name": "Vault",
+    "level": 79,
+    "x": 458.783,
+    "y": 423.236,
+    "connected": [
+      90,
+      103
+    ],
+    "sextant": [
+      88,
+      89,
+      90,
+      98
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Vault3.png"
+  },
+  {
+    "id": 101,
+    "name": "Lair",
+    "level": 80,
+    "x": 621.344,
+    "y": 358.448,
+    "connected": [
+      94,
+      110
+    ],
+    "sextant": [
+      72,
+      73,
+      94,
+      95,
+      110,
+      115
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Lair3.png"
+  },
+  {
+    "id": 102,
+    "name": "Beacon",
+    "level": 80,
+    "x": 690.31,
+    "y": 281.137,
+    "connected": [
+      93,
+      114
+    ],
+    "sextant": [
+      35,
+      55,
+      56
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Beacon3.png"
+  },
+  {
+    "id": 103,
+    "name": "Gorge",
+    "level": 80,
+    "x": 530.707,
+    "y": 431.637,
+    "connected": [
+      94,
+      100,
+      112
+    ],
+    "sextant": [
+      112
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Gorge3.png"
+  },
+  {
+    "id": 104,
+    "name": "High Gardens",
+    "level": 80,
+    "x": 314.98,
+    "y": 265.833,
+    "connected": [
+      99,
+      111
+    ],
+    "sextant": [
+      44,
+      111,
+      124
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/HighGardens3.png",
+    "shaperOrbTier": 8
+  },
+  {
+    "id": 105,
+    "name": "Plaza",
+    "level": 80,
+    "x": 378.324,
+    "y": 352.705,
+    "connected": [
+      97,
+      109
+    ],
+    "sextant": [
+      97,
+      106,
+      109
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Plaza3.png"
+  },
+  {
+    "id": 106,
+    "name": "Scriptorium",
+    "level": 80,
+    "x": 418.373,
+    "y": 348.349,
+    "connected": [
+      96,
+      97,
+      109
+    ],
+    "sextant": [
+      96,
+      98,
+      105,
+      109,
+      116,
+      120
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Scriptorium3.png"
+  },
+  {
+    "id": 107,
+    "name": "Sulphur Wastes",
+    "level": 80,
+    "x": 621.733,
+    "y": 255.16,
+    "connected": [
+      92,
+      93,
+      114
+    ],
+    "sextant": [
+      93,
+      114,
+      117
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/SulphurWastes3.png"
+  },
+  {
+    "id": 108,
+    "name": "Waterways",
+    "level": 80,
+    "x": 363.129,
+    "y": 227.789,
+    "connected": [
+      99,
+      111,
+      113
+    ],
+    "sextant": [
+      83,
+      111,
+      113,
+      118
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Waterways3.png"
+  },
+  {
+    "id": 109,
+    "name": "Maze",
+    "level": 81,
+    "x": 393.146,
+    "y": 305.773,
+    "connected": [
+      105,
+      106,
+      116
+    ],
+    "sextant": [
+      105,
+      106,
+      116,
+      124
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Maze3.png"
+  },
+  {
+    "id": 110,
+    "name": "Mineral Pools",
+    "level": 81,
+    "x": 587.871,
+    "y": 319.659,
+    "connected": [
+      101,
+      115
+    ],
+    "sextant": [
+      101,
+      114,
+      115,
+      122
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/MineralPools3.png"
+  },
+  {
+    "id": 111,
+    "name": "Palace",
+    "level": 81,
+    "x": 360.207,
+    "y": 257.629,
+    "connected": [
+      104,
+      108,
+      118
+    ],
+    "sextant": [
+      104,
+      108,
+      118,
+      124
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Palace3.png"
+  },
+  {
+    "id": 112,
+    "name": "Shrine",
+    "level": 81,
+    "x": 530.843,
+    "y": 405.097,
+    "connected": [
+      103,
+      115
+    ],
+    "sextant": [
+      103
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Shrine3.png"
+  },
+  {
+    "id": 113,
+    "name": "Springs",
+    "level": 81,
+    "x": 413.736,
+    "y": 215.489,
+    "connected": [
+      108,
+      119
+    ],
+    "sextant": [
+      108,
+      118,
+      119,
+      121
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Springs3.png"
+  },
+  {
+    "id": 114,
+    "name": "Volcano",
+    "level": 81,
+    "x": 621.29,
+    "y": 302.575,
+    "connected": [
+      102,
+      107,
+      117
+    ],
+    "sextant": [
+      107,
+      110
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Volcano3.png",
+    "shaperOrbTier": 9
+  },
+  {
+    "id": 115,
+    "name": "Abyss",
+    "level": 82,
+    "x": 570.827,
+    "y": 363.839,
+    "connected": [
+      110,
+      112,
+      122
+    ],
+    "sextant": [
+      94,
+      101,
+      110,
+      122
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Abyss3.png"
+  },
+  {
+    "id": 116,
+    "name": "Colosseum",
+    "level": 82,
+    "x": 428.257,
+    "y": 299.803,
+    "connected": [
+      109,
+      120
+    ],
+    "sextant": [
+      106,
+      109,
+      120
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Colosseum3.png"
+  },
+  {
+    "id": 117,
+    "name": "Core",
+    "level": 82,
+    "x": 587.974,
+    "y": 244.117,
+    "connected": [
+      114,
+      123
+    ],
+    "sextant": [
+      91,
+      92,
+      107,
+      123
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Core3.png"
+  },
+  {
+    "id": 118,
+    "name": "Dark Forest",
+    "level": 82,
+    "x": 400.656,
+    "y": 248.482,
+    "connected": [
+      111,
+      119
+    ],
+    "sextant": [
+      108,
+      111,
+      113,
+      121
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/DarkForest3.png"
+  },
+  {
+    "id": 119,
+    "name": "Overgrown Ruin",
+    "level": 82,
+    "x": 451.165,
+    "y": 195.005,
+    "connected": [
+      113,
+      118,
+      121
+    ],
+    "sextant": [
+      74,
+      113,
+      121
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/OvergrownRuin3.png",
+    "shaperOrbTier": 10
+  },
+  {
+    "id": 120,
+    "name": "Pit of the Chimera",
+    "level": 83,
+    "x": 453.406,
+    "y": 324.744,
+    "connected": [
+      116
+    ],
+    "sextant": [
+      96,
+      106,
+      116
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Chimera.png"
+  },
+  {
+    "id": 121,
+    "name": "Lair of the Hydra",
+    "level": 83,
+    "x": 451.34,
+    "y": 227.672,
+    "connected": [
+      119
+    ],
+    "sextant": [
+      113,
+      118,
+      119
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Hydra.png"
+  },
+  {
+    "id": 122,
+    "name": "Maze of the Minotaur",
+    "level": 83,
+    "x": 547.586,
+    "y": 325.925,
+    "connected": [
+      115
+    ],
+    "sextant": [
+      110,
+      115
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Minotaur.png"
+  },
+  {
+    "id": 123,
+    "name": "Forge of the Phoenix",
+    "level": 83,
+    "x": 546.949,
+    "y": 228.979,
+    "connected": [
+      117
+    ],
+    "sextant": [
+      91,
+      117
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Phoenix.png"
+  },
+  {
+    "id": 124,
+    "name": "Vaal Temple",
+    "level": 83,
+    "x": 353.807,
+    "y": 292.922,
+    "sextant": [
+      44,
+      45,
+      104,
+      109,
+      111
+    ],
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/VaalTemple3.png",
+    "shaperOrbTier": 10
+  },
+  {
+    "id": 125,
+    "name": "The Shaper's Realm",
+    "level": 84,
+    "x": 499.667,
+    "y": 274.1,
+    "iconPath": "Art/2DItems/Maps/AtlasMaps/Atlas.png"
+  }
+]

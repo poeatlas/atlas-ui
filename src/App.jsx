@@ -11,7 +11,7 @@ class App extends Component {
     console.log(this.props);
     return (
       <div id="atlas">
-        <SearchBar mapStore={this.props.mapStore}/>
+        <SearchBar mapList={this.props.mapStore}/>
          { atlas.map((map) => 
           <Map map={map} 
             key={map.id} 

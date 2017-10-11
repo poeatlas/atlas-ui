@@ -150,6 +150,14 @@
   width: 20px;
   height: 20px;
 }
+.mapMenu {
+  position: fixed;
+  width: 33%;
+  height:100px;
+  background: white;
+  z-index:4;
+}
+
 .sextanted {
   position: absolute;
   -webkit-border-radius: 50%;
@@ -169,8 +177,6 @@
 /*.sealCursor {
   cursor: url('/Art/2DItems/Currency/SealWhite.png'), auto;
 }*/
-
-
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
