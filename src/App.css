@@ -1,182 +1,139 @@
 .map {
   background-repeat: no-repeat;
   position: absolute;
-  padding: 10px;
-  width: 1px;
-  height: 1px;
-  background-size: 19px 19px;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  margin-top: -10px;
+  background-size: 20px 20px;
   cursor: pointer;
   cursor: hand;
   z-index: 3;
 }
 
+/* change pointer to hand when hovering over map */
 .map.shaperId {
-  margin: -10px 0 0 -10px;
-  padding: 20px;
-  background-size: 39px 39px;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  background-size: 40px 40px;
   cursor: pointer;
   cursor: hand;
   z-index: 1;
 }
 
+/* circle for maps with shaper orb */
 .shaperOrb {
   position: absolute;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   width: 50px;
   height: 50px;
-  border: 2px dotted blue;
-  -moz-transition:all 1s ease-in-out;
-  -webkit-transition:all 1s ease-in-out;
-  -o-transition:all 1s ease-in-out;
-  -ms-transition:all 1s ease-in-out;
-  transition:all 1s ease-in-out;
-
-  -webkit-animation:spin 30s linear infinite;
-  -moz-animation:spin 30s linear infinite;
-  animation:spin 30s linear infinite;
+  margin-left: -25px;
+  margin-top: -25px;
   z-index: 0;
 }
 
-.usedShaperOrb {
-  position: absolute;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+.borderDottedYellow {
   border: 2px dotted yellow;
-
-  -moz-transition:all 1s ease-in-out;
-  -webkit-transition:all 1s ease-in-out;
-  -o-transition:all 1s ease-in-out;
-  -ms-transition:all 1s ease-in-out;
-  transition:all 1s ease-in-out;
-
-  -webkit-animation:spin 30s linear infinite;
-  -moz-animation:spin 30s linear infinite;
-  animation:spin 30s linear infinite;
-  z-index: 0;
 }
+
+.borderDottedBlue {
+  border: 2px dotted blue;
+}
+
 .highlight {
   position: absolute;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   width: 30px;
   height: 30px;
-  border: 2px solid yellow;
-  background: white;
-
-/*-webkit-animation:spin 30s linear infinite;*/
-  -webkit-animation: flickerAnimation 1.5s infinite;
-  -moz-animation: flickerAnimation 1.5s infinite;
-  -o-animation: flickerAnimation 1.5s infinite;
-  animation: flickerAnimation 1.5s infinite;
+  margin-left: -15px;
+  margin-top: -15px;
   z-index: 0;
 }
 
-.shapedHighlight {
-  position: absolute;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
+.yellowBorderFill {
+  border: 2px solid yellow;
+  background: white;
+}
+
+.blueBorderFill {
   border: 2px solid blue;
   background: lightblue;
-
-/*-webkit-animation:spin 30s linear infinite;*/
-  -webkit-animation: flickerAnimation 1.5s infinite;
-  -moz-animation: flickerAnimation 1.5s infinite;
-  -o-animation: flickerAnimation 1.5s infinite;
-  animation: flickerAnimation 1.5s infinite;
-  z-index: 0;
 }
 
 .info {
   width: 20px;
 }
-.searchbar {
-  position: fixed;
-  margin:0 auto;
-  width: 30%;
-  top: 5px;
-  left: 35%;
-  clear:left;
-  height:auto;
-  z-index:4;
-}
-.seal {
-  background: url('/Art/2DItems/Currency/SealWhite.png');
-  /*background-position: -10;*/
+
+.buttonImageSize {
   background-size: 20px 20px;
   width: 20px;
   height: 20px;
-}
-.sealToggle {
-  background: url('/Art/2DItems/Currency/SealRed.png');
-  /*background-position: -10;*/
-  background-size: 20px 20px;
-  width: 20px;
-  height: 20px;
-}
-.sextant {
-  background: url('/Art/2DItems/Currency/AtlasRadiusWhite.png');
-  /*background-position: -10;*/
-  background-size: 20px 20px;
-  width: 20px;
-  height: 20px;
-}
-.sextantToggle {
-  background: url('/Art/2DItems/Currency/AtlasRadiusRed.png');
-  /*background-position: -10;*/
-  background-size: 20px 20px;
-  width: 20px;
-  height: 20px;
-}
-.orb {
-  background: url('/Art/2DItems/Currency/UpgradeMap-GRAYSCALE.png');
-  /*background-position: -10;*/
-  background-size: 20px 20px;
-  width: 20px;
-  height: 20px;
-}
-.orbToggle {
-  background: url('/Art/2DItems/Currency/UpgradeMapToYellow.png');
-  /*background-position: -10;*/
-  background-size: 20px 20px;
-  width: 20px;
-  height: 20px;
-}
-.mapMenu {
-  position: fixed;
-  width: 33%;
-  height:100px;
-  background: white;
-  z-index:4;
 }
 
+.seal {
+  background-image: url('/Art/2DItems/Currency/SealWhite.png');
+}
+
+.seal.toggle {
+  background-image: url('/Art/2DItems/Currency/SealRed.png');
+}
+
+.sextant {
+  background-image: url('/Art/2DItems/Currency/AtlasRadiusWhite.png');
+}
+
+.sextant.toggle {
+  background-image: url('/Art/2DItems/Currency/AtlasRadiusRed.png');
+}
+
+.orb {
+  background-image: url('/Art/2DItems/Currency/UpgradeMap-GRAYSCALE.png');
+}
+
+.orb.toggle {
+  background-image: url('/Art/2DItems/Currency/UpgradeMapToYellow.png');
+}
+
+/* sextant circle */
 .sextanted {
   position: absolute;
+  width: 217.232676963px;
+  height: 217.232676963px;
+  margin-left: -108.616338481px;
+  margin-top: -108.616338481px;
+  z-index: 2;
+}
+
+.borderDottedRed {
+  border: 2px dotted red;
+}
+
+.circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  width: 217.232676963px;
-  height: 217.232676963px;
-  border: 2px dotted red;
-  margin-left: -108.616338481px;
-  margin-top: -108.616338481px;
-  
+}
+
+.easeInTransition {
+  -moz-transition:all 1s ease-in-out;
+  -webkit-transition:all 1s ease-in-out;
+  -o-transition:all 1s ease-in-out;
+  -ms-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
+}
+
+.rotate {
   -webkit-animation:spin 30s linear infinite;
   -moz-animation:spin 30s linear infinite;
   animation:spin 30s linear infinite;
-  z-index: 2;
 }
-/*.sealCursor {
-  cursor: url('/Art/2DItems/Currency/SealWhite.png'), auto;
-}*/
+
+.flicker {
+  -webkit-animation: flickerAnimation 1.5s infinite;
+  -moz-animation: flickerAnimation 1.5s infinite;
+  -o-animation: flickerAnimation 1.5s infinite;
+  animation: flickerAnimation 1.5s infinite;
+}
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }

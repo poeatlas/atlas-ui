@@ -17,10 +17,12 @@ class Sextant extends Component {
 
   render() {
     const sextantState = this.props.AtlasStore.sextantState;
+    
     // determine if orb is active
     const mapClass = {
-      sextant: !sextantState,
-      sextantToggle: sextantState, 
+      buttonImageSize: true,
+      sextant: true,
+      toggle: sextantState, 
     }
     return (
       <Button onClick={this.activateSextant} active={!!sextantState}>

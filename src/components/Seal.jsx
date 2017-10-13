@@ -15,28 +15,14 @@ class Seal extends Component {
     atlasStore.setSeal(!atlasStore.sealState);
   }
 
-  // changeCursor() {
-  //   const body = document.getElementsByTagName("body")[0];
-  //   console.log(body);
-  //   if ( !this.state.sealOn ) {
-  //     body.classList.add('sealCursor');
-  //     this.setState({
-  //       sealOn: true,
-  //     });
-  //   } else {
-  //     body.classList.remove('sealCursor');
-  //     this.setState({
-  //       sealOn: false,
-  //     });
-  //   }
-  // }
-
   render() {
     const sealState = this.props.AtlasStore.sealState;
+
     // determine if orb is active
     const mapClass = {
-      seal: !sealState,
-      sealToggle: sealState, 
+      buttonImageSize: true,
+      seal: true,
+      toggle: sealState, 
     }
     
     return (

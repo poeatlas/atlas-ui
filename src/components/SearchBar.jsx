@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import { InputGroup, FormGroup, FormControl } from 'react-bootstrap';
-import InfoIcon from "./InfoIcon";
-import Seal from "./Seal";
-import ShaperOrb from "./ShaperOrb";
-import UnshapeDialogue from './UnshapeDialogue';
-import Sextant from "./Sextant";
+import { InputGroup, FormGroup, FormControl, Grid, Row, Col } from 'react-bootstrap';
 import { observer } from "mobx-react";
+
+import './SearchBar.css';
+import InfoIcon from './InfoIcon';
+import Seal from './Seal';
+import ShaperOrb from './ShaperOrb';
+import UnshapeDialogue from './UnshapeDialogue';
+import Sextant from './Sextant';
 
 @observer
 class SearchBar extends Component {
@@ -47,26 +49,28 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div className="searchbar">
-        <form>
-          <FormGroup>
-            <InputGroup>
-              <InfoIcon />
-              <FormControl
-                type="text"
-                value={this.state.value}
-                placeholder="Type keywords here..."
-                onChange={this.handleChange}
-              />
-              <InputGroup.Button>
-              <Seal />
-              <Sextant />
-              <ShaperOrb />
-              </InputGroup.Button>
-            </InputGroup>
-          </FormGroup>
-        </form>
-      </div>
+      <Grid className="searchbar-wrapper">
+        <Col md={4}  mdOffset={4}>
+          <form className="searchbar">
+            <FormGroup>
+              <InputGroup>
+                <InfoIcon />
+                <FormControl
+                  type="text"
+                  value={this.state.value}
+                  placeholder="Type keywords here..."
+                  onChange={this.handleChange}
+                />
+                <InputGroup.Button>
+                <Seal />
+                <Sextant />
+                <ShaperOrb />
+                </InputGroup.Button>
+              </InputGroup>
+            </FormGroup>
+          </form>
+        </Col>
+      </Grid>
     );
   }
 }

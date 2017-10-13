@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import {inject, observer} from 'mobx-react';
+import cx from 'classnames';
 
-@inject("AtlasStore") @observer
 class ShapedHighlight extends Component {
-  highlightChange() {
-    const {mapStore} = this.props.mapProps
-    if (this.props.AtlasStore.shaperOrbState && mapStore.shapeHighlighted ) {
-      return "shapedHighlight";
-    }
-    return "";
-  }
 
   render() {
+    const { mapStore } = this.props.mapProps;
+    const highlightState = mapStore.highlighted;
+    const highlightClass = {
+      circle: highlightState,
+      highlight: highlightState,
+      flicker: highlightState,
+      blueBorderFill: highlightState,
+    }
     return (
-      <div className={this.highlightChange()} style={this.props.mapProps.highlightStyle}></div>
-    )
+      <div className={cx(highlightClass)} style={this.props.mapProps.highlightStyle}></div>
+    );
   }
 }
 

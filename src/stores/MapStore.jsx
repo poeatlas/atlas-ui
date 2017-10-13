@@ -23,26 +23,17 @@ class MapStore {
   shapedIconPath = null;
   shaperOrbTier = 0; // number indicates tier maps this orb can shape
 
-  constructor({id, 
-      name, 
-      level, 
-      x, 
-      y, 
-      connected, 
-      sextant,
-      iconPath, 
-      shapedIconPath,
-      shaperOrbTier}) {
-    this.id = id;
-    this.x = x;
-    this.y = y;
-    this.connectedMapIds = connected;
-    this.worldAreasName = name;
-    this.worldAreasLevel = level;
-    this.sextantMapIds = sextant;
-    this.iconPath = iconPath;
-    this.shapedIconPath = shapedIconPath;
-    this.shaperOrbTier = shaperOrbTier;
+  constructor(raw) {
+    this.id = raw.id;
+    this.x = raw.x;
+    this.y = raw.y;
+    this.connectedMapIds = raw.connected;
+    this.worldAreasName = raw.name;
+    this.worldAreasLevel = raw.level;
+    this.sextantMapIds = raw.sextant;
+    this.iconPath = raw.iconPath;
+    this.shapedIconPath = raw.shapedIconPath;
+    this.shaperOrbTier = raw.shaperOrbTier;
   }
   @computed get hasShaperOrb() {
     return this.shaperOrbTier > 0 && !this.usedShaperOrb;

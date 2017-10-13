@@ -6,14 +6,17 @@ import { inject, observer } from 'mobx-react';
 class ShaperOrbCircle extends Component {
   
   render() {
-    const {shaperOrbStyle, mapStore} = this.props.mapProps;
+    const {positionStyle, mapStore} = this.props;
     const classStyle = {
-      shaperOrb: mapStore.hasShaperOrb,
-      usedShaperOrb: mapStore.usedShaperOrb,
+      circle: true,
+      shaperOrb: true,
+      rotate: true,
+      borderDottedBlue: mapStore.hasShaperOrb,
+      borderDottedYellow: mapStore.usedShaperOrb,
     }
 
     return (
-      <div className={cx(classStyle)} style={shaperOrbStyle}></div>
+      <div className={cx(classStyle)} style={positionStyle}></div>
     )
   }
 }

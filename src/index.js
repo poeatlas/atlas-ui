@@ -8,18 +8,12 @@ import { Provider  } from 'mobx-react';
 import atlas from './resources/atlas.json';
 import MapStore from './stores/MapStore';
 
-const maps = [];
-
-for (var i = 0; i < atlas.length; i++) {
-  const currMap = atlas[i];
-  const mapStore = new MapStore( currMap );
-
-  maps.push(mapStore);
-}
+// array of mapStores
+const maps = atlas.map((map) => { return new MapStore( map ); });
 
 const stores = {
   AtlasStore,
-}
+};
 
 ReactDOM.render(
   <Provider {...stores}>

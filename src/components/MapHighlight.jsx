@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
+import cx from 'classnames';
 
 @observer
 class MapHighlight extends Component {
-  filterChange() {
-    if (this.props.mapProps.mapStore.highlighted) {
-      return "highlight";
-    } 
-    return "";
-  }
 
   render() {
+    const { mapStore, positionStyle } = this.props;
+    const highlightState = mapStore.highlighted;
+    const highlightClass = {
+      circle: highlightState,
+      highlight: highlightState,
+      flicker: highlightState,
+      yellowBorderFill: highlightState,
+    }
     return (
-      <div className={this.filterChange()} style={this.props.mapProps.highlightStyle}></div>
+      <div className={cx(highlightClass)} style={positionStyle}></div>
     );
   }
 }

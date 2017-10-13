@@ -8,6 +8,7 @@ import SearchBar from './components/SearchBar';
 class App extends Component {
 
   render() {
+    const lastMap = atlas[atlas.length-1];
     console.log(this.props);
     return (
       <div id="atlas">
@@ -18,7 +19,7 @@ class App extends Component {
             mapStore={this.props.mapStore[map.id]} 
             mapList = {this.props.mapStore} 
           /> ) }
-        <BonusCount x={atlas[atlas.length-1].x} y={atlas[atlas.length-1].y} />
+        <BonusCount x={lastMap.x} y={lastMap.y} />
       </div>
     );
   }

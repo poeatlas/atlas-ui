@@ -1,0 +1,12 @@
+.searchbar-wrapper {
+  position: fixed;
+  top: 5px;
+  width: 100%;
+  z-index:4;
+}
+
+.searchbar {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
