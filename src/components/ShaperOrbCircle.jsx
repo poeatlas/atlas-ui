@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import cx from 'classnames';
 import { inject, observer } from 'mobx-react';
 
-@inject("AtlasStore") @observer
+@inject("atlasStore") @observer
 class ShaperOrbCircle extends Component {
   
   render() {

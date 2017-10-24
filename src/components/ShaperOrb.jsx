@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import { inject, observer } from 'mobx-react';
 import cx from 'classnames';
 
-@inject("AtlasStore") @observer
+@inject("atlasStore") @observer
 class ShaperOrb extends Component {
   constructor(props) {
     super(props);
@@ -11,13 +11,13 @@ class ShaperOrb extends Component {
   }
 
   activateShaperOrb() {
-    const atlasStore = this.props.AtlasStore;
+    const atlasStore = this.props.atlasStore;
 
     atlasStore.setShaperOrb(!atlasStore.shaperOrbState); 
   }
 
   render() {
-    const shaperOrbState = this.props.AtlasStore.shaperOrbState;
+    const shaperOrbState = this.props.atlasStore.shaperOrbState;
     
     // determine if orb is active
     const mapClass = {

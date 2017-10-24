@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { InputGroup, FormGroup, FormControl, Grid, Row, Col } from 'react-bootstrap';
+import { InputGroup, FormGroup, FormControl, Grid, Col } from 'react-bootstrap';
 import { observer } from "mobx-react";
 
 import './SearchBar.css';
 import InfoIcon from './InfoIcon';
 import Seal from './Seal';
 import ShaperOrb from './ShaperOrb';
-import UnshapeDialogue from './UnshapeDialogue';
+import ShaperOrbAssign from './ShaperOrbAssign';
 import Sextant from './Sextant';
 
 @observer
@@ -62,9 +62,10 @@ class SearchBar extends Component {
                   onChange={this.handleChange}
                 />
                 <InputGroup.Button>
-                <Seal />
-                <Sextant />
-                <ShaperOrb />
+                  <Seal />
+                  <Sextant />
+                  <ShaperOrb />
+                  <ShaperOrbAssign />
                 </InputGroup.Button>
               </InputGroup>
             </FormGroup>

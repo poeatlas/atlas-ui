@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import { inject, observer } from 'mobx-react';
 import cx from 'classnames';
 
-@inject("AtlasStore") @observer
+@inject("atlasStore") @observer
 class Sextant extends Component {
   constructor(props) {
     super(props);
@@ -11,12 +11,12 @@ class Sextant extends Component {
   }
 
   activateSextant() {
-    const atlasStore = this.props.AtlasStore;
+    const atlasStore = this.props.atlasStore;
     atlasStore.setSextant(!atlasStore.sextantState);
   }
 
   render() {
-    const sextantState = this.props.AtlasStore.sextantState;
+    const sextantState = this.props.atlasStore.sextantState;
     
     // determine if orb is active
     const mapClass = {

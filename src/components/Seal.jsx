@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import { inject, observer } from 'mobx-react';
 import cx from 'classnames';
 
-@inject("AtlasStore") @observer
+@inject("atlasStore") @observer
 class Seal extends Component {
   constructor(props) {
     super(props);
@@ -11,12 +11,12 @@ class Seal extends Component {
   }
 
   activateSeal() {
-    const atlasStore = this.props.AtlasStore;
+    const atlasStore = this.props.atlasStore;
     atlasStore.setSeal(!atlasStore.sealState);
   }
 
   render() {
-    const sealState = this.props.AtlasStore.sealState;
+    const sealState = this.props.atlasStore.sealState;
 
     // determine if orb is active
     const mapClass = {

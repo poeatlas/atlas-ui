@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import { inject, observer } from 'mobx-react';
 import cx from 'classnames';
 
-@inject("AtlasStore") @observer
+@inject("atlasStore") @observer
 class AtlasDowngrade extends Component {
   constructor(props) {
     super(props);
@@ -11,11 +11,11 @@ class AtlasDowngrade extends Component {
   }
 
   activateSeal() {
-    const atlasStore = this.props.AtlasStore;
+    const atlasStore = this.props.atlasStore;
     atlasStore.setDowngrade(!atlasStore.downgradeState);
   }
   render() {
-    const downgradeState = this.props.AtlasStore.downgradeState;
+    const downgradeState = this.props.atlasStore.downgradeState;
     // determine if orb is active
     const mapClass = {
       downgrade: !downgradeState,

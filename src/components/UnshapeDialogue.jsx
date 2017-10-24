@@ -2,39 +2,29 @@ import React, { Component } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import {inject, observer} from 'mobx-react';
 
-@inject("AtlasStore") @observer
+@inject("ModalStore", "atlasStore") @observer
 class UnshapeDialogue extends Component {
   constructor(props) {
     super(props);
-    this.executeUnshape = this.executeUnshape.bind(this);
-  }
-
-  executeUnshape() {
-    const { mapStore, mapList } = this.props.mapProps;
-    const prevShapedMap = mapList[mapList[mapStore.shapedById].shapedMapId];
-    console.log(prevShapedMap);
-    prevShapedMap.shaped = false;
-    prevShapedMap.shapedById = -1;
-    // mapStore.shapedById = -1
-    mapStore.showUnshapeModal = false;
+    this.props.ModalStore.callback = this.props.ModalStore.callback.bind(this);
   }
 
   render() {
-    const { mapStore } = this.props.mapProps;
+    const modalStore = this.props.ModalStore;
+    console.log("body is " + modalStore.body);
     return (
-      <Modal show={mapStore.showUnshapeModal}>
+      <Modal show={modalStore.shown}>
         <Modal.Header>
           <Modal.Title>
-            Shaping Limit Reached
+            {modalStore.title}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>Only one map can be shaped for this tier.</p>
-          <p>Do you want to unshape the currently shaped map?</p>
+          {modalStore.body}
         </Modal.Body>
         <Modal.Footer>
-          <Button>Cancel</Button>
-          <Button bsStyle="primary" onClick={this.executeUnshape}>Okay</Button>
+          <Button onClick={() => {modalStore.shown = false}}>Cancel</Button>
+          <Button bsStyle="primary" onClick={modalStore.callback}>Okay</Button>
         </Modal.Footer>
 
       </Modal>

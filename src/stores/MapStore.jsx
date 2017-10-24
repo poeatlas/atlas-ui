@@ -1,6 +1,5 @@
 import { observable, computed, action } from 'mobx';
 
-
 class MapStore {
   @observable shaped = false;
   @observable sextanted = false;
@@ -9,9 +8,8 @@ class MapStore {
   @observable shapeHighlighted = false;
   @observable isHidden = false;
   @observable usedShaperOrb = false;
-  @observable shapedById = -1;
-  @observable shapedMapId = -1;
-  @observable showUnshapeModal = false;
+  @observable shapedById = -1; // map that this map was shaped by
+  @observable shapedMapId = -1; // map that this map shaped
   id = 0;
   x = 0;
   y = 0;
@@ -63,6 +61,7 @@ class MapStore {
   @computed get name() {
     return this.shaped ? "Shaped " + this.worldAreasName : this.worldAreasName;  
   }
+
 }
 
 export default MapStore;
