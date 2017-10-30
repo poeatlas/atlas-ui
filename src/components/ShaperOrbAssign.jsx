@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Button } from 'react-bootstrap';
 import { inject, observer } from 'mobx-react';
 
+import './ShaperOrbAssign.css';
 import ShaperOrbAssignBody from "./ShaperOrbAssignBody";
 
 @inject("ModalStore", "atlasStore") @observer
@@ -25,7 +26,7 @@ class ShaperOrbAssign extends Component {
     const {ModalStore} = this.props;
     return (
       <Button onClick={this.setModalContent} active={ModalStore.shown}>
-        <div></div>
+        <div className="circle borderDottedBlue barAssign"></div>
       </Button>
     )
   }
