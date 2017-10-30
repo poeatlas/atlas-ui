@@ -338,4 +338,5 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-/public/Art
+# keep this to make development easier; also is prep for testing
+#/public/Art
