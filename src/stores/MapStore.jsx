@@ -7,7 +7,6 @@ class MapStore {
   @observable highlighted = false;
   @observable shapeHighlighted = false;
   @observable isHidden = false;
-  @observable usedShaperOrb = false;
   @observable shapedById = -1; // map that this map was shaped by
   @observable shapedMapId = -1; // map that this map shaped
   id = 0;
@@ -62,6 +61,9 @@ class MapStore {
     return this.shaped ? "Shaped " + this.worldAreasName : this.worldAreasName;  
   }
 
+  @computed get usedShaperOrb() {
+    return this.shapedMapId !== -1;
+  }
 }
 
 export default MapStore;

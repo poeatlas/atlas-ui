@@ -10,11 +10,18 @@ export class AtlasStore {
   @observable shaperOrbState = 0;
   @observable downgradeState = 0;
   @observable activeMap = null;
-  @observable shapedMapList= [];
+  @observable shapedMapList = [];
+
+  //SHAPED_MAP_LIST = [];
   mapList = [];
 
   constructor(mapList) {
     this.mapList = mapList;
+    //this.SHAPED_MAP_LIST = mapList.filter((map) => { return map.shaperOrbTier; })
+    //  .reduce(function(maps, currMap) { 
+    //    // add shaper orb maps into 2-dim array based on id
+    //    return maps[currMap.shaperOrbTier].push(currMap) && maps;
+    //  },[null, [], [], [], [], [], [], [], [], [], []]);
   }
 
   @action setToggle({seal, sextant, shaperOrb, downgrade}) {
@@ -95,25 +102,6 @@ export class AtlasStore {
     }
   }
 
-    // store shaping map's id and the shaped map's id
-  @action setCustomShapeId(map, shapingMapId) {
-    const shapingMap = this.mapList[shapingMapId];
-    if( map.shaped ) {
-      
-      if (shapingMap.shapedMapId !== -1) {
-        const prevShapedMap = this.mapList[shapingMap.shapedMapId];
-        prevShapedMap.shapedById = shapingMapId;
-      }
-      map.shapedById = shapingMap.id; 
-      shapingMap.shapedMapId = map.id;
-      shapingMap.usedShaperOrb = true;
-    } else {
-      map.shapedById = -1;
-      shapingMap.shapedMapId = -1;
-      shapingMap.usedShaperOrb = false;
-    }
-  }
-
   @action toggleLowShapedState() {
     const shapedState = !this.activeMap.shaped;
     getShapingMap(this.mapList, this.activeMap).usedShaperOrb = shapedState;
@@ -146,6 +134,45 @@ export class AtlasStore {
     shapingMap.shapedMapId = this.activeMap.id;
 
     this.activeMap.showUnshapeModal = false;
+  }
+
+  @action assign(mapId, assignMapId) {
+    const map1 = this.mapList[mapId];
+    let map1ShaperMap = null;
+    let map2 = null;
+    const map2ShaperMap = this.mapList[assignMapId];
+
+    if (map1.shapedById === assignMapId) { // assigning map with same shaper map = unsassign
+      map1.shapedById = -1;
+      this.mapList[assignMapId].shapedMapId = -1;
+      return;
+    }
+
+    if (map1.shapedById !== -1) { // it already has an assigned map, so either reassign or unassign
+      map1ShaperMap = this.mapList[map1.shapedById];
+    }
+
+    if (map2ShaperMap.shapedMapId !== -1) { // the map2ShaperMap has already been assigned to a different map
+      map2 = this.mapList[map2ShaperMap.shapedMapId];
+    }
+
+    // assign map1's shaper orb the the desired shaper orb map + the shaper orb map to point to map1
+    map1.shapedById = map2ShaperMap.id;
+    map2ShaperMap.shapedMapId = map1.id;
+
+    if (map2) { // unassign the map2's map first (it is taken)
+      map2.shapedById = -1;
+    }
+
+    if (map1ShaperMap) { // map1 originally had a shaper orb map assigned to it, so unlink it 
+      map1ShaperMap.shapedMapId = -1;
+
+      // since we took map2's original shaper orb map, give it map1's shaper orb map
+      if (map2) {
+        map2.shapedById = map1ShaperMap.id;
+        map1ShaperMap.shapedMapId = map2.id;
+      }
+    }
   }
 }
 export default AtlasStore;
