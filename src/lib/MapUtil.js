@@ -1,4 +1,4 @@
-import { MAP_MULTIPLIER, SHAPER_ORB_MAP_ARRAY } from '../const';
+import { MAP_MULTIPLIER, SHAPER_ORB_MAP_ARRAY, SHAPER_ORB_HIGH_MAP_ARRAY } from '../const';
 
 export function getPositionStyle({x,y}) {
   return({
@@ -13,4 +13,9 @@ export function getShapingMap(mapList, map) {
 
 export function getPrevShapedMap(mapList, shapingMap) {
   return mapList[shapingMap.shapedMapId];
+}
+
+export function getShaperOrbHighTierCount(tier) {
+  const MIN_TIER = 7;
+  return SHAPER_ORB_HIGH_MAP_ARRAY[tier-MIN_TIER].length;
 }

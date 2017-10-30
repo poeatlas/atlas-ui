@@ -11,11 +11,4 @@ export const SHAPER_ORB_MAP_ARRAY = atlas.filter((map) => { return map.shaperOrb
 export const SHAPER_ORB_HIGH_MAP_ARRAY = SHAPER_ORB_MAP_ARRAY
   .filter((map) => { return map && map[0].shaperOrbTier >= 7 })
   .map((arr) => {return arr.sort((a,b) =>  (a.name).localeCompare(b.name)
-    // if(a.level > b.level) {
-    //   return 1;
-    // }
-    // if( a.level < b.level ) {
-    //   return -1;
-    // }
-    // return 0; }
   )});

@@ -6,7 +6,7 @@ import cx from 'classnames';
 import MapHighlight from './MapHighlight';
 import ShaperOrbCircle from './ShaperOrbCircle';
 import { getPopover } from './MapPopover';
-import { getPositionStyle, getShapingMap, getPrevShapedMap } from '../lib/MapUtil';
+import { getPositionStyle, getShapingMap, getPrevShapedMap, getShaperOrbHighTierCount } from '../lib/MapUtil';
 
 @inject("atlasStore", "ModalStore") @observer
 class Map extends Component {
@@ -18,31 +18,45 @@ class Map extends Component {
   executeAtlasAction() {
     const { mapStore, mapList, atlasStore, ModalStore } = this.props;
     atlasStore.activeMap = mapStore;
-    
     // toggle seal state
     atlasStore.sealState && atlasStore.toggleSealState();
     // toggle sextant state
     atlasStore.sextantState && atlasStore.toggleSextantState();
     
     // toggle shape state if map is shapable
-    if (atlasStore.shaperOrbState) {
-      if (mapStore.baseTier <= 6) {
+    if (atlasStore.shaperOrbState && mapStore.shapedIconPath) {
+      const mapBaseTier = mapStore.baseTier;
+      const modalValues = {
+        title: "Shaping Orb Tier Limit Reached",
+        shown: true,
+      }
+      if (mapBaseTier <= 6) {
         const shapingMap = getShapingMap(mapList,mapStore);
         const prevShapedMap = getPrevShapedMap(mapList,shapingMap);
         if (shapingMap.usedShaperOrb && prevShapedMap.id !== mapStore.id) {
-          ModalStore.setModalValues({
-            title: "Shaping Orb Tier Limit Reached",
-            body: "Only one map can be shaped for this tier. Do you want to unshape the " + prevShapedMap.worldAreasName + " Map?",
-            shown: true,
-            callback: () => {
-              atlasStore.switchShaping();
-              ModalStore.shown = false;
-            }
-          })
+          modalValues.body = "Only one map can be shaped for this tier. Do you want to unshape the " + prevShapedMap.worldAreasName + " Map?";
+          modalValues.callback = () => {
+            atlasStore.switchShaping();
+            ModalStore.shown = false;
+          }
+          ModalStore.setModalValues(modalValues)
           return;
         }
+        atlasStore.toggleLowShapedState();
+      } else if (mapBaseTier > 6 && mapStore.baseTier <= 10) {
+          const shapedMapTierCount = atlasStore.shapedMapTierCount(mapBaseTier);
+          const shaperOrbHighTierCount = getShaperOrbHighTierCount(mapBaseTier);
+          // show modal if orb limit for map tier reached 
+          if (!mapStore.shaped && shapedMapTierCount >= shaperOrbHighTierCount) {
+            modalValues.body = "Maximum number of maps that can be shaped for Tier " + mapBaseTier + " is " + shapedMapTierCount + ". Please unshape a map first.";
+            modalValues.callback = () => {
+              ModalStore.shown = false;
+            }
+            ModalStore.setModalValues(modalValues);
+            return;
+          }
+        atlasStore.toggleHighShapedState();
       }
-      atlasStore.toggleShapedState();
     }
   }
 
@@ -50,10 +64,8 @@ class Map extends Component {
     const { mapStore } = this.props;
     const SHAPERS_REALM_ID = 125;
     const isShaperId = mapStore.id===SHAPERS_REALM_ID;
-
     // position of map objects
     const positionStyle = getPositionStyle(mapStore);
-
     // shaped map image position for div
     const shapedMapImageStyle = {
       backgroundImage: `url(./${mapStore.shapedIconPath})`,

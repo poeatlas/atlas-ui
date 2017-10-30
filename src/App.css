@@ -32,7 +32,12 @@
 .map.menu.shaped {
   width: 30px;
   height: 30px;
+  opacity: 100%;
   background-size: 30px 30px;
+}
+
+.map.menu.shaped.opaque {
+  opacity: 0.5;
 }
 
 /* circle for maps with shaper orb */

@@ -78,6 +78,11 @@ export class AtlasStore {
     } );
   }
 
+  @action shapedMapTierCount(tier) {
+    return this.shapedMapList.filter((map) => {
+      return map.baseTier === tier;
+    }).length;
+  }
   // store shaping map's id and the shaped map's id
   @action setShapeId() {
     const shapingMap = getShapingMap(this.mapList, this.activeMap)
@@ -89,26 +94,43 @@ export class AtlasStore {
       shapingMap.shapedMapId = -1;
     }
   }
-  // toggle shaped state based on tier/shaped id/shaping map id
-  @action toggleShapedState() {
-    if (this.shaperOrbState && this.activeMap.shapedIconPath) {
-      const shapedState = !this.activeMap.shaped;
-      // low tier
-      if( this.activeMap.baseTier <= 6) {
-        getShapingMap(this.mapList, this.activeMap).usedShaperOrb = shapedState;
-        this.setShapeId(this.activeMap);
-        this.activeMap.shaped = shapedState;
-      // high tier
-      } else if (this.activeMap.baseTier > 6 && this.activeMap.baseTier <= 10) {
-        this.activeMap.shaped = shapedState;
-        const shapedMapListIndex = this.shapedMapList.indexOf(this.activeMap)
 
-        if (this.activeMap.shaped && shapedMapListIndex === -1) {
-          this.shapedMapList.push(this.activeMap)
-        } else if (!this.activeMap.shaped && shapedMapListIndex > -1) {
-          this.shapedMapList.splice(shapedMapListIndex, 1);
-        }
+    // store shaping map's id and the shaped map's id
+  @action setCustomShapeId(map, shapingMapId) {
+    const shapingMap = this.mapList[shapingMapId];
+    if( map.shaped ) {
+      
+      if (shapingMap.shapedMapId !== -1) {
+        const prevShapedMap = this.mapList[shapingMap.shapedMapId];
+        prevShapedMap.shapedById = shapingMapId;
       }
+      map.shapedById = shapingMap.id; 
+      shapingMap.shapedMapId = map.id;
+      shapingMap.usedShaperOrb = true;
+    } else {
+      map.shapedById = -1;
+      shapingMap.shapedMapId = -1;
+      shapingMap.usedShaperOrb = false;
+    }
+  }
+
+  @action toggleLowShapedState() {
+    const shapedState = !this.activeMap.shaped;
+    getShapingMap(this.mapList, this.activeMap).usedShaperOrb = shapedState;
+    this.setShapeId(this.activeMap);
+    this.activeMap.shaped = shapedState;
+  }
+  
+  // toggle shaped state based on tier/shaped id/shaping map id
+  @action toggleHighShapedState() {
+    const shapedState = !this.activeMap.shaped;
+    this.activeMap.shaped = shapedState;
+    const shapedMapListIndex = this.shapedMapList.indexOf(this.activeMap)
+    // record shaped maps into list
+    if (this.activeMap.shaped && shapedMapListIndex === -1) {
+      this.shapedMapList.push(this.activeMap)
+    } else if (!this.activeMap.shaped && shapedMapListIndex > -1) {
+      this.shapedMapList.splice(shapedMapListIndex, 1);
     }
   }
   // switch shaped states between 2 maps (tier <= 6)

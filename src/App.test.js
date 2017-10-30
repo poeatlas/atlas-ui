@@ -1,24 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import AtlasStore from './stores/AtlasStore';
 import { Provider  } from 'mobx-react';
 import atlas from './resources/atlas.json';
 import MapStore from './stores/MapStore';
+import AtlasStore from './stores/AtlasStore';
+import ModalStore from './stores/ModalStore'
 
 it('renders without crashing', () => {
-  const maps = [];
-
-  for (var i = 0; i < atlas.length; i++) {
-    const currMap = atlas[i];
-    const mapStore = new MapStore( currMap );
-
-    maps.push(mapStore);
-  }
+  // array of mapStores
+  var maps = atlas.map((map) => { return new MapStore( map ); }); 
+  const atlasStore = new AtlasStore(maps);
   
   const stores = {
-    AtlasStore,
-  }
+    atlasStore,
+    ModalStore,
+  };
+  
   const div = document.createElement('div');
   ReactDOM.render(
     <Provider {...stores}>
