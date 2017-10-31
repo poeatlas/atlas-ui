@@ -65,10 +65,13 @@ export class AtlasStore {
 
   @action toggleSealState() {
     this.activeMap.sealed = !this.activeMap.sealed;
+    this.activeMap.sextanted = !this.activeMap.sealed;
   }
 
   @action toggleSextantState() {
-    this.activeMap.sextanted = !this.activeMap.sextanted;
+    if (!this.activeMap.sealed) {
+      this.activeMap.sextanted = !this.activeMap.sextanted;
+    }
   }
 
   @computed get sortedShapedMapList() {
@@ -104,7 +107,6 @@ export class AtlasStore {
 
   @action toggleLowShapedState() {
     const shapedState = !this.activeMap.shaped;
-    getShapingMap(this.mapList, this.activeMap).usedShaperOrb = shapedState;
     this.setShapeId(this.activeMap);
     this.activeMap.shaped = shapedState;
   }

@@ -6,7 +6,6 @@ class MapStore {
   @observable sealed = false;
   @observable highlighted = false;
   @observable shapeHighlighted = false;
-  @observable isHidden = false;
   @observable shapedById = -1; // map that this map was shaped by
   @observable shapedMapId = -1; // map that this map shaped
   id = 0;
@@ -36,13 +35,8 @@ class MapStore {
     return this.shaperOrbTier > 0 && !this.usedShaperOrb;
   }
 
-  @action toggleShaperOrbMap(value) {
-    this.isHidden = !value;
-    this.shapehighlighted = value;
-  }
-
   @computed get isMapShown() {
-    return !this.isHidden && !this.sealed;
+    return !this.sealed;
   }
 
   @computed get mapLevel() {

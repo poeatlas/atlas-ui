@@ -24,13 +24,13 @@ class Map extends Component {
     atlasStore.sextantState && atlasStore.toggleSextantState();
     
     // toggle shape state if map is shapable
-    if (atlasStore.shaperOrbState && mapStore.shapedIconPath) {
+    if (atlasStore.shaperOrbState && mapStore.shapedIconPath && !mapStore.sealed) {
       const mapBaseTier = mapStore.baseTier;
       const modalValues = {
         title: "Shaping Orb Tier Limit Reached",
         shown: true,
       }
-      if (mapBaseTier <= 6) {
+      if (mapBaseTier <= 7) {
         const shapingMap = getShapingMap(mapList,mapStore);
         const prevShapedMap = getPrevShapedMap(mapList,shapingMap);
         if (shapingMap.usedShaperOrb && prevShapedMap.id !== mapStore.id) {
@@ -43,12 +43,13 @@ class Map extends Component {
           return;
         }
         atlasStore.toggleLowShapedState();
-      } else if (mapBaseTier > 6 && mapStore.baseTier <= 10) {
+      } else if (mapBaseTier > 7 && mapStore.baseTier <= 10) {
           const shapedMapTierCount = atlasStore.shapedMapTierCount(mapBaseTier);
           const shaperOrbHighTierCount = getShaperOrbHighTierCount(mapBaseTier);
           // show modal if orb limit for map tier reached 
           if (!mapStore.shaped && shapedMapTierCount >= shaperOrbHighTierCount) {
             modalValues.body = "Maximum number of maps that can be shaped for Tier " + mapBaseTier + " is " + shapedMapTierCount + ". Please unshape a map first.";
+            modalValues.extraButton = false;
             modalValues.callback = () => {
               ModalStore.shown = false;
             }
@@ -57,6 +58,18 @@ class Map extends Component {
           }
         atlasStore.toggleHighShapedState();
       }
+    }
+  }
+
+  imageSelect() {
+    const { mapStore } = this.props;
+    if (mapStore.sealed) {
+      return{};
+    }
+    if (mapStore.shaped) {
+      return {backgroundImage: `url(./${mapStore.shapedIconPath})`};
+    } else {
+      return {backgroundImage: `url(./${mapStore.iconPath})`};
     }
   }
 
@@ -76,8 +89,8 @@ class Map extends Component {
     };
     // determine mapClass -- if it is the shaper's realm, do not resize
     const mapClass = {
-      map: mapStore.isMapShown,
-      shaperId: isShaperId
+      map: true,
+      shaperId: isShaperId,
     };
     // sextant class style:
     const sextantCircleClass = {
@@ -91,8 +104,8 @@ class Map extends Component {
     return (
       <div>
         <OverlayTrigger trigger={['hover', 'focus']} placement="top" 
-                        overlay={getPopover(mapStore.name, mapStore.tier, mapStore.mapLevel)}>
-          <div className={cx(mapClass)} style={{...mapStyle, ...positionStyle}} onClick={this.executeAtlasAction}></div>
+                        overlay={getPopover(mapStore.name, mapStore.tier, mapStore.mapLevel, mapStore.shaped)}>
+          <div className={cx(mapClass)} style={{...this.imageSelect(), ...positionStyle}} onClick={this.executeAtlasAction}></div>
         </OverlayTrigger>
         
         {/*blue circle indicating map can be shaped*/}

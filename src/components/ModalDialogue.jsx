@@ -3,7 +3,7 @@ import { Modal, Button } from 'react-bootstrap';
 import {inject, observer} from 'mobx-react';
 
 @inject("ModalStore", "atlasStore") @observer
-class UnshapeDialogue extends Component {
+class ModalDialogue extends Component {
   constructor(props) {
     super(props);
     this.props.ModalStore.callback = this.props.ModalStore.callback.bind(this);
@@ -11,6 +11,15 @@ class UnshapeDialogue extends Component {
 
   render() {
     const modalStore = this.props.ModalStore;
+    let button = null;
+    if (modalStore.extraButton) {
+      button = <div>
+        <Button onClick={() => {modalStore.shown = false}}>{modalStore.cancelText}</Button>
+        <Button bsStyle="primary" onClick={modalStore.callback} >{modalStore.confirmText}</Button>
+      </div>
+    } else {
+      button = <Button bsStyle="primary" onClick={() => {modalStore.shown = false}}>{modalStore.confirmText}</Button>
+    }
     console.log("body is " + modalStore.body);
     return (
       <Modal show={modalStore.shown}>
@@ -23,12 +32,11 @@ class UnshapeDialogue extends Component {
           {modalStore.body}
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={() => {modalStore.shown = false}}>Cancel</Button>
-          <Button bsStyle="primary" onClick={modalStore.callback}>Okay</Button>
+          {button}
         </Modal.Footer>
 
       </Modal>
     )
   }
 }
-export default UnshapeDialogue;
+export default ModalDialogue;

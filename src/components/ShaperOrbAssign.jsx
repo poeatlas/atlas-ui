@@ -14,11 +14,13 @@ class ShaperOrbAssign extends Component {
 
   setModalContent() {
     const {ModalStore} = this.props;
-
+    
     ModalStore.setModalValues({
       title: "Assign Shaper Orbs (Tier 7-10 Maps)",
       shown: !ModalStore.shown,
       body: <ShaperOrbAssignBody />,
+      confirmText: "Done",
+      extraButton: false,
     })
   }
 

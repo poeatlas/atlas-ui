@@ -25,11 +25,11 @@ class MenuMap extends Component {
       map: true,
       menu: true,
       shaped: true,
-      opaque: map.shapedById === orbMap.id && orbMap.usedShaperOrb,
+      opaque: !(map.shapedById === orbMap.id && orbMap.usedShaperOrb),
     }
     return (
       <OverlayTrigger trigger={['hover', 'focus']} placement="top" 
-                            overlay={getPopover(orbMap.name, orbMap.tier, orbMap.mapLevel)}>
+                            overlay={getPopover(orbMap.name, orbMap.tier, orbMap.mapLevel, orbMap.shaped)}>
         <div className={cx(mapClass)} 
                     onClick={this.assignShaperOrb}
                     style={{backgroundImage: `url(./${orbMap.iconPath})`}}></div>
