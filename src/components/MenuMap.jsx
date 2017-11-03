@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import { inject, observer } from 'mobx-react';
 import { OverlayTrigger } from 'react-bootstrap';
+import { withRouter } from 'react-router-dom';
 import cx from 'classnames';
 
 import { getPopover } from './MapPopover';
+import HistoryUtil from '../lib/HistoryUtil';
 
 @inject("atlasStore") @observer
 class MenuMap extends Component {
@@ -16,8 +18,11 @@ class MenuMap extends Component {
   assignShaperOrb() {
     const {atlasStore} = this.props;
     const {map, orbMap} = this.props.mapProps;
+    const historyUtil = new HistoryUtil(atlasStore, this.props.history);
 
     atlasStore.assign(map.id, orbMap.id);
+    // store history
+    historyUtil.recalculateHistory();
   }
   render() {
     const {map, orbMap} = this.props.mapProps;
@@ -37,4 +42,4 @@ class MenuMap extends Component {
     );
   }
 }
-export default MenuMap;
+export default withRouter(MenuMap);

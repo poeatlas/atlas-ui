@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { OverlayTrigger } from 'react-bootstrap';
 import { inject, observer } from 'mobx-react';
+import { withRouter } from 'react-router-dom';
 import cx from 'classnames';
 
 import MapHighlight from './MapHighlight';
 import ShaperOrbCircle from './ShaperOrbCircle';
 import { getPopover } from './MapPopover';
 import { getPositionStyle, getShapingMap, getPrevShapedMap, getShaperOrbHighTierCount } from '../lib/MapUtil';
+import HistoryUtil from '../lib/HistoryUtil';
 
 @inject("atlasStore", "ModalStore") @observer
 class Map extends Component {
@@ -59,6 +61,9 @@ class Map extends Component {
         atlasStore.toggleHighShapedState();
       }
     }
+    // store history
+    const historyUtil = new HistoryUtil(atlasStore, this.props.history);
+    historyUtil.recalculateHistory();
   }
 
   imageSelect() {
@@ -119,4 +124,4 @@ class Map extends Component {
     );
   }
 }
-export default Map;
+export default withRouter(Map);

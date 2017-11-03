@@ -31,6 +31,15 @@ class MapStore {
     this.shapedIconPath = raw.shapedIconPath;
     this.shaperOrbTier = raw.shaperOrbTier;
   }
+
+  @action reset() {
+    this.shaped = false;
+    this.sextanted = false;
+    this.sealed = false;
+    this.shapedById = -1;
+    this.shapedMapId = -1;
+  }
+
   @computed get hasShaperOrb() {
     return this.shaperOrbTier > 0 && !this.usedShaperOrb;
   }

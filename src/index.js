@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom'
+
 import './index.css';
 import App from './App';
 import AtlasStore from './stores/AtlasStore';
@@ -20,7 +22,10 @@ const stores = {
 
 ReactDOM.render(
   <Provider {...stores}>
-    <App mapStore={maps}/>
-  </Provider>,
+    <BrowserRouter>
+      <App mapStore={maps}/>
+    </BrowserRouter>
+  </Provider>
+  ,
   document.getElementById('root'));
 registerServiceWorker();

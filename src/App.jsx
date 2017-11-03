@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {withRouter} from 'react-router-dom';
+
 import './App.css';
 import atlas from './resources/atlas.json';
 import Map from './components/Map';
@@ -7,7 +9,7 @@ import SearchBar from './components/SearchBar';
 import ModalDialogue from './components/ModalDialogue';
 
 class App extends Component {
-
+  
   render() {
     const lastMap = atlas[atlas.length-1];
 
@@ -28,4 +30,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);

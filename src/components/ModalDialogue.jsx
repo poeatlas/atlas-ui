@@ -20,7 +20,7 @@ class ModalDialogue extends Component {
     } else {
       button = <Button bsStyle="primary" onClick={() => {modalStore.shown = false}}>{modalStore.confirmText}</Button>
     }
-    console.log("body is " + modalStore.body);
+
     return (
       <Modal show={modalStore.shown}>
         <Modal.Header>

@@ -8,7 +8,6 @@ export class AtlasStore {
   @observable sealState = 0;
   @observable sextantState = 0;
   @observable shaperOrbState = 0;
-  @observable downgradeState = 0;
   @observable activeMap = null;
   @observable shapedMapList = [];
 
@@ -64,14 +63,25 @@ export class AtlasStore {
   }
 
   @action toggleSealState() {
-    this.activeMap.sealed = !this.activeMap.sealed;
-    this.activeMap.sextanted = !this.activeMap.sealed;
+    const activeMap = this.activeMap;
+    
+    activeMap.sealed = !this.activeMap.sealed;
+    
+    if (activeMap.sealed) {
+      activeMap.sextanted = false;
+      activeMap.shaped = false;
+      if (activeMap.shapedById !== -1) {
+        this.mapList[activeMap.shapedById].shapedMapId = -1;
+        activeMap.shapedById = -1;
+      }
+    }
   }
 
   @action toggleSextantState() {
     if (!this.activeMap.sealed) {
       this.activeMap.sextanted = !this.activeMap.sextanted;
     }
+    
   }
 
   @computed get sortedShapedMapList() {
@@ -176,5 +186,16 @@ export class AtlasStore {
       }
     }
   }
+
+  @action resetMaps() {
+    this.mapList.forEach((map) => map.reset());
+    this.filter = "";
+    this.sealState = 0;
+    this.sextantState = 0;
+    this.shaperOrbState = 0;
+    this.activeMap = null;
+    this.shapedMapList = [];
+  }
+
 }
 export default AtlasStore;

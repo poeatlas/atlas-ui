@@ -8,6 +8,7 @@ import Seal from './Seal';
 import ShaperOrb from './ShaperOrb';
 import ShaperOrbAssign from './ShaperOrbAssign';
 import Sextant from './Sextant';
+import Reset from './Reset';
 
 @observer
 class SearchBar extends Component {
@@ -54,6 +55,9 @@ class SearchBar extends Component {
           <form className="searchbar">
             <FormGroup>
               <InputGroup>
+                <InputGroup.Button>
+                  <Reset />
+                </InputGroup.Button>
                 <InfoIcon />
                 <FormControl
                   type="text"
@@ -62,6 +66,7 @@ class SearchBar extends Component {
                   onChange={this.handleChange}
                 />
                 <InputGroup.Button>
+                
                   <Seal />
                   <Sextant />
                   <ShaperOrb />
