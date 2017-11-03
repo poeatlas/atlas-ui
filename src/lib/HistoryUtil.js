@@ -1,5 +1,3 @@
-import lzw from 'node-lzw';
-
 import { SHAPER_ORB_HIGH_MAP_ARRAY } from '../const';
 
 class HistoryUtil {
@@ -23,14 +21,13 @@ class HistoryUtil {
   // records state changes based on index totals vs symbol array
   recalculateHistory() {
     let historyStr = "";
-    const symbols = "-0123456789abcdefghijklmnopqrstuvwxyzA";
+    const symbols = "-0123456789abcdefghijklmnopqrstuvwxyzAB";
     const symbolArr = symbols.split("");
     const MIN_TIER = 7;
     const ASSIGN_VALUES = [8,16,32];
 
     this.atlasStore.mapList.forEach((map) =>
       {
-        const mapId = map.id;
         let historyIndex = 0;
         if (map.sealed) {
           historyIndex++;
@@ -48,6 +45,7 @@ class HistoryUtil {
             .map((map) => {return map.id}).indexOf(map.shapedById);
           historyIndex = historyIndex + ASSIGN_VALUES[assignPosition];  
         }
+        console.log(historyIndex, symbolArr[historyIndex]);
         historyStr = historyStr + symbolArr[historyIndex];
       }
     )

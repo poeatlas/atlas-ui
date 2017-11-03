@@ -84,14 +84,7 @@ class Map extends Component {
     const isShaperId = mapStore.id===SHAPERS_REALM_ID;
     // position of map objects
     const positionStyle = getPositionStyle(mapStore);
-    // shaped map image position for div
-    const shapedMapImageStyle = {
-      backgroundImage: `url(./${mapStore.shapedIconPath})`,
-    };
-    // shaped map image position for div
-    const mapImageStyle = {
-      backgroundImage: `url(./${mapStore.iconPath})`,
-    };
+
     // determine mapClass -- if it is the shaper's realm, do not resize
     const mapClass = {
       map: true,
@@ -104,8 +97,7 @@ class Map extends Component {
       borderDottedRed: mapStore.sextanted,
       sextanted: mapStore.sextanted,
     };
-    // determine map image based on shaped state
-    const mapStyle = mapStore.shaped ? shapedMapImageStyle : mapImageStyle;
+
     return (
       <div>
         <OverlayTrigger trigger={['hover', 'focus']} placement="top" 

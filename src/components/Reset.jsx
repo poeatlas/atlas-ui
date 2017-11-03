@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import { Button } from 'react-bootstrap';
 import { inject, observer } from "mobx-react";
-import { InputGroup, Popover, OverlayTrigger } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom';
+
 import HistoryUtil from '../lib/HistoryUtil';
 
 @inject('atlasStore') @observer
