@@ -7,9 +7,13 @@ import Map from './components/Map';
 import BonusCount from './components/BonusCount';
 import SearchBar from './components/SearchBar';
 import ModalDialogue from './components/ModalDialogue';
+import HistoryUtil from './lib/HistoryUtil';
 
 class App extends Component {
-  
+  componentWillMount() {
+    const historyUtil = new HistoryUtil(this.props.atlasStore, this.props.history);
+    historyUtil.decodeHistory();
+  }
   render() {
     const lastMap = atlas[atlas.length-1];
 

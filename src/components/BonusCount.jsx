@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { MAP_MULTIPLIER } from '../const';
+import { inject, observer} from 'mobx-react';
 
+@inject('atlasStore') @observer
 class BonusCount extends Component {
     
   render() {
@@ -20,7 +22,7 @@ class BonusCount extends Component {
       backgroundColor: "transparent"
     }
     return (
-      <div type="text" style = {textStyle}>94 / 126</div>
+      <div type="text" style = {textStyle}>{this.props.atlasStore.bonusCount} / 126</div>
     );
   }
 }

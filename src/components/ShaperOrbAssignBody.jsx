@@ -34,7 +34,7 @@ class ShaperOrbAssignBody extends Component {
     const shaperOrbMapArr = SHAPER_ORB_HIGH_MAP_ARRAY[map.baseTier-MIN_MAP_TIER]
     const tdArr = [];
     const {atlasStore} = this.props;
-    
+    console.log(shaperOrbMapArr);
     for (var i = 0; i < 3; i++) {
       if (shaperOrbMapArr[i]) {
         const orbMap = atlasStore.mapList[shaperOrbMapArr[i].id];

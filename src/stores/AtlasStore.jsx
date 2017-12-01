@@ -1,6 +1,7 @@
 import { observable, action, computed } from 'mobx';
 
 import { getShapingMap, getPrevShapedMap } from '../lib/MapUtil';
+import sextantBlock from '../sextantBlock';
 
 export class AtlasStore {
 
@@ -62,6 +63,102 @@ export class AtlasStore {
       downgrade: value,});
   }
 
+  @computed get bonusCount() {
+    let count = 0;
+    this.mapList.forEach((map) => {
+      if (!map.sealed) {count++;}
+    })
+    return count;
+  }
+
+  @action displaySextantBlock(map) {
+    // var queue = [map];
+    var node;
+    var layerOneGood = map.sextantMapIds;
+    var layerTwoBad =[];
+    var layerThreeGood = [];
+
+    // check if map has any sextantable children, if not, blocking not possible
+    if ( !layerOneGood ) {
+      return;
+    }
+    for (var i = 0; i < layerOneGood.length; i++) {
+      // get curr node
+      node = this.mapList[layerOneGood[i]];
+      // toggle blockState
+      if (map.blockState === sextantBlock.LAYER_ROOT) {
+        node.blockState = sextantBlock.NONE;
+      } else {
+        node.blockState = sextantBlock.LAYER_ONE;
+      }
+
+      if (!node.sextantMapIds) {
+        continue;
+      }
+
+      node.sextantMapIds.forEach((mapId) => {
+        // layer 2 bad should not include nodes from prevous layer
+        if (!layerOneGood.includes(mapId) && mapId !== map.id) {
+          layerTwoBad.push(mapId);
+        }
+      })
+    }
+
+    for (var j = 0; j < layerTwoBad.length; j++) {
+      // get curr node
+      node = this.mapList[layerTwoBad[j]];
+      
+      // toggle blockState
+      if (map.blockState === sextantBlock.LAYER_ROOT) {
+        node.blockState = sextantBlock.NONE;
+      } else {
+        node.blockState = sextantBlock.LAYER_TWO;
+      }
+      
+      if (!node.sextantMapIds) {
+        continue;
+      }
+
+      node.sextantMapIds.forEach((mapId) => {
+        // layer 3 good should no include nodes from previous layers
+        if (!layerTwoBad.includes(mapId) && !layerOneGood.includes(mapId) && mapId !== map.id) {
+          // layerThreeGood.push(mapId);
+          var layerThreeMap = this.mapList[mapId];
+          // toggle blockState
+          if (map.blockState === sextantBlock.LAYER_ROOT) {
+            layerThreeMap.blockState = sextantBlock.NONE;
+          } else {
+            layerThreeMap.blockState = sextantBlock.LAYER_THREE;
+          }
+        }
+      })
+    }
+
+    // set higlight for root map
+    // toggle blockState
+    if (map.blockState === sextantBlock.LAYER_ROOT) {
+      map.blockState = sextantBlock.NONE;
+    } else {
+      map.blockState = sextantBlock.LAYER_ROOT;
+    }
+    // while (queue.length > 0 && queue.length < 15) {
+    //   node = queue.shift();
+    //   // do something to current node
+
+    //   if (!node.sextantMapIds) {
+    //     continue;
+    //   }
+      
+    //   node.sextantMapIds.forEach((mapId) => {
+    //     if (!queue.includes(this.mapList[mapId])) {
+    //       queue.push(this.mapList[mapId])
+    //     }
+    //   });
+    // }
+    // console.log(queue);
+    // queue.forEach((map)=> { console.log(map.name, map.id)});
+  }
+
   @action toggleSealState() {
     const activeMap = this.activeMap;
     
@@ -121,17 +218,21 @@ export class AtlasStore {
     this.activeMap.shaped = shapedState;
   }
   
-  // toggle shaped state based on tier/shaped id/shaping map id
-  @action toggleHighShapedState() {
-    const shapedState = !this.activeMap.shaped;
-    this.activeMap.shaped = shapedState;
-    const shapedMapListIndex = this.shapedMapList.indexOf(this.activeMap)
+  @action recordHighShapedMaps() {
+    const shapedMapListIndex = this.shapedMapList.indexOf(this.activeMap);
     // record shaped maps into list
     if (this.activeMap.shaped && shapedMapListIndex === -1) {
       this.shapedMapList.push(this.activeMap)
     } else if (!this.activeMap.shaped && shapedMapListIndex > -1) {
       this.shapedMapList.splice(shapedMapListIndex, 1);
     }
+  }
+
+  // toggle shaped state based on tier/shaped id/shaping map id
+  @action toggleHighShapedState() {
+    const shapedState = !this.activeMap.shaped;
+    this.activeMap.shaped = shapedState;
+    this.recordHighShapedMaps()
   }
   // switch shaped states between 2 maps (tier <= 6)
   @action switchShaping() {

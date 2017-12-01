@@ -6,6 +6,7 @@ import cx from 'classnames';
 
 import MapHighlight from './MapHighlight';
 import ShaperOrbCircle from './ShaperOrbCircle';
+import SextantBlock from './SextantBlock';
 import { getPopover } from './MapPopover';
 import { getPositionStyle, getShapingMap, getPrevShapedMap, getShaperOrbHighTierCount } from '../lib/MapUtil';
 import HistoryUtil from '../lib/HistoryUtil';
@@ -17,7 +18,7 @@ class Map extends Component {
     this.executeAtlasAction = this.executeAtlasAction.bind(this);
   }
   // click event on map div--set states for sextanted, sealed, shaped
-  executeAtlasAction() {
+  executeAtlasAction(event) {
     const { mapStore, mapList, atlasStore, ModalStore } = this.props;
     atlasStore.activeMap = mapStore;
     // toggle seal state
@@ -25,6 +26,11 @@ class Map extends Component {
     // toggle sextant state
     atlasStore.sextantState && atlasStore.toggleSextantState();
     
+    // show sextant blocking if ctrl+click
+    if (event.ctrlKey) {
+      atlasStore.displaySextantBlock(mapStore);
+    }
+
     // toggle shape state if map is shapable
     if (atlasStore.shaperOrbState && mapStore.shapedIconPath && !mapStore.sealed) {
       const mapBaseTier = mapStore.baseTier;
@@ -61,6 +67,7 @@ class Map extends Component {
         atlasStore.toggleHighShapedState();
       }
     }
+    
     // store history
     const historyUtil = new HistoryUtil(atlasStore, this.props.history);
     historyUtil.recalculateHistory();
@@ -111,6 +118,7 @@ class Map extends Component {
         {/*component activates highlight div based on filter var*/}
         <MapHighlight mapStore={mapStore} positionStyle={positionStyle}></MapHighlight>
 
+        <SextantBlock mapStore={mapStore} positionStyle={positionStyle} />
         <div className={cx(sextantCircleClass)} style={positionStyle}></div>
       </div>
     );

@@ -23,7 +23,7 @@ const stores = {
 ReactDOM.render(
   <Provider {...stores}>
     <BrowserRouter>
-      <App mapStore={maps}/>
+      <App mapStore={maps} atlasStore={atlasStore}/>
     </BrowserRouter>
   </Provider>
   ,

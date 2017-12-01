@@ -77,6 +77,16 @@
   background: lightblue;
 }
 
+.redBorderFill {
+  border: 2px solid red;
+  background: lightcoral;
+}
+
+.greenBorderFill {
+  border: 2px solid green;
+  background: lightgreen;
+}
+
 .info {
   width: 20px;
 }
