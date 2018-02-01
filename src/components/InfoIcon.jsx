@@ -10,7 +10,8 @@ class InfoIcon extends Component {
         <ul>
           <li>Type mutliple keywords by separating them with a space</li>
           <li>Search for map tier by typing tier:X</li>
-          <li>Click the shaper icon to reveal maps containg a shaper orb</li>
+          <li>Right click a map to toggle sextant blocking visual for the map. 
+            Note that sextant button does not need to be activated.</li>
         </ul>
       </Popover>
     );

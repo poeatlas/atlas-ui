@@ -8,81 +8,63 @@ import MapHighlight from './MapHighlight';
 import ShaperOrbCircle from './ShaperOrbCircle';
 import SextantBlock from './SextantBlock';
 import { getPopover } from './MapPopover';
-import { getPositionStyle, getShapingMap, getPrevShapedMap, getShaperOrbHighTierCount } from '../lib/MapUtil';
+import { getPositionStyle, executeLowShapeModal, executeHighShapeModal, imageSelect } from '../lib/MapUtil';
 import HistoryUtil from '../lib/HistoryUtil';
 
 @inject("atlasStore", "ModalStore") @observer
 class Map extends Component {
   constructor(props) {
     super(props);
-    this.executeAtlasAction = this.executeAtlasAction.bind(this);
+    this.handleAtlasAction = this.handleAtlasAction.bind(this);
+    this.handleRightClick = this.handleRightClick.bind(this);
   }
   // click event on map div--set states for sextanted, sealed, shaped
-  executeAtlasAction(event) {
+  handleAtlasAction(event) {
+    if (event.type === "contextmenu") {
+      return;
+    }
+
     const { mapStore, mapList, atlasStore, ModalStore } = this.props;
     atlasStore.activeMap = mapStore;
     // toggle seal state
     atlasStore.sealState && atlasStore.toggleSealState();
     // toggle sextant state
     atlasStore.sextantState && atlasStore.toggleSextantState();
-    
-    // show sextant blocking if ctrl+click
-    if (event.ctrlKey) {
-      atlasStore.displaySextantBlock(mapStore);
+
+    if (event.shiftKey && atlasStore.sextantState) {
+      atlasStore.autoSextant();
     }
 
     // toggle shape state if map is shapable
     if (atlasStore.shaperOrbState && mapStore.shapedIconPath && !mapStore.sealed) {
       const mapBaseTier = mapStore.baseTier;
-      const modalValues = {
-        title: "Shaping Orb Tier Limit Reached",
-        shown: true,
-      }
       if (mapBaseTier <= 7) {
-        const shapingMap = getShapingMap(mapList,mapStore);
-        const prevShapedMap = getPrevShapedMap(mapList,shapingMap);
-        if (shapingMap.usedShaperOrb && prevShapedMap.id !== mapStore.id) {
-          modalValues.body = "Only one map can be shaped for this tier. Do you want to unshape the " + prevShapedMap.worldAreasName + " Map?";
-          modalValues.callback = () => {
-            atlasStore.switchShaping();
-            ModalStore.shown = false;
-          }
-          ModalStore.setModalValues(modalValues)
+        if (executeLowShapeModal(mapStore, mapList, atlasStore, ModalStore)) {
           return;
         }
         atlasStore.toggleLowShapedState();
       } else if (mapBaseTier > 7 && mapStore.baseTier <= 10) {
-          const shapedMapTierCount = atlasStore.shapedMapTierCount(mapBaseTier);
-          const shaperOrbHighTierCount = getShaperOrbHighTierCount(mapBaseTier);
-          // show modal if orb limit for map tier reached 
-          if (!mapStore.shaped && shapedMapTierCount >= shaperOrbHighTierCount) {
-            modalValues.body = "Maximum number of maps that can be shaped for Tier " + mapBaseTier + " is " + shapedMapTierCount + ". Please unshape a map first.";
-            modalValues.extraButton = false;
-            modalValues.callback = () => {
-              ModalStore.shown = false;
-            }
-            ModalStore.setModalValues(modalValues);
+          if( executeHighShapeModal(mapStore, mapList, atlasStore, ModalStore) ) {
             return;
           }
         atlasStore.toggleHighShapedState();
       }
     }
-    
     // store history
     const historyUtil = new HistoryUtil(atlasStore, this.props.history);
     historyUtil.recalculateHistory();
   }
 
-  imageSelect() {
-    const { mapStore } = this.props;
-    if (mapStore.sealed) {
-      return{};
-    }
-    if (mapStore.shaped) {
-      return {backgroundImage: `url(./${mapStore.shapedIconPath})`};
-    } else {
-      return {backgroundImage: `url(./${mapStore.iconPath})`};
-    }
+  handleRightClick(e) {
+    const { mapStore, atlasStore } = this.props;
+    atlasStore.activeMap = mapStore;
+
+    e.stopPropagation();
+    e.preventDefault();
+
+    // show sextant blocking if right click
+    atlasStore.resetSextantBlock();
+    atlasStore.displaySextantBlock(mapStore);
   }
 
   render() { 
@@ -109,7 +91,9 @@ class Map extends Component {
       <div>
         <OverlayTrigger trigger={['hover', 'focus']} placement="top" 
                         overlay={getPopover(mapStore.name, mapStore.tier, mapStore.mapLevel, mapStore.shaped)}>
-          <div className={cx(mapClass)} style={{...this.imageSelect(), ...positionStyle}} onClick={this.executeAtlasAction}></div>
+          <div className={cx(mapClass)} style={{...imageSelect(mapStore), ...positionStyle}} 
+            onClick={this.handleAtlasAction}
+            onContextMenu={this.handleRightClick}></div>
         </OverlayTrigger>
         
         {/*blue circle indicating map can be shaped*/}

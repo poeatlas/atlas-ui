@@ -1,23 +1,26 @@
 import React, { Component } from 'react';
 import cx from 'classnames';
+import { inject, observer } from 'mobx-react';
 
-import sextantBlock from '../sextantBlock';
+import * as sextantBlock from '../sextantBlock';
 
+@inject("mapStore") @observer
 class SextantBlock extends Component {
 
   render() {
     const { mapStore } = this.props;
-    const highlightState = mapStore.highlighted;
-    const mapBlockState = mapStore.blockState;
 
+    const mapBlockState = mapStore.blockState;
+    const blockMask = mapStore.blockMask;
+    
     const markClass = {
-      circle: mapBlockState > 0,
-      highlight: mapBlockState > 0,
-      flicker: mapBlockState > 0,
-      blueBorderFill: mapBlockState === sextantBlock.LAYER_ROOT,
-      greenBorderFill: mapBlockState === sextantBlock.LAYER_ONE,
-      redBorderFill: mapBlockState === sextantBlock.LAYER_TWO,
-      yellowBorderFill: mapBlockState === sextantBlock.LAYER_THREE,
+      circle: mapBlockState !== sextantBlock.NO_LAYER,
+      highlight: mapBlockState !== sextantBlock.NO_LAYER,
+      // flicker: mapBlockState > 0,
+      // yellowBorderFill: mapBlockState === sextantBlock.LAYER_ZERO,
+      greenBorderFill: blockMask === 1,
+      redBorderFill: blockMask === 2,
+      blueBorderFill: blockMask === 4,
     }
 
     return (

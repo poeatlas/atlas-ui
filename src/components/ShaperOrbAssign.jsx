@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Button } from 'react-bootstrap';
+import { Popover, OverlayTrigger, Button } from 'react-bootstrap';
 import { inject, observer } from 'mobx-react';
 
 import './ShaperOrbAssign.css';
@@ -26,10 +26,21 @@ class ShaperOrbAssign extends Component {
 
   render() {
     const {ModalStore} = this.props;
+    const INFO_TITLE="Shaper Orb Assignment";
+    const popoverHoverFocus = (
+      <Popover id="popover-trigger-hover-focus" title={ INFO_TITLE }>
+        <strong>Tips:</strong> <br />
+        <ul>
+          <li>Assign shaper orb source for map tiers with more than one shaper orb.</li>
+        </ul>
+      </Popover>
+    );
     return (
-      <Button onClick={this.setModalContent} active={ModalStore.shown}>
-        <div className="circle borderDottedBlue barAssign"></div>
-      </Button>
+      <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" overlay={popoverHoverFocus}>
+        <Button onClick={this.setModalContent} active={ModalStore.shown}>
+          <div className="circle borderDottedBlue barAssign"></div>
+        </Button>
+      </OverlayTrigger>
     )
   }
 }

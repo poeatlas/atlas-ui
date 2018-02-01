@@ -1,7 +1,6 @@
 import { observable, action, computed } from 'mobx';
 
 import { getShapingMap, getPrevShapedMap } from '../lib/MapUtil';
-import sextantBlock from '../sextantBlock';
 
 export class AtlasStore {
 
@@ -71,92 +70,64 @@ export class AtlasStore {
     return count;
   }
 
-  @action displaySextantBlock(map) {
-    // var queue = [map];
-    var node;
-    var layerOneGood = map.sextantMapIds;
-    var layerTwoBad =[];
-    var layerThreeGood = [];
-
-    // check if map has any sextantable children, if not, blocking not possible
-    if ( !layerOneGood ) {
-      return;
+  fetchSextantLayers(map) {
+    if (map.visited) { 
+      return; 
     }
-    for (var i = 0; i < layerOneGood.length; i++) {
-      // get curr node
-      node = this.mapList[layerOneGood[i]];
-      // toggle blockState
-      if (map.blockState === sextantBlock.LAYER_ROOT) {
-        node.blockState = sextantBlock.NONE;
-      } else {
-        node.blockState = sextantBlock.LAYER_ONE;
-      }
 
-      if (!node.sextantMapIds) {
+    const mapList = this.mapList.map((map) => { return {map, layer: 0}});
+    const queue = [mapList[map.id]];
+    const visited = [mapList[map.id]];
+
+    while (queue.length > 0) {
+      const node = queue.shift();
+
+      if (!node.map.sextantMapIds || node.layer === 3) {
         continue;
       }
-
-      node.sextantMapIds.forEach((mapId) => {
-        // layer 2 bad should not include nodes from prevous layer
-        if (!layerOneGood.includes(mapId) && mapId !== map.id) {
-          layerTwoBad.push(mapId);
+      
+      node.map.sextantMapIds.forEach((mapId) => {
+        const adjacentMap = mapList[mapId];
+        if (!visited.includes(adjacentMap)) {
+          queue.push(adjacentMap);
+          visited.push(adjacentMap);
+          adjacentMap.layer = node.layer + 1;
         }
-      })
+        
+      });
     }
 
-    for (var j = 0; j < layerTwoBad.length; j++) {
-      // get curr node
-      node = this.mapList[layerTwoBad[j]];
-      
-      // toggle blockState
-      if (map.blockState === sextantBlock.LAYER_ROOT) {
-        node.blockState = sextantBlock.NONE;
-      } else {
-        node.blockState = sextantBlock.LAYER_TWO;
+    // remove source Map from own visited array
+    visited.shift();
+    map.visited = visited;
+  }
+
+  @action displaySextantBlock() {
+    const activeMap = this.activeMap;
+    
+    this.fetchSextantLayers(activeMap);
+    activeMap.blockState = !activeMap.blockState;
+
+    activeMap.visited.forEach((blockedMap) => {
+      const map = blockedMap.map;
+      // if blockState true for blocking map, record layers, else empty layerSource arrays
+      if (activeMap.blockState) {
+        map.layerSource[blockedMap.layer - 1].push(activeMap.id);
       }
-      
-      if (!node.sextantMapIds) {
-        continue;
-      }
+    });
+  }
 
-      node.sextantMapIds.forEach((mapId) => {
-        // layer 3 good should no include nodes from previous layers
-        if (!layerTwoBad.includes(mapId) && !layerOneGood.includes(mapId) && mapId !== map.id) {
-          // layerThreeGood.push(mapId);
-          var layerThreeMap = this.mapList[mapId];
-          // toggle blockState
-          if (map.blockState === sextantBlock.LAYER_ROOT) {
-            layerThreeMap.blockState = sextantBlock.NONE;
-          } else {
-            layerThreeMap.blockState = sextantBlock.LAYER_THREE;
-          }
-        }
-      })
-    }
+  // clears map object's layersource to remove mask from previous sextant block
+  @action resetSextantBlock() {
+    this.mapList.forEach((map) => {
+      map.layerSource = [[],[],[]];
+    });
+  }
 
-    // set higlight for root map
-    // toggle blockState
-    if (map.blockState === sextantBlock.LAYER_ROOT) {
-      map.blockState = sextantBlock.NONE;
-    } else {
-      map.blockState = sextantBlock.LAYER_ROOT;
-    }
-    // while (queue.length > 0 && queue.length < 15) {
-    //   node = queue.shift();
-    //   // do something to current node
-
-    //   if (!node.sextantMapIds) {
-    //     continue;
-    //   }
-      
-    //   node.sextantMapIds.forEach((mapId) => {
-    //     if (!queue.includes(this.mapList[mapId])) {
-    //       queue.push(this.mapList[mapId])
-    //     }
-    //   });
-    // }
-    // console.log(queue);
-    // queue.forEach((map)=> { console.log(map.name, map.id)});
+  @action autoSextant() {
+    const activeMap = this.activeMap;
+    this.fetchSextantLayers(activeMap);
+    activeMap.visited.forEach((blockedMap) => blockedMap.map.sextanted = true);
   }
 
   @action toggleSealState() {
@@ -178,7 +149,6 @@ export class AtlasStore {
     if (!this.activeMap.sealed) {
       this.activeMap.sextanted = !this.activeMap.sextanted;
     }
-    
   }
 
   @computed get sortedShapedMapList() {
@@ -208,7 +178,7 @@ export class AtlasStore {
       this.activeMap.shapedById = shapingMap.id; 
       shapingMap.shapedMapId = this.activeMap.id;
     } else {
-      shapingMap.shapedMapId = -1;
+      shapingMap.shapedMapId = -1; 
     }
   }
 

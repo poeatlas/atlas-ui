@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Button } from 'react-bootstrap';
+import { Popover, OverlayTrigger, Button } from 'react-bootstrap';
 import { inject, observer } from "mobx-react";
 import { withRouter } from 'react-router-dom';
 
@@ -23,10 +23,21 @@ class Reset extends Component {
   }
 
   render() {
+    const INFO_TITLE="Reset Atlas";
+    const popoverHoverFocus = (
+      <Popover id="popover-trigger-hover-focus" title={ INFO_TITLE }>
+        <strong>Tips:</strong> <br />
+        <ul>
+          <li>Reset all Atlas properties to default values.</li>
+        </ul>
+      </Popover>
+    );
     return(
-      <Button onClick={this.reset}>
-        <span className="fa fa-refresh" aria-hidden="true"></span>
-      </Button>
+      <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" overlay={popoverHoverFocus}>
+        <Button onClick={this.reset}>
+          <span className="fa fa-refresh" aria-hidden="true"></span>
+        </Button>
+      </OverlayTrigger>
     )
   }
 }

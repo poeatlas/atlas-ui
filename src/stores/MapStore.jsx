@@ -6,9 +6,10 @@ class MapStore {
   @observable sealed = false;
   @observable highlighted = false;
   @observable shapeHighlighted = false;
-  @observable blockState = 0; // from sextantBlock.js --> states 0 to 3
+  @observable blockState = false; // false if not showing sextant block, true if showing sextant block
   @observable shapedById = -1; // map that this map was shaped by
   @observable shapedMapId = -1; // map that this map shaped
+  @observable layerSource = [[],[],[]];
   id = 0;
   x = 0;
   y = 0;
@@ -19,6 +20,7 @@ class MapStore {
   iconPath = null;
   shapedIconPath = null;
   shaperOrbTier = 0; // number indicates tier maps this orb can shape
+  visited = null; // visited nodes for sextant blocking
 
   constructor(raw) {
     this.id = raw.id;
@@ -39,9 +41,25 @@ class MapStore {
     this.sealed = false;
     this.shapedById = -1;
     this.shapedMapId = -1;
-    this.blockState = 0;
+    this.blockState = false;
+    this.layerSource = [[],[],[]];
   }
-
+  @computed get blockMask() {
+    let mask = 0;
+    if (this.layerSource[0] &&  this.layerSource[0].length) {
+      mask = 1;
+    }
+    if (this.layerSource[1] &&  this.layerSource[1].length) {
+      mask = 2;
+    }
+    if (this.layerSource[2] && this.layerSource[2].length) {
+      mask = 4;
+    }
+    // mask = this.layerSource[0] && this.layerSource[0].length ? 1 : 0;
+    // mask += this.layerSource[1] &&  this.layerSource[1].length ? 2 : 0;
+    // mask += this.layerSource[2] && this.layerSource[2].length ? 4 : 0;
+    return mask;
+  }
   @computed get hasShaperOrb() {
     return this.shaperOrbTier > 0 && !this.usedShaperOrb;
   }

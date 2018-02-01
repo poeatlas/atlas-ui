@@ -1,13 +1,12 @@
-const NONE = 0;
-const LAYER_ROOT = 4;
-const LAYER_ONE = 1;
-const LAYER_TWO = 2;
-const LAYER_THREE = 3;
+export const NO_LAYER = "NO_LAYER";
+export const LAYER_ZERO = "LAYER_ZERO";
+export const LAYER_ONE = "LAYER_ONE";
+export const LAYER_TWO = "LAYER_TWO";
+export const LAYER_THREE = "LAYER_THREE";
 
-export default {
-  NONE, 
-  LAYER_ROOT,
-  LAYER_ONE, 
-  LAYER_TWO, 
-  LAYER_THREE
-};
+export const REVERSE_LAYER_ARRAY = [
+  LAYER_ZERO,
+  LAYER_ONE,
+  LAYER_TWO,
+  LAYER_THREE,
+];
