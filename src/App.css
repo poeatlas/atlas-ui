@@ -97,30 +97,6 @@
   height: 20px;
 }
 
-.seal {
-  background-image: url('/Art/2DItems/Currency/SealWhite.png');
-}
-
-.seal.toggle {
-  background-image: url('/Art/2DItems/Currency/SealRed.png');
-}
-
-.sextant {
-  background-image: url('/Art/2DItems/Currency/AtlasRadiusWhite.png');
-}
-
-.sextant.toggle {
-  background-image: url('/Art/2DItems/Currency/AtlasRadiusRed.png');
-}
-
-.orb {
-  background-image: url('/Art/2DItems/Currency/UpgradeMap-GRAYSCALE.png');
-}
-
-.orb.toggle {
-  background-image: url('/Art/2DItems/Currency/UpgradeMapToYellow.png');
-}
-
 .border-right-black {
   border-right-style: solid;
   border-right-color: gray;
