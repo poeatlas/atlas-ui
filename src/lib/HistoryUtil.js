@@ -25,8 +25,8 @@ class HistoryUtil {
     const searchSymbolArr = searchSubstring.split("");
 
     // all history symbol represntations
-    const symbols = "-0123456789abcdefghijklmnopqrstuvwxyzAB";
-    const symbolArr = symbols.split("");
+    const SYMBOLS = "-0123456789abcdefghijklmnopqrstuvwxyzAB";
+    const symbolArr = SYMBOLS.split("");
 
     searchSymbolArr.forEach((symbol, i) => {
       const historyIndex = symbolArr.indexOf(symbol);
@@ -80,8 +80,8 @@ class HistoryUtil {
   // records state changes based on index totals vs symbol array
   recalculateHistory() {
     let historyStr = "";
-    const symbols = "-0123456789abcdefghijklmnopqrstuvwxyzAB";
-    const symbolArr = symbols.split("");
+    const SYMBOLS = "-0123456789abcdefghijklmnopqrstuvwxyzAB";
+    const symbolArr = SYMBOLS.split("");
     const ASSIGN_VALUES = [8,16,32];
 
     this.atlasStore.mapList.forEach((map) =>
@@ -106,7 +106,7 @@ class HistoryUtil {
       // console.log(historyIndex, symbolArr[historyIndex]);
       historyStr = historyStr + symbolArr[historyIndex];
     })
-    this.history.push("?" + historyStr);
+    this.history.push(process.env.PUBLIC_URL + "?" + historyStr);
   }
 }
 
