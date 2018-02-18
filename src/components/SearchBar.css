@@ -1,3 +1,5 @@
+
+
 .searchbar-wrapper {
   position: fixed;
   top: 5px;
@@ -6,7 +8,27 @@
 }
 
 .searchbar {
+  width: 50%;
+
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5px;
   display: block;
+
+  z-index:4;
 }
+
+.searchSize {
+  height: 38px;
+}
+/* .searchbar {
+  position: fixed;
+  margin:0 auto;
+  width: 30%;
+  top: 5px;
+  left: 35%;
+
+  clear:left;
+  height:auto;
+  z-index:4;
+} */

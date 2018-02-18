@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { InputGroup, FormGroup, FormControl, Grid, Col } from 'react-bootstrap';
+import { InputGroup, FormGroup, FormControl, Grid, Col, Row, Form, Button} from 'react-bootstrap';
 import { observer } from "mobx-react";
 
 import './SearchBar.css';
@@ -50,33 +50,68 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <Grid className="searchbar-wrapper">
-        <Col md={4}  mdOffset={4}>
-          <form className="searchbar">
-            <FormGroup>
-              <InputGroup>
-                <InputGroup.Button>
-                  <Reset />
-                </InputGroup.Button>
-                <InfoIcon />
-                <FormControl
-                  type="text"
-                  value={this.state.value}
-                  placeholder="Type keywords here..."
-                  onChange={this.handleChange}
-                />
-                <InputGroup.Button>
+      <div className="searchbar-wrapper">
+        <Grid>
+          <Row>
+            <Col md={12}> 
+              <div className="searchbar">
+                <form>
+                  <FormGroup>
+                    <InputGroup>
+                      <InputGroup.Button>
+                        <Reset className="infoSize" />
+                      </InputGroup.Button>
+                      <InfoIcon />
+                      <FormControl
+                        className="searchSize"
+                        type="text"
+                        value={this.state.value}
+                        placeholder="Type keywords here..."
+                        onChange={this.handleChange}
+                      />
+                      <InputGroup.Button>
+                        <Seal />
+                        <Sextant />
+                        <ShaperOrb />
+                        <ShaperOrbAssign />
+                      </InputGroup.Button>
+                    </InputGroup>
+                  </FormGroup>
+                </form>
+              </div>
+            </Col>
+          </Row>
+        </Grid>
+      </div>
+      // <Grid className="grid">
+      //   <Row className="searchbar">
+      //   <Col xs={6} xsOffset={6}>
+      //     <form>
+      //       <FormGroup>
+      //         <InputGroup>
+      //           <InputGroup.Button>
+      //             <Reset />
+      //           </InputGroup.Button>
+      //           <InfoIcon />
+      //           <FormControl
+      //             type="text"
+      //             value={this.state.value}
+      //             placeholder="Type keywords here..."
+      //             onChange={this.handleChange}
+      //           />
+      //           <InputGroup.Button>
                 
-                  <Seal />
-                  <Sextant />
-                  <ShaperOrb />
-                  <ShaperOrbAssign />
-                </InputGroup.Button>
-              </InputGroup>
-            </FormGroup>
-          </form>
-        </Col>
-      </Grid>
+      //             <Seal />
+      //             <Sextant />
+      //             <ShaperOrb />
+      //             <ShaperOrbAssign />
+      //           </InputGroup.Button>
+      //         </InputGroup>
+      //       </FormGroup>
+      //     </form>
+      //   </Col>
+      //   </Row>
+      // </Grid>
     );
   }
 }

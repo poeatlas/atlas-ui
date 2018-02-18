@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Popover, OverlayTrigger, Button } from 'react-bootstrap';
+import { Popover, OverlayTrigger, Button, InputGroup } from 'react-bootstrap';
 import { inject, observer } from "mobx-react";
 import { withRouter } from 'react-router-dom';
 
@@ -34,7 +34,7 @@ class Reset extends Component {
     );
     return(
       <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" overlay={popoverHoverFocus}>
-        <Button onClick={this.reset}>
+        <Button className="resetSize" onClick={this.reset}>
           <span className="fa fa-refresh" aria-hidden="true"></span>
         </Button>
       </OverlayTrigger>

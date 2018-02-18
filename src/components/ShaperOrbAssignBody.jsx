@@ -54,7 +54,7 @@ class ShaperOrbAssignBody extends Component {
 
   render() {
     return (
-      <Table responsive condensed hover>
+      <Table responsive condensed hover >
         <thead>
           <tr>
             <th>Shaped Map</th>

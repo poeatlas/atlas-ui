@@ -11,6 +11,7 @@ class ModalDialogue extends Component {
 
   render() {
     const modalStore = this.props.ModalStore;
+
     let button = null;
     if (modalStore.extraButton) {
       button = <div>
@@ -22,7 +23,7 @@ class ModalDialogue extends Component {
     }
 
     return (
-      <Modal show={modalStore.shown}>
+      <Modal show={modalStore.shown} className="modal-index">
         <Modal.Header>
           <Modal.Title>
             {modalStore.title}

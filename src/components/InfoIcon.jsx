@@ -19,7 +19,7 @@ class InfoIcon extends Component {
     return (
 
       <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" overlay={popoverHoverFocus}>
-        <InputGroup.Addon>
+        <InputGroup.Addon className="infoSize">
           <span className="fa fa-info" aria-hidden="true"></span>
         </InputGroup.Addon>
       </OverlayTrigger>
