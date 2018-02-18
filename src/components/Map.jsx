@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { OverlayTrigger, Tooltip, Popover } from 'react-bootstrap';
+import { OverlayTrigger } from 'react-bootstrap';
 import { inject, observer } from 'mobx-react';
 import { withRouter } from 'react-router-dom';
 import cx from 'classnames';
@@ -87,17 +87,6 @@ class Map extends Component {
       sextanted: mapStore.sextanted,
     };
 
-    const tooltip = (
-      <Tooltip id="tooltip">
-        <strong>Holy guacamole!</strong> Check this info.
-      </Tooltip>
-    );
-
-    const popoverHoverFocus = (
-      <Popover id="popover-trigger-hover-focus" title={"Map"}>
-        <strong>Tier: </strong> { "hi" } <br />
-      </Popover>
-    );
     return (
       <div>
         <OverlayTrigger trigger={['hover', 'focus']} placement="top" 

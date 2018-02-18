@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { InputGroup, FormGroup, FormControl, Grid, Col, Row, Form, Button} from 'react-bootstrap';
+import { InputGroup, FormGroup, FormControl, Grid, Col, Row} from 'react-bootstrap';
 import { observer } from "mobx-react";
 
 import './SearchBar.css';
