@@ -74,8 +74,8 @@ export function imageSelect(mapStore) {
     return{};
   }
   if (mapStore.shaped) {
-    return {backgroundImage: `url(./${mapStore.shapedIconPath})`};
+    return {backgroundImage: `url(${process.env.PUBLIC_URL}/${mapStore.shapedIconPath})`};
   } else {
-    return {backgroundImage: `url(./${mapStore.iconPath})`};
+    return {backgroundImage: `url(${process.env.PUBLIC_URL}/${mapStore.iconPath})`};
   }
 }
