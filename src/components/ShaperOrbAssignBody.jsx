@@ -19,7 +19,7 @@ class ShaperOrbAssignBody extends Component {
           <td key={map.id}>
             <OverlayTrigger trigger={['hover', 'focus']} placement="top" 
                             overlay={getPopover(map.name, map.tier, map.mapLevel, map.shaped)}>
-              <div className="map menu shaped" style={{backgroundImage: `url(./${map.shapedIconPath})`}}></div>
+              <div className="map menu shaped" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/${map.shapedIconPath})`}}></div>
             </OverlayTrigger>
           </td>
           {this.renderTableOrbMaps(map).map((row) => row)}
