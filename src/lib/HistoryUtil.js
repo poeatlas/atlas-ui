@@ -106,7 +106,7 @@ class HistoryUtil {
       // console.log(historyIndex, symbolArr[historyIndex]);
       historyStr = historyStr + symbolArr[historyIndex];
     })
-    this.history.push(process.env.PUBLIC_URL + "?" + historyStr);
+    this.history.replace(process.env.PUBLIC_URL + "/?" + historyStr);
   }
 }
 
