@@ -2,425 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01afda2a-8ab6-4c39-9b6c-8224c8e42d65" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/cleanup" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Abyss1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Abyss2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Abyss3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Academy1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Academy2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Academy3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/AcidLakes1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/AcidLakes2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/AcidLakes3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/ArachnidNest1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/ArachnidNest2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/ArachnidNest3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/ArachnidTomb1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/ArachnidTomb2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/ArachnidTomb3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Arcade1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Arcade2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Arcade3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Arena1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Arena2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Arena3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/AridLake1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/AridLake2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/AridLake3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Armory1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Armory2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Armory3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Arsenal1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Arsenal2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Arsenal3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/AtlasCompleted.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/AtlasElder.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Atoll1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Atoll2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Atoll3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Barrows1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Barrows2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Barrows3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Bazaar1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Bazaar2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Bazaar3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Beach1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Beach2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Beach3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Beacon1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Beacon2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Beacon3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Bog1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Bog2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Bog3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/BurialChambers1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/BurialChambers2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/BurialChambers3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Canyon1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Canyon2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Canyon3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/CastleRuins1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/CastleRuins2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/CastleRuins3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Catacomb1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Catacomb2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Catacomb3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Cavern1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Cavern2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Cavern3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Cells1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Cells2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Cells3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Cemetery1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Cemetery2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Cemetery3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Channel1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Channel2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Channel3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Chateau1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Chateau2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Chateau3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Chimera1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Chimera2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Chimera3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Colonnade1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Colonnade2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Colonnade3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Colosseum1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Colosseum2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Colosseum3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Core1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Core2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Core3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Courtyard1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Courtyard2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Courtyard3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Coves1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Coves2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Coves3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Crematorium1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Crematorium2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Crematorium3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Crypt1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Crypt2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Crypt3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/CrystalOre1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/CrystalOre2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/CrystalOre3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/DarkForest1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/DarkForest2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/DarkForest3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Desert1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Desert2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Desert3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/DryPeninsula1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/DryPeninsula2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/DryPeninsula3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/DryWoods1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/DryWoods2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/DryWoods3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Dunes1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Dunes2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Dunes3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Dungeon1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Dungeon2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Dungeon3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Estuary1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Estuary2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Estuary3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Excavation1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Excavation2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Excavation3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Factory1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Factory2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Factory3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/FragmentChimera.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/FragmentHydra.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/FragmentMinotaur.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/FragmentPhoenix.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Ghetto1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Ghetto2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Ghetto3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Gorge1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Gorge2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Gorge3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Graveyard1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Graveyard2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Graveyard3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Grotto1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Grotto2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Grotto3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/HighGardens1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/HighGardens2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/HighGardens3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Hydra1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Hydra2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Hydra3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/IvoryTemple1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/IvoryTemple2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/IvoryTemple3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/JungleValley1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/JungleValley2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/JungleValley3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Lair1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Lair2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Lair3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Malformation1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Malformation2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Malformation3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Marshes1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Marshes2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Marshes3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Maze1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Maze2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Maze3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Mesa1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Mesa2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Mesa3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/MineralPools1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/MineralPools2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/MineralPools3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Minotaur1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Minotaur2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Minotaur3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/MudGeyser1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/MudGeyser2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/MudGeyser3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Museum1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Museum2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Museum3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Necropolis1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Necropolis2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Necropolis3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Oasis1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Oasis2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Oasis3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Orchard1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Orchard2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Orchard3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/OvergrownRuin1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/OvergrownRuin2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/OvergrownRuin3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/OvergrownShrine1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/OvergrownShrine2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/OvergrownShrine3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Palace1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Palace2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Palace3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Phantasmagoria1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Phantasmagoria2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Phantasmagoria3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Phoenix1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Phoenix2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Phoenix3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Pier1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Pier2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Pier3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Pit2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Pit3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Plateau1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Plateau2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Plateau3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Plaza1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Plaza2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Plaza3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Precinct1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Precinct2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Precinct3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/PrimordialPool1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/PrimordialPool2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/PrimordialPool3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Promenade1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Promenade2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Promenade3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Quarry1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Quarry2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Quarry3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Quay1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Quay2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Quay3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Racecourse1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Racecourse2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Racecourse3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Ramparts1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Ramparts2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Ramparts3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Reef1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Reef2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Reef3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Residence1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Residence2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Residence3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Scriptorium1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Scriptorium2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Scriptorium3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Sewer1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Sewer2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Sewer3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Shipyard1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Shipyard2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Shipyard3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Shore1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Shore2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Shore3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Shrine1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Shrine2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Shrine3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/SpiderForest1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/SpiderForest2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/SpiderForest3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/SpiderLair1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/SpiderLair2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/SpiderLair3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Springs1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Springs2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Springs3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Strand1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Strand2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Strand3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/SulphurWastes1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/SulphurWastes2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/SulphurWastes3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Temple1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Temple2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Terrace1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Terrace2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Terrace3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Thicket1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Thicket2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Thicket3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/TortureChamber1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/TortureChamber2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/TortureChamber3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Tower1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Tower2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Tower3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/TropicalIsland1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/TropicalIsland2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/TropicalIsland3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/UndergroundRiver1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/UndergroundRiver2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/UndergroundRiver3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/UndergroundSea1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/UndergroundSea2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/UndergroundSea3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/VaalCity1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/VaalCity2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/VaalCity3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/VaalPyramid1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/VaalPyramid2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/VaalPyramid3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/VaalTemple1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/VaalTemple2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Vault1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Vault2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Vault3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Villa1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Villa2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Villa3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Volcano1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Volcano2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Volcano3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/WastePool1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/WastePool2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/WastePool3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Wasteland1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Wasteland2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Wasteland3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Waterways1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Waterways2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Waterways3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Wharf1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Wharf2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/AtlasMaps/Wharf3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Doryanis.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/HarbingerRed.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/HarbingerWhite.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/HarbingerYellow.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Labyrinth.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/MaligarosSanctum.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map10.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map11.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map12.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map13.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map14.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map15.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map16.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map17.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map18.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map19.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map20.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map21.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map22.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map23.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map24.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map25.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map26.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map27.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map28.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map29.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map30.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map31.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map32.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map33.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map34.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map35.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map36.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map37.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map38.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map39.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map40.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map41.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map42.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map43.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map44.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map45.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map46.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map47.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map48.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map49.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map50.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map51.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map52.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map53.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map54.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map55.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map56.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map57.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map58.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map59.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map60.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map61.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map62.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map63.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map7.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map8.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Map9.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/PaleCourt01.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/PaleCourt02.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/PaleCourt03.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/PaleCourt04.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/PerandusManor.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/SinFlaskEmpty.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/SinFlaskFull.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/UberVaal01.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/UberVaal02.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/UberVaal03.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/UberVaal04.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/UniqueMap2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Vaal01.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Vaal02.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Vaal03.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/Vaal04.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/VaultMap.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/Art/2DItems/Maps/VaultMap2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/resources/atlas.json" afterPath="$PROJECT_DIR$/src/resources/atlas.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -451,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Seal.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Seal.jsx">
+      <file leaf-file-name="Map.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Map.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="39" column="52" lean-forward="false" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="52" />
+            <state relative-caret-position="399">
+              <caret line="74" column="17" lean-forward="true" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -483,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Map.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Map.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Map.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+            <state relative-caret-position="450">
+              <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -525,7 +107,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cleanup" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cleanup" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cleanup">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
@@ -579,6 +161,8 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -604,7 +188,6 @@
         <option value="$PROJECT_DIR$/src/stores/MapStore.jsx" />
         <option value="$PROJECT_DIR$/src/lib/MapUtil.js" />
         <option value="$PROJECT_DIR$/src/components/BonusCount.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Map.css" />
         <option value="$PROJECT_DIR$/src/components/MapHighlight.jsx" />
         <option value="$PROJECT_DIR$/src/App.jsx" />
         <option value="$PROJECT_DIR$/src/stores/AtlasStore.jsx" />
@@ -617,6 +200,7 @@
         <option value="$PROJECT_DIR$/src/components/Sextant.jsx" />
         <option value="$PROJECT_DIR$/src/resources/atlas.json" />
         <option value="$PROJECT_DIR$/cleanup" />
+        <option value="$PROJECT_DIR$/src/components/Map.css" />
       </list>
     </option>
   </component>
@@ -770,7 +354,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -897,7 +481,7 @@
       <updated>1502431301771</updated>
       <workItem from="1519778288202" duration="8707000" />
       <workItem from="1519885778884" duration="3517000" />
-      <workItem from="1519978498823" duration="31686000" />
+      <workItem from="1519978498823" duration="33000000" />
     </task>
     <task id="LOCAL-00001" summary="updated gitignore">
       <created>1502863445805</created>
@@ -969,11 +553,25 @@
       <option name="project" value="LOCAL" />
       <updated>1520067730716</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added cleanup script. Removed unnecessary map assets.">
+      <created>1520071753275</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1520071753275</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Darkened yellow for maps.">
+      <created>1520100784684</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1520100784684</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43910000" />
+    <option name="totallyTimeSpent" value="45224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="101" y="28" width="1920" height="1173" extended-state="6" />
@@ -1026,7 +624,9 @@
     <MESSAGE value="use new github token" />
     <MESSAGE value="Update for ggpk 3.2.&#10;Added new ggpk assets with new folder structure.&#10;Removed shaper orb assignment component and related items.&#10;Removed modal component.&#10;Maps are now generated by layered divs due to new ggpk content.&#10;Users are no longer limited to how many maps they are able to shape.&#10;Updated info descriptions.&#10;Unique maps are now tagged with &quot;unique&quot; boolean in mapstore." />
     <MESSAGE value="Merge branch 'master' of github.com:poeatlas/atlas-ui&#10;&#10;# Conflicts:&#10;#&#9;package.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:poeatlas/atlas-ui&#10;&#10;# Conflicts:&#10;#&#9;package.json" />
+    <MESSAGE value="Added cleanup script. Removed unnecessary map assets." />
+    <MESSAGE value="Darkened yellow for maps." />
+    <option name="LAST_COMMIT_MESSAGE" value="Darkened yellow for maps." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1242,16 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Map.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="74" column="17" lean-forward="true" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ModalDialogue.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1300,14 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Map.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1368,6 +950,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Map.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="74" column="17" lean-forward="true" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Map.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding />
         </state>
       </provider>
