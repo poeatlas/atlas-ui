@@ -17,12 +17,12 @@ class BonusCount extends Component {
       height: "14px",
       textAlign: "center",
       lineHeight: "1.1",
-      left: `${x * MAP_MULTIPLIER - 39 * 8/7}px`,
-      top: `${y * MAP_MULTIPLIER + 39 * 18/5}px`,
+      left: `${x * MAP_MULTIPLIER - 39 }px`,
+      top: `${y * MAP_MULTIPLIER + 39 * 15/6}px`,
       backgroundColor: "transparent"
     }
     return (
-      <div type="text" style = {textStyle}>{this.props.atlasStore.bonusCount} / 126</div>
+      <div type="text" style = {textStyle}>{this.props.atlasStore.bonusCount} / 157</div>
     );
   }
 }

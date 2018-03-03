@@ -4,11 +4,11 @@ import { inject, observer } from 'mobx-react';
 import { withRouter } from 'react-router-dom';
 import cx from 'classnames';
 
+import './Map.css';
 import MapHighlight from './MapHighlight';
-import ShaperOrbCircle from './ShaperOrbCircle';
 import SextantBlock from './SextantBlock';
 import { getPopover } from './MapPopover';
-import { getPositionStyle, executeLowShapeModal, executeHighShapeModal, imageSelect } from '../lib/MapUtil';
+import { getPositionStyle, imageSelect, imageSelectBase, imageSelectIcon, imageSelectRing } from '../lib/MapUtil';
 import HistoryUtil from '../lib/HistoryUtil';
 
 @inject("atlasStore", "ModalStore") @observer
@@ -24,32 +24,19 @@ class Map extends Component {
       return;
     }
 
-    const { mapStore, mapList, atlasStore, ModalStore } = this.props;
+    const { mapStore, atlasStore } = this.props;
     atlasStore.activeMap = mapStore;
     // toggle seal state
     atlasStore.sealState && atlasStore.toggleSealState();
     // toggle sextant state
     atlasStore.sextantState && atlasStore.toggleSextantState();
+    // toggle shape state
+    atlasStore.shaperOrbState && mapStore.baseTier < 11 && !mapStore.unique && atlasStore.toggleShapeState();
 
     if (event.shiftKey && atlasStore.sextantState) {
       atlasStore.autoSextant();
     }
 
-    // toggle shape state if map is shapable
-    if (atlasStore.shaperOrbState && mapStore.shapedIconPath && !mapStore.sealed) {
-      const mapBaseTier = mapStore.baseTier;
-      if (mapBaseTier <= 7) {
-        if (executeLowShapeModal(mapStore, mapList, atlasStore, ModalStore)) {
-          return;
-        }
-        atlasStore.toggleLowShapedState();
-      } else if (mapBaseTier > 7 && mapStore.baseTier <= 10) {
-          if( executeHighShapeModal(mapStore, mapList, atlasStore, ModalStore) ) {
-            return;
-          }
-        atlasStore.toggleHighShapedState();
-      }
-    }
     // store history
     const historyUtil = new HistoryUtil(atlasStore, this.props.history);
     historyUtil.recalculateHistory();
@@ -69,16 +56,27 @@ class Map extends Component {
 
   render() { 
     const { mapStore } = this.props;
-    const SHAPERS_REALM_ID = 125;
+    const SHAPERS_REALM_ID = 156;
     const isShaperId = mapStore.id===SHAPERS_REALM_ID;
     // position of map objects
     const positionStyle = getPositionStyle(mapStore);
+    const tier = mapStore.tier;
+    let shapeDiv = null;
+    let mapDiv = null;
 
     // determine mapClass -- if it is the shaper's realm, do not resize
     const mapClass = {
       map: true,
       shaperId: isShaperId,
     };
+
+    const maskClass = {
+      shaperId: isShaperId,
+      mask: true,
+      white: tier < 6,
+      yellow: (tier > 5 && tier < 11),
+      red: tier > 10,
+    }
     // sextant class style:
     const sextantCircleClass = {
       circle: mapStore.sextanted,
@@ -87,25 +85,42 @@ class Map extends Component {
       sextanted: mapStore.sextanted,
     };
 
-    return (
-      <div>
-        <OverlayTrigger trigger={['hover', 'focus']} placement="top" 
-                        overlay={getPopover(mapStore.name, mapStore.tier, mapStore.mapLevel, mapStore.shaped)}
-                        /* overlay={popoverHoverFocus} style={positionStyle}*/>
-          <div className={cx(mapClass)} style={{...imageSelect(mapStore), ...positionStyle}} 
-            onClick={this.handleAtlasAction}
-            onContextMenu={this.handleRightClick}></div>
-        </OverlayTrigger>
-        
-        {/*blue circle indicating map can be shaped*/}
-        <ShaperOrbCircle mapStore={mapStore} positionStyle={positionStyle}></ShaperOrbCircle>
-        
-        {/*component activates highlight div based on filter var*/}
-        <MapHighlight mapStore={mapStore} positionStyle={positionStyle}></MapHighlight>
+    //show/hide shaped map ring
+    if (mapStore.shaped) {
+      shapeDiv = <div className={cx(maskClass)} style={{...imageSelectRing(mapStore), ...positionStyle}}></div>;
+    } else {
+      shapeDiv = null;
+    }
 
-        <SextantBlock mapStore={mapStore} positionStyle={positionStyle} />
-        <div className={cx(sextantCircleClass)} style={positionStyle}></div>
+    // map div dependent on unique or if guardian map
+    if (mapStore.unique || mapStore.baseTier > 15) {
+      mapDiv = <div className={cx(mapClass)} style={{...imageSelect(mapStore), ...positionStyle}} />
+    } else {
+      mapDiv = <div>
+        <div className={'mask'} style={{...imageSelectBase(mapStore), ...positionStyle}} />
+        <div className={cx(maskClass)} style={{...imageSelectIcon(mapStore), ...positionStyle}} />
       </div>
+    }
+
+    return (
+        <div>
+          <OverlayTrigger trigger={['hover', 'focus']} placement="top"
+                          overlay={getPopover(mapStore.name, mapStore.tier, mapStore.mapLevel, mapStore.shaped)}>
+            <div className='mapMain' style={{...positionStyle}}
+                 onClick={this.handleAtlasAction}
+                 onContextMenu={this.handleRightClick} />
+          </OverlayTrigger>
+
+          {/*component activates highlight div based on filter var*/}
+          <SextantBlock mapStore={mapStore} positionStyle={positionStyle} />
+          <MapHighlight mapStore={mapStore} positionStyle={positionStyle} />
+
+          {/*get map images (base, icon, and ring if shaped*/}
+          {mapDiv}
+          {shapeDiv}
+
+          <div className={cx(sextantCircleClass)} style={positionStyle} />
+        </div>
     );
   }
 }

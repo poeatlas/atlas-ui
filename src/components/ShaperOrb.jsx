@@ -23,10 +23,7 @@ class ShaperOrb extends Component {
       <Popover id="popover-trigger-hover-focus" title={ INFO_TITLE }>
         <strong>Tips:</strong> <br />
         <ul>
-          <li>Left click a map to toggle shaping of the map.</li>
-          <li>Maps containing a shaper orb are indicated via a spining blue circle.</li>
-          <li>Maps from which shaper orbs are taken will have their blue circle turn yellow.</li>
-          <li>Select shaper orb assignments for map tiers with more than one shaper orb. Use the Shaper Orb Assignment modal to the right.</li>
+          <li>Left click a map to toggle its shape state.</li>
         </ul>
       </Popover>
     );

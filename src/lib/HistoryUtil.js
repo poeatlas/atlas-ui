@@ -1,13 +1,6 @@
-import { SHAPER_ORB_HIGH_MAP_ARRAY } from '../const';
-import { getShapingMap } from './MapUtil';
-
 const SEAL_MASK = 1;
 const SEXTANT_MASK = 2;
 const SHAPE_MASK = 4;
-const ASSIGN_ONE_MASK = 8;
-const ASSIGN_TWO_MASK = 16;
-const ASSIGN_THREE_MASK = 32;
-const MIN_TIER = 7;
 
 class HistoryUtil {
   atlasStore = null;
@@ -43,37 +36,6 @@ class HistoryUtil {
       // console.log((historyIndex & SEAL_MASK) !== 0, (historyIndex & SEXTANT_MASK) !== 0, (historyIndex & SHAPE_MASK) !== 0);
       
       console.log(this.atlasStore.activeMap);
-      if(map.shaped) {
-        this.atlasStore.activeMap = map;
-        if (map.baseTier <= 7) {
-          console.log("in low tier check");
-          const shapingMap = getShapingMap(this.atlasStore.mapList, map);
-          // console.log(shapingMap);
-          map.shapedById = shapingMap.id;
-          shapingMap.shapedMapId = map.id;  
-        }
-        else if (map.baseTier > 7 && map.baseTier <= 10) {
-          const assignMapSubArr = SHAPER_ORB_HIGH_MAP_ARRAY[map.baseTier-MIN_TIER];
-          let assignMap = null;
-          // check if there is a map assigned
-          if ((historyIndex & ASSIGN_ONE_MASK)) {
-            assignMap = this.atlasStore.mapList[assignMapSubArr[0].id];
-          } else if ((historyIndex & ASSIGN_TWO_MASK)) {
-            assignMap = this.atlasStore.mapList[assignMapSubArr[1].id];
-          } else if ((historyIndex & ASSIGN_THREE_MASK)) {
-            assignMap = this.atlasStore.mapList[assignMapSubArr[2].id];
-          }
-          // set map's shapedbyid and assignmap's shapedmapid
-          if (assignMap) {
-            console.log(assignMap);
-            this.atlasStore.shapedMapList.push(map);
-            this.atlasStore.recordHighShapedMaps();
-            this.atlasStore.assign(map.id,assignMap.id);
-          }
-          // console.log(this.atlasStore.shapedMapList);
-          
-        }
-      }
     })
   }
   // call on every change--loops throguh all maps and checks relevant states
@@ -82,7 +44,6 @@ class HistoryUtil {
     let historyStr = "";
     const SYMBOLS = "-0123456789abcdefghijklmnopqrstuvwxyzAB";
     const symbolArr = SYMBOLS.split("");
-    const ASSIGN_VALUES = [8,16,32];
 
     this.atlasStore.mapList.forEach((map) =>
     {
@@ -95,13 +56,6 @@ class HistoryUtil {
       }
       if (map.shaped) {
         historyIndex = historyIndex + 4;
-      }
-      if (map.shapedById !== -1 && map.baseTier > 7) {
-        // get position of assigned shaping map in menu
-        // must map to id array first as array contains list of objects
-        const assignPosition = SHAPER_ORB_HIGH_MAP_ARRAY[map.baseTier-MIN_TIER]
-          .map((map) => {return map.id}).indexOf(map.shapedById);
-        historyIndex = historyIndex + ASSIGN_VALUES[assignPosition];  
       }
       // console.log(historyIndex, symbolArr[historyIndex]);
       historyStr = historyStr + symbolArr[historyIndex];

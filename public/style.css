@@ -21,9 +21,9 @@
 }
 
 .orb {
-  background-image: url('Art/2DItems/Currency/UpgradeMap-GRAYSCALE.png');
+  background-image: url('Art/2DItems/Currency/UpgradeMapToYellow.png');
 }
 
 .orb.toggle {
-  background-image: url('Art/2DItems/Currency/UpgradeMapToYellow.png');
+  background-image: url('Art/2DItems/Currency/UpgradeMapToRed.png');
 }

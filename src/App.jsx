@@ -6,7 +6,6 @@ import atlas from './resources/atlas.json';
 import Map from './components/Map';
 import BonusCount from './components/BonusCount';
 import SearchBar from './components/SearchBar';
-import ModalDialogue from './components/ModalDialogue';
 import HistoryUtil from './lib/HistoryUtil';
 
 class App extends Component {
@@ -27,8 +26,6 @@ class App extends Component {
             mapList = {this.props.mapStore} 
           /> ) }
         <BonusCount x={lastMap.x} y={lastMap.y} />
-        {/*modal dialogue when user attempts to shape a map beyond limit */}
-        <ModalDialogue />
       </div>
     );
   }

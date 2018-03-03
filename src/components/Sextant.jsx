@@ -24,6 +24,7 @@ class Sextant extends Component {
         <ul>
           <li>Left click a map to toggle sextant application.</li>
           <li>Shift+left click a map to sextant and sextant block relevant surrounding maps.</li>
+          <li>Right click a map to toggle sextant blocking visual for the map.</li>
         </ul>
       </Popover>
     );

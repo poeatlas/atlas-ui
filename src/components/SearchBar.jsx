@@ -6,7 +6,6 @@ import './SearchBar.css';
 import InfoIcon from './InfoIcon';
 import Seal from './Seal';
 import ShaperOrb from './ShaperOrb';
-import ShaperOrbAssign from './ShaperOrbAssign';
 import Sextant from './Sextant';
 import Reset from './Reset';
 
@@ -73,7 +72,6 @@ class SearchBar extends Component {
                         <Seal />
                         <Sextant />
                         <ShaperOrb />
-                        <ShaperOrbAssign />
                       </InputGroup.Button>
                     </InputGroup>
                   </FormGroup>
@@ -83,35 +81,6 @@ class SearchBar extends Component {
           </Row>
         </Grid>
       </div>
-      // <Grid className="grid">
-      //   <Row className="searchbar">
-      //   <Col xs={6} xsOffset={6}>
-      //     <form>
-      //       <FormGroup>
-      //         <InputGroup>
-      //           <InputGroup.Button>
-      //             <Reset />
-      //           </InputGroup.Button>
-      //           <InfoIcon />
-      //           <FormControl
-      //             type="text"
-      //             value={this.state.value}
-      //             placeholder="Type keywords here..."
-      //             onChange={this.handleChange}
-      //           />
-      //           <InputGroup.Button>
-                
-      //             <Seal />
-      //             <Sextant />
-      //             <ShaperOrb />
-      //             <ShaperOrbAssign />
-      //           </InputGroup.Button>
-      //         </InputGroup>
-      //       </FormGroup>
-      //     </form>
-      //   </Col>
-      //   </Row>
-      // </Grid>
     );
   }
 }

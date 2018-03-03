@@ -18,9 +18,8 @@ class MapStore {
   worldAreasName = null;
   worldAreasLevel = 0;
   iconPath = null;
-  shapedIconPath = null;
-  shaperOrbTier = 0; // number indicates tier maps this orb can shape
   visited = null; // visited nodes for sextant blocking
+  unique = false;
 
   constructor(raw) {
     this.id = raw.id;
@@ -31,8 +30,7 @@ class MapStore {
     this.worldAreasLevel = raw.level;
     this.sextantMapIds = raw.sextant;
     this.iconPath = raw.iconPath;
-    this.shapedIconPath = raw.shapedIconPath;
-    this.shaperOrbTier = raw.shaperOrbTier;
+    this.unique = raw.unique;
   }
 
   @action reset() {
@@ -59,9 +57,6 @@ class MapStore {
     // mask += this.layerSource[1] &&  this.layerSource[1].length ? 2 : 0;
     // mask += this.layerSource[2] && this.layerSource[2].length ? 4 : 0;
     return mask;
-  }
-  @computed get hasShaperOrb() {
-    return this.shaperOrbTier > 0 && !this.usedShaperOrb;
   }
 
   @computed get isMapShown() {

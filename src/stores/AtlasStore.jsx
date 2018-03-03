@@ -1,7 +1,5 @@
 import { observable, action, computed } from 'mobx';
 
-import { getShapingMap, getPrevShapedMap } from '../lib/MapUtil';
-
 export class AtlasStore {
 
   @observable filter = "";
@@ -151,6 +149,12 @@ export class AtlasStore {
     }
   }
 
+  @action toggleShapeState() {
+    if (!this.activeMap.sealed) {
+      this.activeMap.shaped = !this.activeMap.shaped;
+    }
+  }
+
   @computed get sortedShapedMapList() {
     return this.shapedMapList.sort((a,b) => {
       if (a.baseTier > b.baseTier){
@@ -169,54 +173,6 @@ export class AtlasStore {
     return this.shapedMapList.filter((map) => {
       return map.baseTier === tier;
     }).length;
-  }
-  // store shaping map's id and the shaped map's id
-  @action setShapeId() {
-    const shapingMap = getShapingMap(this.mapList, this.activeMap)
-
-    if( !this.activeMap.shaped ) {
-      this.activeMap.shapedById = shapingMap.id; 
-      shapingMap.shapedMapId = this.activeMap.id;
-    } else {
-      shapingMap.shapedMapId = -1; 
-    }
-  }
-
-  @action toggleLowShapedState() {
-    const shapedState = !this.activeMap.shaped;
-    this.setShapeId(this.activeMap);
-    this.activeMap.shaped = shapedState;
-  }
-  
-  @action recordHighShapedMaps() {
-    const shapedMapListIndex = this.shapedMapList.indexOf(this.activeMap);
-    // record shaped maps into list
-    if (this.activeMap.shaped && shapedMapListIndex === -1) {
-      this.shapedMapList.push(this.activeMap)
-    } else if (!this.activeMap.shaped && shapedMapListIndex > -1) {
-      this.shapedMapList.splice(shapedMapListIndex, 1);
-    }
-  }
-
-  // toggle shaped state based on tier/shaped id/shaping map id
-  @action toggleHighShapedState() {
-    const shapedState = !this.activeMap.shaped;
-    this.activeMap.shaped = shapedState;
-    this.recordHighShapedMaps()
-  }
-  // switch shaped states between 2 maps (tier <= 6)
-  @action switchShaping() {
-    const shapingMap = getShapingMap(this.mapList, this.activeMap);
-    const prevShapedMap = getPrevShapedMap(this.mapList, shapingMap);
-
-    prevShapedMap.shaped = false;
-    prevShapedMap.shapedById = -1;
-
-    this.activeMap.shaped = true;
-    this.activeMap.shapedById = shapingMap.id;
-    shapingMap.shapedMapId = this.activeMap.id;
-
-    this.activeMap.showUnshapeModal = false;
   }
 
   @action assign(mapId, assignMapId) {

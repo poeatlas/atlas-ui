@@ -10,6 +10,7 @@ class Seal extends Component {
     this.activateSeal = this.activateSeal.bind(this);
   }
 
+  // triggers activation of seal button
   activateSeal() {
     const atlasStore = this.props.atlasStore;
     atlasStore.setSeal(!atlasStore.sealState);

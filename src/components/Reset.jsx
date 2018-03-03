@@ -13,6 +13,7 @@ class Reset extends Component {
     this.reset = this.reset.bind(this);
   }
 
+  // reset map states and recalculate history
   reset() {
     const atlasStore = this.props.atlasStore;
     atlasStore.resetMaps();
@@ -32,6 +33,7 @@ class Reset extends Component {
         </ul>
       </Popover>
     );
+
     return(
       <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" overlay={popoverHoverFocus}>
         <Button className="resetSize" onClick={this.reset}>
