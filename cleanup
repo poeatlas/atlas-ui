@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#find ./public/Art/2DItems/Maps/ -type f -name "*.png" | while read file; do
+
+#    if grep ${file##*/} ./src/resources/atlas.json
+#    then
+#        echo $file
+#    fi
+
+#done
+
+JSON=$PWD/src/resources/atlas.json
+
+cd ./public/Art/2DItems/Maps/
+
+for file in *.png;
+do
+    if ! grep -q ${file} $JSON;
+    then
+        rm $file
+    fi
+done
+
+cd AtlasMaps
+
+for file in *.png;
+do
+    if ! grep -q ${file} $JSON;
+    then
+        rm $file
+    fi
+done
