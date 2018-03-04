@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { OverlayTrigger } from 'react-bootstrap';
+import { OverlayTrigger, Popover } from 'react-bootstrap';
 import { inject, observer } from 'mobx-react';
 import { withRouter } from 'react-router-dom';
 import cx from 'classnames';
@@ -18,6 +18,7 @@ class Map extends Component {
     this.handleAtlasAction = this.handleAtlasAction.bind(this);
     this.handleRightClick = this.handleRightClick.bind(this);
   }
+
   // click event on map div--set states for sextanted, sealed, shaped
   handleAtlasAction(event) {
     if (event.type === "contextmenu") {
@@ -87,7 +88,7 @@ class Map extends Component {
 
     //show/hide shaped map ring
     if (mapStore.shaped) {
-      shapeDiv = <div className={cx(maskClass)} style={{...imageSelectRing(mapStore), ...positionStyle}}></div>;
+      shapeDiv = <div className={cx(maskClass)} style={{...imageSelectRing(mapStore), ...positionStyle}} />;
     } else {
       shapeDiv = null;
     }
@@ -103,12 +104,13 @@ class Map extends Component {
     }
 
     return (
-        <div>
-          <OverlayTrigger trigger={['hover', 'focus']} placement="top"
+        <div style={{position: `relative`}}>
+          <OverlayTrigger trigger={['hover']} placement="top" container={this}
                           overlay={getPopover(mapStore.name, mapStore.tier, mapStore.mapLevel, mapStore.shaped)}>
             <div className='mapMain' style={{...positionStyle}}
                  onClick={this.handleAtlasAction}
-                 onContextMenu={this.handleRightClick} />
+                 onContextMenu={this.handleRightClick}
+            />
           </OverlayTrigger>
 
           {/*component activates highlight div based on filter var*/}

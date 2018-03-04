@@ -20,13 +20,16 @@ class Seal extends Component {
     const sealState = this.props.atlasStore.sealState;
     const INFO_TITLE="Activate Map Sealing";
     const popoverHoverFocus = (
-      <Popover id="popover-trigger-hover-focus" title={ INFO_TITLE }>
-        <strong>Tips:</strong> <br />
-        <ul>
-          <li>Left click a map to toggle sealing (removal) from the Atlas.</li>
-          <li>Sealed maps are considered uncomplete and unshaped.</li>
-        </ul>
-      </Popover>
+      <div className="customPopover info">
+        <div className="customPopoverTitle infoTitle">{INFO_TITLE}</div>
+        <div className="customPopover infoContent">
+          <strong>Tips:</strong> <br />
+          <ul>
+            <li>Left click a map to toggle sealing (removal) from the Atlas.</li>
+            <li>Sealed maps are considered uncomplete and unshaped.</li>
+          </ul>
+        </div>
+      </div>
     );
     // determine if orb is active
     const mapClass = {
@@ -36,7 +39,7 @@ class Seal extends Component {
     }
     
     return (
-      <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" overlay={popoverHoverFocus}>
+      <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" container={this} overlay={popoverHoverFocus}>
           <Button onClick={this.activateSeal} active={!!sealState}>
             <div className={cx(mapClass)}></div>
           </Button>

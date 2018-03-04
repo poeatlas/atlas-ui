@@ -26,16 +26,19 @@ class Reset extends Component {
   render() {
     const INFO_TITLE="Reset Atlas";
     const popoverHoverFocus = (
-      <Popover id="popover-trigger-hover-focus" title={ INFO_TITLE }>
-        <strong>Tips:</strong> <br />
-        <ul>
-          <li>Reset all Atlas properties to default values.</li>
-        </ul>
-      </Popover>
+      <div className="customPopover info">
+        <div className="customPopoverTitle infoTitle">{INFO_TITLE}</div>
+        <div className="customPopover infoContent">
+          <strong>Tips:</strong> <br />
+          <ul>
+            <li>Reset all Atlas properties to default values.</li>
+          </ul>
+        </div>
+      </div>
     );
 
     return(
-      <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" overlay={popoverHoverFocus}>
+      <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" container={this} overlay={popoverHoverFocus}>
         <Button className="resetSize" onClick={this.reset}>
           <span className="fa fa-refresh" aria-hidden="true"></span>
         </Button>

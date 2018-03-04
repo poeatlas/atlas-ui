@@ -20,12 +20,15 @@ class ShaperOrb extends Component {
     const shaperOrbState = this.props.atlasStore.shaperOrbState;
     const INFO_TITLE="Activate Map Shaping";
     const popoverHoverFocus = (
-      <Popover id="popover-trigger-hover-focus" title={ INFO_TITLE }>
-        <strong>Tips:</strong> <br />
-        <ul>
-          <li>Left click a map to toggle its shape state.</li>
-        </ul>
-      </Popover>
+      <div className="customPopover info">
+        <div className="customPopoverTitle infoTitle">{INFO_TITLE}</div>
+        <div className="customPopover infoContent">
+          <strong>Tips:</strong> <br />
+          <ul>
+            <li>Left click a map to toggle its shape state.</li>
+          </ul>
+        </div>
+      </div>
     );
     // determine if orb is active
     const mapClass = {
@@ -35,7 +38,7 @@ class ShaperOrb extends Component {
     }
 
     return (
-      <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" overlay={popoverHoverFocus}>
+      <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" container={this} overlay={popoverHoverFocus}>
         <Button onClick={this.activateShaperOrb} active={!!shaperOrbState}>
           <div className={cx(mapClass)}></div>
         </Button>

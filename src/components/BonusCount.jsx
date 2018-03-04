@@ -11,14 +11,14 @@ class BonusCount extends Component {
     const textStyle = {
       position: "absolute",
       fontFamily: "serif",
-      fontSize: "14px",
+      fontSize: "25px",
       color: "white",
-      width: "78px",
-      height: "14px",
+      width: "95px",
+      height: "25px",
       textAlign: "center",
       lineHeight: "1.1",
-      left: `${x * MAP_MULTIPLIER - 39 }px`,
-      top: `${y * MAP_MULTIPLIER + 39 * 15/6}px`,
+      left: `${x * MAP_MULTIPLIER - 47 }px`,
+      top: `${y * MAP_MULTIPLIER + 47 * 25/6}px`,
       backgroundColor: "transparent"
     }
     return (

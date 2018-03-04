@@ -1,0 +1,76 @@
+.customPopover {
+  position: absolute;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #CCC;
+  margin-left: -20px;
+  margin-top: -25px;
+  width: 225px;
+  max-width: 276px;
+
+  padding: 1px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.5;
+
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 6px;
+
+  z-index: 100;
+  /*padding: 10px;*/
+}
+
+/* for non-map popover*/
+.customPopover.info {
+  margin-left: -100px;
+  margin-top: 5px;
+  width: 350px;
+  max-width: 350px;
+}
+
+/* for non-map popover*/
+.customPopover.infoContent {
+  background-color: #ebebeb;
+  margin-left: 0px;
+  margin-top: 0px;
+  font-size: 16px;
+  padding: 8px 14px;
+  width: 350px;
+  max-width: 350px;
+  border-radius: 0px;
+}
+
+/* for non-map popover*/
+.customPopoverTitle.infoTitle {
+  width: 350px;
+  max-width: 350px;
+}
+
+.customPopoverTitle {
+  margin: 0;
+  padding: 8px 14px;
+  font-size: 18px;
+  background-color: #d7d7d7;
+  border-bottom: 1px solid #c8c8c8;
+  border-radius: 5px 5px 0 0;
+  width: 225px;
+}
+
+.customPopoverBody {
+  background-color: #ebebeb;
+  font-size: 16px;
+  padding: 8px 14px;
+
+  width: 225px;
+}

@@ -1,12 +1,12 @@
 .mask {
-  -webkit-mask-size: 19px 19px;
+  -webkit-mask-size: 39px 39px;
   background-repeat: no-repeat;
   position: absolute;
-  width: 19px;
-  height: 19px;
-  margin-left: -10px;
-  margin-top: -10px;
-  background-size: 19px 19px;
+  width: 39px;
+  height: 39px;
+  margin-left: -20px;
+  margin-top: -20px;
+  background-size: 39px 39px;
 }
 
 .mask.white {
@@ -18,39 +18,43 @@
 }
 
 .mask.red {
-  background-color: red;
+  background-color: #b00;
 }
 
 .map {
   background-repeat: no-repeat;
   position: absolute;
-  width: 19px;
-  height: 19px;
-  margin-left: -10px;
-  margin-top: -10px;
-  background-size: 19px 19px;
+  width: 39px;
+  height: 39px;
+  margin-left: -20px;
+  margin-top: -20px;
+  background-size: 39px 39px;
   z-index: 3;
 }
 
 .mapMain {
   position: absolute;
-  width: 19px;
-  height: 19px;
-  margin-left: -10px;
-  margin-top: -10px;
-  background-size: 19px 19px;
+  width: 39px;
+  height: 39px;
+  margin-left: -20px;
+  margin-top: -20px;
+  background-size: 39px 39px;
   cursor: pointer;
   cursor: hand;
   z-index: 5;
 }
 
+.popoverPad {
+  margin-left: 20px;
+  margin-top: 20px;
+}
 /* change pointer to hand when hovering over map */
 .map.shaperId {
-  width: 40px;
-  height: 40px;
-  margin-left: -19px;
-  margin-top: -19px;
-  background-size: 40px 40px;
+  width: 80px;
+  height: 80px;
+  margin-left: -39px;
+  margin-top: -39px;
+  background-size: 80px 80px;
   cursor: pointer;
   cursor: hand;
   z-index: 1;
