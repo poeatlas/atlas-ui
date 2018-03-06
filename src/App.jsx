@@ -18,16 +18,16 @@ class App extends Component {
     const lastMap = atlas[atlas.length-1];
 
     return (
-        <div id="atlas" customAttribute="nochilddrag">
-          <SearchBar mapList={this.props.mapStore}/>
-           { atlas.map((map) =>
-            <Map map={map}
-              key={map.id}
-              mapStore={this.props.mapStore[map.id]}
-              mapList = {this.props.mapStore}
-            /> ) }
-          <BonusCount x={lastMap.x} y={lastMap.y} />
-        </div>
+      <div id="atlas" customAttribute="nochilddrag">
+        <SearchBar mapList={this.props.mapStore}/>
+         { atlas.map((map) =>
+          <Map map={map}
+            key={map.id}
+            mapStore={this.props.mapStore[map.id]}
+            mapList = {this.props.mapStore}
+          /> ) }
+        <BonusCount x={lastMap.x} y={lastMap.y} />
+      </div>
     );
   }
 }

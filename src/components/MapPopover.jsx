@@ -3,16 +3,17 @@ import React from 'react';
 import './Popover.css';
 
 
-export function getPopover(name, tier, level, shaped) {
+export function getPopover(mapStore) {
 
   // map information popup
   return (
     <div className='customPopover'>
-      <div className='customPopoverTitle'>{name} Map</div>
+      <div className='customPopoverTitle'>{mapStore.name} Map</div>
       <div className='customPopoverBody'>
-        <strong>Tier: </strong> { tier } <br />
-        { shaped ? <div><strong>{"Base Tier:"} </strong>{tier - 5} <br /></div> : null}
-        <strong>Area Level: </strong> { level } <br />
+        <strong>Tier: </strong> { mapStore.tier } <br />
+        { mapStore.shaped || mapStore.eldered ?
+            <div><strong>{"Base Tier:"} </strong>{mapStore.baseTier} <br /></div> : null}
+        <strong>Area Level: </strong> { mapStore.mapLevel } <br />
       </div>
     </div>
   )

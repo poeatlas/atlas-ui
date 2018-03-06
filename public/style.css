@@ -27,3 +27,23 @@
 .orb.toggle {
   background-image: url('Art/2DItems/Currency/UpgradeMapToRed.png');
 }
+
+.elderOrb {
+  background-image: url('Art/2DItems/Currency/SuperShapersOrb.png');
+}
+
+.elderOrb.toggle {
+  background-image: url('Art/2DItems/Currency/SuperShapersOrb.png');
+}
+
+.dragscroll {
+  cursor : -webkit-grab;
+  cursor : -moz-grab;
+  cursor : grab;
+}
+
+.dragscroll:active {
+  cursor : -webkit-grabbing;
+  cursor : -moz-grabbing;
+  cursor : grabbing;
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import 'dragscroll';
 
 import './index.css';
 import App from './App';
@@ -13,7 +12,7 @@ import atlas from './resources/atlas.json';
 import MapStore from './stores/MapStore';
 
 // array of mapStores
-var maps = atlas.map((map) => { return new MapStore( map ); }); 
+let maps = atlas.map((map) => { return new MapStore( map ); });
 const atlasStore = new AtlasStore(maps);
 
 const stores = {
@@ -29,4 +28,6 @@ ReactDOM.render(
   </Provider>
   ,
   document.getElementById('root'));
+
+
 registerServiceWorker();

@@ -1,6 +1,7 @@
 const SEAL_MASK = 1;
 const SEXTANT_MASK = 2;
 const SHAPE_MASK = 4;
+const ELDER_MASK = 8;
 
 class HistoryUtil {
   atlasStore = null;
@@ -26,13 +27,14 @@ class HistoryUtil {
       const map = this.atlasStore.mapList[i];
 
       // check if no values set
-      if (historyIndex === 0 && map.shapedMapId === -1 && map.shapedById === -1) {
+      if (historyIndex === 0 && map.shapedById === -1) {
         map.reset();
         return;
       }
       map.sealed = (historyIndex & SEAL_MASK) !== 0;
       map.sextanted = (historyIndex & SEXTANT_MASK) !== 0;
       map.shaped = (historyIndex & SHAPE_MASK) !== 0;
+      map.eldered = (historyIndex & ELDER_MASK) !== 0;
     })
   }
   // call on every change--loops throguh all maps and checks relevant states
@@ -54,8 +56,11 @@ class HistoryUtil {
       if (map.shaped) {
         historyIndex = historyIndex + 4;
       }
+      if (map.eldered) {
+        historyIndex = historyIndex + 8;
+      }
       historyStr = historyStr + symbolArr[historyIndex];
-    })
+    });
     this.history.replace(process.env.PUBLIC_URL + "/?" + historyStr);
   }
 }

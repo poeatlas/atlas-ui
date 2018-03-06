@@ -7,6 +7,25 @@ export function getPositionStyle({x,y}) {
   })
 }
 
+// checks highlight for a map based on existing search value
+export function refreshSearch(mapStore, atlasStore) {
+  const filter = atlasStore.searchString.toLowerCase();
+
+  let filterTier = null;
+  const tierIndex = filter.indexOf("tier:");
+  if(tierIndex !== -1) {
+    filterTier = parseInt(filter.substring(tierIndex+5), 10);
+  }
+
+  for (let i = 0; i < atlasStore.mapList.length; i++) {
+    const currMap = atlasStore.mapList[i];
+    const areaName = currMap.name.toLowerCase();
+    const tier = currMap.tier;
+
+    currMap.highlighted = (filter && filter.length <= areaName.length && areaName.indexOf(filter) !== -1)
+        || filterTier === tier;
+  }
+}
 
 // selects shaped or unshaped map image based on shaped state for map component
 export function imageSelect(mapStore) {
@@ -27,7 +46,7 @@ export function imageSelectBase(mapStore) {
 }
 
 export function imageSelectRing(mapStore) {
-  if (mapStore.shaped) {
+  if (mapStore.shaped || mapStore.eldered) {
     return {WebkitMaskImage: `url(${process.env.PUBLIC_URL}/Art/2DItems/Maps/Atlas2Maps/New/Ring.png)`,
             };
   }
@@ -42,7 +61,7 @@ export function imageSelectIcon(mapStore) {
   // }
   // return {backgroundImage: `url(${process.env.PUBLIC_URL}/${mapStore.iconPath})`};
 
-  if (mapStore.shaped) {
+  if (mapStore.shaped || mapStore.eldered) {
     return {WebkitMaskImage: `url(${process.env.PUBLIC_URL}/${mapStore.iconPath})`,
             // backgroundColor: `red`,
             // webkitMaskSize: `20px 20px`,

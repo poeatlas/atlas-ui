@@ -1,14 +1,15 @@
 import { observable, computed, action } from 'mobx';
 
+const MAX_WORLD_LEVEL = 83;
+
 class MapStore {
   @observable shaped = false;
+  @observable eldered = false;
   @observable sextanted = false;
   @observable sealed = false;
   @observable highlighted = false;
   @observable shapeHighlighted = false;
   @observable blockState = false; // false if not showing sextant block, true if showing sextant block
-  @observable shapedById = -1; // map that this map was shaped by
-  @observable shapedMapId = -1; // map that this map shaped
   @observable layerSource = [[],[],[]];
   id = 0;
   x = 0;
@@ -35,10 +36,9 @@ class MapStore {
 
   @action reset() {
     this.shaped = false;
+    this.eldered = false;
     this.sextanted = false;
     this.sealed = false;
-    this.shapedById = -1;
-    this.shapedMapId = -1;
     this.blockState = false;
     this.layerSource = [[],[],[]];
   }
@@ -64,7 +64,12 @@ class MapStore {
   }
 
   @computed get mapLevel() {
-    return this.shaped ? this.worldAreasLevel + 5 : this.worldAreasLevel;
+    if (this.shaped) {
+      return this.worldAreasLevel + 5;
+    } else if (this.eldered) {
+      return MAX_WORLD_LEVEL;
+    }
+    return this.worldAreasLevel
   }
 
   @computed get tier() {
@@ -76,12 +81,14 @@ class MapStore {
   }
 
   @computed get name() {
-    return this.shaped ? "Shaped " + this.worldAreasName : this.worldAreasName;  
+    if (this.shaped) {
+      return "Shaped " + this.worldAreasName;
+    } else if (this.eldered) {
+      return "Elder " + this.worldAreasName;
+    }
+    return this.worldAreasName;
   }
 
-  @computed get usedShaperOrb() {
-    return this.shapedMapId !== -1;
-  }
 }
 
 export default MapStore;

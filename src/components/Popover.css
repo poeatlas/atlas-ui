@@ -24,7 +24,6 @@
   word-spacing: normal;
   word-wrap: normal;
 
-  border: 1px solid rgba(0,0,0,.2);
   border-radius: 6px;
 
   z-index: 100;
@@ -34,7 +33,7 @@
 /* for non-map popover*/
 .customPopover.info {
   margin-left: -150px;
-  margin-top: 10px;
+  margin-top: 5px;
   width: 350px;
   max-width: 350px;
 }
@@ -42,13 +41,13 @@
 /* for non-map popover*/
 .customPopover.infoContent {
   background-color: #ebebeb;
-  margin-left: 0px;
-  margin-top: 0px;
+  margin-left: 0;
+  margin-top: 0;
   font-size: 16px;
   padding: 8px 14px;
   width: 350px;
   max-width: 350px;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 /* for non-map popover*/

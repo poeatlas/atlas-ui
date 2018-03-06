@@ -36,14 +36,16 @@ class Seal extends Component {
       buttonImageSize: true,
       seal: true,
       toggle: sealState, 
-    }
+    };
     
     return (
-      <Button onClick={this.activateSeal} active={!!sealState}>
-        <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" container={this} overlay={popoverHoverFocus}>
-          <div className={cx(mapClass)}></div>
-        </OverlayTrigger>
-      </Button>
+      <OverlayTrigger trigger={['hover', 'focus']}
+                      placement="bottom"
+                      container={this}
+                      overlay={popoverHoverFocus}
+                      rootClose={true}>
+        <Button onClick={this.activateSeal} active={!!sealState}><div className={cx(mapClass)}/></Button>
+      </OverlayTrigger>
     );
   }
 }

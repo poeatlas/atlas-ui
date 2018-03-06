@@ -8,7 +8,8 @@ import './Map.css';
 import MapHighlight from './MapHighlight';
 import SextantBlock from './SextantBlock';
 import { getPopover } from './MapPopover';
-import { getPositionStyle, imageSelect, imageSelectBase, imageSelectIcon, imageSelectRing } from '../lib/MapUtil';
+import { getPositionStyle, refreshSearch, imageSelect, imageSelectBase, imageSelectIcon, imageSelectRing }
+  from '../lib/MapUtil';
 import HistoryUtil from '../lib/HistoryUtil';
 
 @inject("atlasStore", "ModalStore") @observer
@@ -33,10 +34,15 @@ class Map extends Component {
     atlasStore.sextantState && atlasStore.toggleSextantState();
     // toggle shape state
     atlasStore.shaperOrbState && mapStore.baseTier < 11 && !mapStore.unique && atlasStore.toggleShapeState();
+    // toggle shape state
+    atlasStore.elderOrbState && mapStore.baseTier < 16 && !mapStore.unique && atlasStore.toggleElderState();
 
     if (event.shiftKey && atlasStore.sextantState) {
       atlasStore.autoSextant();
     }
+
+    // check if map needs to be highlighted based on existing search string and changes
+    refreshSearch(mapStore,atlasStore);
 
     // store history
     const historyUtil = new HistoryUtil(atlasStore, this.props.history);
@@ -59,8 +65,7 @@ class Map extends Component {
     const { mapStore } = this.props;
     const SHAPERS_REALM_ID = 156;
     const isShaperId = mapStore.id===SHAPERS_REALM_ID;
-    // position of map objects
-    const positionStyle = getPositionStyle(mapStore);
+    const positionStyle = getPositionStyle(mapStore); // position of map objects
     const tier = mapStore.tier;
     let shapeDiv = null;
     let mapDiv = null;
@@ -70,14 +75,14 @@ class Map extends Component {
       map: true,
       shaperId: isShaperId,
     };
-
+    // determine what color to mask ggg's white/transparent map image parts
     const maskClass = {
       shaperId: isShaperId,
       mask: true,
       white: tier < 6,
       yellow: (tier > 5 && tier < 11),
       red: tier > 10,
-    }
+    };
     // sextant class style:
     const sextantCircleClass = {
       circle: mapStore.sextanted,
@@ -87,7 +92,7 @@ class Map extends Component {
     };
 
     //show/hide shaped map ring
-    if (mapStore.shaped) {
+    if (mapStore.shaped || mapStore.eldered) {
       shapeDiv = <div className={cx(maskClass)} style={{...imageSelectRing(mapStore), ...positionStyle}} />;
     } else {
       shapeDiv = null;
@@ -106,7 +111,7 @@ class Map extends Component {
     return (
         <div style={{position: `relative`}}>
           <OverlayTrigger trigger={['hover']} placement="top" container={this}
-                          overlay={getPopover(mapStore.name, mapStore.tier, mapStore.mapLevel, mapStore.shaped)}>
+                          overlay={getPopover(mapStore)}>
             <div className='mapMain' style={{...positionStyle}}
                  onClick={this.handleAtlasAction}
                  onContextMenu={this.handleRightClick}

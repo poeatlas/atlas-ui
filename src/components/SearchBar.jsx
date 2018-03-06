@@ -8,46 +8,41 @@ import Seal from './Seal';
 import ShaperOrb from './ShaperOrb';
 import Sextant from './Sextant';
 import Reset from './Reset';
+import ElderOrb from './ElderOrb';
+import {inject} from "mobx-react/index";
 
-@observer
+@inject("atlasStore") @observer
 class SearchBar extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      value: ''
-    };
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(e) {
-    const { mapList } = this.props;
+    const { mapList, atlasStore } = this.props;
 
-    this.setState({ 
-      value: e.target.value
-    });
+    atlasStore.searchString = e.target.value;
+
     const filter = e.target.value.toLowerCase();
 
-    var filterTier = null;
+    let filterTier = null;
     const tierIndex = filter.indexOf("tier:");
     if(tierIndex !== -1) {
       filterTier = parseInt(filter.substring(tierIndex+5), 10);
     }
 
-    for (var i=0; i<mapList.length; i++) {
+    for (let i=0; i<mapList.length; i++) {
       const currMap = mapList[i];
       const areaName = currMap.name.toLowerCase();
       const tier = currMap.tier;
 
-      if (((filter && filter.length <= areaName.length && areaName.indexOf(filter) !== -1 ) 
-          || filterTier === tier )) {
-        currMap.highlighted = true;
-      } else {
-        currMap.highlighted = false;
-      }
+      currMap.highlighted = (filter && filter.length <= areaName.length && areaName.indexOf(filter) !== -1)
+          || filterTier === tier;
     }
   }
 
   render() {
+    const { atlasStore } = this.props;
     return (
       <div className="searchbar-wrapper">
         <Grid>
@@ -64,7 +59,7 @@ class SearchBar extends Component {
                       <FormControl
                         className="searchSize"
                         type="text"
-                        value={this.state.value}
+                        value={atlasStore.searchString}
                         placeholder="Type keywords here..."
                         onChange={this.handleChange}
                       />
@@ -72,6 +67,7 @@ class SearchBar extends Component {
                         <Seal />
                         <Sextant />
                         <ShaperOrb />
+                        <ElderOrb />
                       </InputGroup.Button>
                     </InputGroup>
                   </FormGroup>
