@@ -33,9 +33,6 @@ class HistoryUtil {
       map.sealed = (historyIndex & SEAL_MASK) !== 0;
       map.sextanted = (historyIndex & SEXTANT_MASK) !== 0;
       map.shaped = (historyIndex & SHAPE_MASK) !== 0;
-      // console.log((historyIndex & SEAL_MASK) !== 0, (historyIndex & SEXTANT_MASK) !== 0, (historyIndex & SHAPE_MASK) !== 0);
-      
-      console.log(this.atlasStore.activeMap);
     })
   }
   // call on every change--loops throguh all maps and checks relevant states
@@ -57,7 +54,6 @@ class HistoryUtil {
       if (map.shaped) {
         historyIndex = historyIndex + 4;
       }
-      // console.log(historyIndex, symbolArr[historyIndex]);
       historyStr = historyStr + symbolArr[historyIndex];
     })
     this.history.replace(process.env.PUBLIC_URL + "/?" + historyStr);

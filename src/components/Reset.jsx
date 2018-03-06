@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Popover, OverlayTrigger, Button } from 'react-bootstrap';
+import { OverlayTrigger, Button } from 'react-bootstrap';
 import { inject, observer } from "mobx-react";
 import { withRouter } from 'react-router-dom';
 

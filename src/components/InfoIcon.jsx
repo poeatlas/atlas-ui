@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { InputGroup, Popover, OverlayTrigger } from 'react-bootstrap';
+import { InputGroup, OverlayTrigger } from 'react-bootstrap';
 
 class InfoIcon extends Component {
   render() {
