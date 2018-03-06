@@ -18,7 +18,7 @@ class App extends Component {
     const lastMap = atlas[atlas.length-1];
 
     return (
-        <div id="atlas">
+        <div id="atlas" customAttribute="nochilddrag">
           <SearchBar mapList={this.props.mapStore}/>
            { atlas.map((map) =>
             <Map map={map}

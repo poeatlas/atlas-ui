@@ -33,8 +33,8 @@
 
 /* for non-map popover*/
 .customPopover.info {
-  margin-left: -100px;
-  margin-top: 5px;
+  margin-left: -150px;
+  margin-top: 10px;
   width: 350px;
   max-width: 350px;
 }

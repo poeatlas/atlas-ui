@@ -26,8 +26,6 @@ class InfoIcon extends Component {
           <span className="fa fa-info" aria-hidden="true"></span>
         </InputGroup.Addon>
       </OverlayTrigger>
-
-      
     );
   }
 }

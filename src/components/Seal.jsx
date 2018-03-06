@@ -39,11 +39,11 @@ class Seal extends Component {
     }
     
     return (
-      <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" container={this} overlay={popoverHoverFocus}>
-          <Button onClick={this.activateSeal} active={!!sealState}>
-            <div className={cx(mapClass)}></div>
-          </Button>
-      </OverlayTrigger>
+      <Button onClick={this.activateSeal} active={!!sealState}>
+        <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" container={this} overlay={popoverHoverFocus}>
+          <div className={cx(mapClass)}></div>
+        </OverlayTrigger>
+      </Button>
     );
   }
 }

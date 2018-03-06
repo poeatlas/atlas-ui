@@ -38,11 +38,11 @@ class ShaperOrb extends Component {
     }
 
     return (
-      <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" container={this} overlay={popoverHoverFocus}>
-        <Button onClick={this.activateShaperOrb} active={!!shaperOrbState}>
+      <Button onClick={this.activateShaperOrb} active={!!shaperOrbState}>
+        <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" container={this} overlay={popoverHoverFocus}>
           <div className={cx(mapClass)}></div>
-        </Button>
-      </OverlayTrigger>
+        </OverlayTrigger>
+      </Button>
     );
   }
 }

@@ -38,11 +38,11 @@ class Reset extends Component {
     );
 
     return(
-      <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" container={this} overlay={popoverHoverFocus}>
-        <Button className="resetSize" onClick={this.reset}>
+      <Button className="resetSize" onClick={this.reset}>
+        <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" container={this} overlay={popoverHoverFocus}>
           <span className="fa fa-refresh" aria-hidden="true"></span>
-        </Button>
-      </OverlayTrigger>
+        </OverlayTrigger>
+      </Button>
     )
   }
 }
