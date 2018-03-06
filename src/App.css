@@ -7,14 +7,6 @@
   left: 0;
 }
 
-.borderDottedYellow {
-  border: 2px dotted yellow;
-}
-
-.borderDottedBlue {
-  border: 2px dotted blue;
-}
-
 .highlight {
   position: absolute;
   width: 60px;
@@ -82,7 +74,7 @@
 }
 
 .borderDottedRed {
-  border: 2px dotted red;
+  border: 4px dotted red;
 }
 
 .circle {

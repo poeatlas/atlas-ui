@@ -40,7 +40,6 @@
   margin-top: -20px;
   background-size: 39px 39px;
   cursor: pointer;
-  cursor: hand;
   z-index: 5;
 }
 
@@ -56,6 +55,5 @@
   margin-top: -39px;
   background-size: 80px 80px;
   cursor: pointer;
-  cursor: hand;
   z-index: 1;
 }
